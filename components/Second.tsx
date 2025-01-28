@@ -60,10 +60,15 @@ const Second = () => {
   ];
 
   return (
-    <div className="pb-20 pt-36 mx-[8rem]" id="header">
-      <div className="grid grid-cols-2 gap-10 justify-end">
-        <div className="text-6xl">Breathtaking journey around the island</div>
-        <div className="text-md max-w-xl justify-end justify-self-end">
+    <div
+      className="pb-20 pt-36 mx-[2rem] sm:mx-[2rem] xl:mx-[8rem]"
+      id="header"
+    >
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-end">
+        <div className="text-4xl lg:text-6xl">
+          Breathtaking journey around the island
+        </div>
+        <div className="text-md max-w-xl justify-start justify-self-start lg:justify-self-end lg:justify-end">
           <p>
             This journey offers an unforgettable experience that blends
             adventure, culture and the natural beauty if the country. Filled

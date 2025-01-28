@@ -40,12 +40,12 @@ const Destinations = () => {
   ];
 
   return (
-    <div className="pb-20 pt-36 mx-[8rem] " id="header">
-      <div className="text-6xl text-center">
+    <div className="pb-20 pt-5 lg:pt:36 mx-[2rem] lg:mx-[8rem]" id="header">
+      <div className="text-2xl lg:text-6xl text-center">
         A selection of exceptional destinations
       </div>
 
-      <div className="mt-20">
+      <div className="mt-10 lg:mt-20">
         <FocusCards cards={cards} />
       </div>
     </div>

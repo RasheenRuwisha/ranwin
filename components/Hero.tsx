@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="pb-20 pt-36 mx-auto sm:px-10 px-5" id="header">
       <div
-        className="h-[90vh] w-full 
+        className="h-[100vh] lg:h-[90vh] w-full 
        absolute top-0 left-0 flex items-center justify-center"
       >
         <Image
@@ -15,7 +15,7 @@ const Hero = () => {
           alt="Logo"
           className="mx-auto md:ms-0 h-full w-full"
         />
-        <div className="h-[90vh] absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100/50" />
+        <div className="h-[100vh] lg:h-[90vh] absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100/50" />
       </div>
       <div className="flex w-full justify-start">
         <div
@@ -40,7 +40,7 @@ const Hero = () => {
       </div>
       <InteractiveHoverButton>Explore Now</InteractiveHoverButton>
 
-      <div className="flex  flex-col items-end md:gap-3 gap-6 mt-40">
+      <div className="flex  flex-row lg:flex-col items-end md:gap-3 gap-6 mt-40">
         {socialMedia.map((info) => (
           <a target="_blank" href={info.link}>
             <div
