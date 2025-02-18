@@ -61,7 +61,7 @@ const Second = () => {
 
   return (
     <div
-      className="pb-20 pt-36 mx-[2rem] sm:mx-[2rem] xl:mx-[8rem]"
+      className="pb-20 pt-36 mx-[2rem] sm:mx-[2rem] xl:mx-[15rem]"
       id="header"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-end">
