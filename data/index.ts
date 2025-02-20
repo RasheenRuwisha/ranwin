@@ -1,5 +1,29 @@
 import { title } from "process";
 
+export const navItems = [
+  { name: "About", link: "#about" },
+  { name: "Projects", link: "#projects" },
+  { name: "Contact", link: "#contact" },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    img: "/git.svg",
+    link: "https://www.instagram.com/rasheen_ruwisha/",
+  },
+  {
+    id: 2,
+    img: "/twit.svg",
+    link: "https://x.com/RRuwisha",
+  },
+  {
+    id: 3,
+    img: "/insta.svg",
+    link: "https://github.com/RasheenRuwisha",
+  },
+];
+
 export const package1 = {
   price_with_hotel: 750,
   price: 225,
