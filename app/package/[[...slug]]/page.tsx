@@ -28,6 +28,7 @@ import {
 import Footer from "@/components/Footer";
 import { navItems } from "@/data";
 import { FloatingNav } from "@/components/ui/navbar-menu";
+import { BookButton } from "@/components/book-button";
 
 export default function PackagePage({ params }) {
   const [packages, setPackages] = useState(null);
@@ -154,6 +155,7 @@ export default function PackagePage({ params }) {
                   )
                 )}
               </div>
+              <BookButton />
             </CardContent>
           </Card>
 
