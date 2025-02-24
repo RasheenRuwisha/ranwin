@@ -1,7 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 
-const Map = () => {
+interface MapProps {
+  waypoints: [];
+}
+
+const Map = ({ waypoints }: MapProps) => {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const route = useRef(null);
@@ -23,8 +27,12 @@ const Map = () => {
     });
 
     const fetchRoute = async () => {
+      const waypointsString = waypoints
+        .map((coord) => coord.join(","))
+        .join(";");
+
       const response = await fetch(
-        `https://api.mapbox.com/directions/v5/mapbox/driving/79.88452%2C7.17929%3B80.649991%2C7.292631%3B80.69836%2C7.01334%3B79.97408%2C6.87053%3B79.88452%2C7.17929?alternatives=true&continue_straight=false&geometries=geojson&overview=full&steps=false&access_token=${mapboxgl.accessToken}`
+        `https://api.mapbox.com/directions/v5/mapbox/driving/${waypointsString}?alternatives=true&continue_straight=false&geometries=geojson&overview=full&steps=false&access_token=${mapboxgl.accessToken}`
       );
       const data = await response.json();
       route.current = data.routes[0].geometry;
@@ -72,14 +80,6 @@ const Map = () => {
             },
           ],
         };
-
-        const waypoints = [
-          [79.88452, 7.17929], // Example waypoint 1
-          [80.649991, 7.292631], // Example waypoint 2
-          [80.69836, 7.01334], // Example waypoint 3
-          [79.97408, 6.87053], // Example waypoint 3
-          [79.88452, 7.17929], // Example waypoint 3
-        ];
 
         map.current.addSource("point", {
           type: "geojson",

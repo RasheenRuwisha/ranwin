@@ -23,6 +23,22 @@ module.exports = {
         protocol: "https",
         hostname: "yzvovutt5syi9lsy.public.blob.vercel-storage.com",
       },
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
+      {
+        protocol: "https",
+        hostname: "simpsonsforest.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.andbeyond.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
     ],
   },
 };

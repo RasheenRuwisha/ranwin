@@ -26,6 +26,11 @@ export const socialMedia = [
 
 export const package1 = {
   price_with_hotel: 750,
+  image_1:
+    "https://images.pexels.com/photos/1998440/pexels-photo-1998440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  image_2: "https://simpsonsforest.com/wp-content/uploads/2024/03/01-1.jpg",
+  image_3:
+    "https://www.andbeyond.com/wp-content/uploads/sites/5/colombo-sri-lanka.jpg",
   price: 225,
   number_of_days: 5,
   short_title: "Sri Lanka: Culture & Nature Escape",
@@ -71,7 +76,7 @@ export const package1 = {
       },
     },
   ],
-  whats_included: ["Sim card", "Water Bottle"],
+  whats_included: ["Sim card", "Bottled Water"],
   tickets_included: [
     "Spice Garden",
     "Tea Factory",
@@ -85,11 +90,31 @@ export const package1 = {
       distance: "115km",
       duration: "3 hours",
       things_to_do: [
-        { name: "Pinnawala Elephant Orphanage", image: "" },
-        { name: "Kandy Spice Garden", image: "" },
-        { name: "Tooth Relic Temple", image: "" },
-        { name: "Kandy View Point", image: "" },
-        { name: "Traditional Kandy Dancers", image: "" },
+        {
+          name: "Pinnawala Elephant Orphanage",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Pinnawala_01.jpg/1200px-Pinnawala_01.jpg",
+        },
+        {
+          name: "Kandy Spice Garden",
+          image:
+            "https://travelinfosrilanka.com/wp-content/uploads/2023/09/Spice-Garden-Sri-Lanka.jpg",
+        },
+        {
+          name: "Tooth Relic Temple",
+          image:
+            "https://srisrilanka.com/wp-content/uploads/2023/06/temple-of-the-sacred-tooth-relic-kandy.jpg",
+        },
+        {
+          name: "Kandy View Point",
+          image:
+            "https://www.attractionsinsrilanka.com/wp-content/uploads/2019/07/kandyviewpoint-.jpg",
+        },
+        {
+          name: "Traditional Kandy Dancers",
+          image:
+            "https://assets.roar.media/Life/2017/09/Featured-Image-e1505121383658.jpg?w=1200",
+        },
       ],
     },
     2: {
@@ -98,12 +123,36 @@ export const package1 = {
       distance: "115km",
       duration: "3 hours",
       things_to_do: [
-        { name: "Nuwara Eliya Gem Museum", image: "" },
-        { name: "Wood Carving Center", image: "" },
-        { name: "Peradeniya Botanical Garden", image: "" },
-        { name: "Tea Factory", image: "" },
-        { name: "Ramboda waterfall", image: "" },
-        { name: "Hanuman Temple", image: "" },
+        {
+          name: "Nuwara Eliya Gem Museum",
+          image:
+            "https://www.attractionsinsrilanka.com/wp-content/uploads/2019/07/Natural-Gems-and-Gemological-Museum.jpg",
+        },
+        {
+          name: "Wood Carving Center",
+          image:
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/f7/55/ae/caption.jpg?w=900&h=500&s=1",
+        },
+        {
+          name: "Peradeniya Botanical Garden",
+          image:
+            "https://simpsonsforest.com/wp-content/uploads/2024/03/01-1.jpg",
+        },
+        {
+          name: "Tea Factory",
+          image:
+            "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/fe/8d/e7.jpg",
+        },
+        {
+          name: "Ramboda waterfall",
+          image:
+            "https://www.lankatourexperts.com/wp-content/uploads/2018/12/Ramboda-Falls-Sri-Lanka-Economy-Tours.png",
+        },
+        {
+          name: "Hanuman Temple",
+          image:
+            "https://www.ceylonexpeditions.com/medias/destination_places/big/79/shri-bhakta-hanuman-temple-ramboda-sri-lanka-ramayana-ceylon-expedition-travels-3-1.jpg",
+        },
       ],
     },
     3: {
@@ -112,10 +161,26 @@ export const package1 = {
       distance: "115km",
       duration: "3 hours",
       things_to_do: [
-        { name: "Pink Post Office", image: "" },
-        { name: "Rama Seetha Temple", image: "" },
-        { name: "Haggala Garden", image: "" },
-        { name: "Gregory Lake Boat Ride", image: "" },
+        {
+          name: "Pink Post Office",
+          image:
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeOJZwv4Th-5AS4HPp3RINurWGcsrmilRbg&s",
+        },
+        {
+          name: "Rama Seetha Temple",
+          image:
+            "https://pyt-blogs.imgix.net/2021/06/Depositphotos_158390642_s-2019.jpg?auto=format&ixlib=php-3.3.0",
+        },
+        {
+          name: "Haggala Garden",
+          image:
+            "https://lp-cms-production.imgix.net/2023-05/shutterstock_639029941.jpg?fit=crop&ar=1%3A1&w=1200&auto=format&q=75",
+        },
+        {
+          name: "Gregory Lake Boat Ride",
+          image:
+            "https://yannaratawate.lk/images/nuwara-eliya/gregory-lake-nuwara-eliya-31.jpg",
+        },
       ],
     },
     4: {
@@ -124,10 +189,26 @@ export const package1 = {
       distance: "115km",
       duration: "3 hours",
       things_to_do: [
-        { name: "Ambewela Farm", image: "" },
-        { name: "Devon Waterfall", image: "" },
-        { name: "Saint Clair Waterfall", image: "" },
-        { name: "Kithulgala White Water Rafting", image: "" },
+        {
+          name: "Ambewela Farm",
+          image:
+            "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ambewela_farm_%28Cattle%29.jpg",
+        },
+        {
+          name: "Devon Waterfall",
+          image:
+            "https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/devon-waterfalls-in-sri-lanka-s-central-highlands-940_orig.jpg",
+        },
+        {
+          name: "Saint Clair Waterfall",
+          image:
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/86/ab/e8/st-clair-s-falls.jpg?w=900&h=500&s=1",
+        },
+        {
+          name: "Kithulgala White Water Rafting",
+          image:
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/1e/31/caption.jpg?w=1200&h=-1&s=1",
+        },
       ],
     },
     5: {
@@ -135,7 +216,13 @@ export const package1 = {
       end: "BIA",
       distance: "115km",
       duration: "3 hours",
-      things_to_do: [{ name: "Colombo City Tour (Tuktuk or Car)", image: "" }],
+      things_to_do: [
+        {
+          name: "Colombo City Tour (Tuktuk or Car)",
+          image:
+            "https://www.andbeyond.com/wp-content/uploads/sites/5/colombo-sri-lanka.jpg",
+        },
+      ],
     },
   },
   short_description:
