@@ -22,7 +22,7 @@ const Second = () => {
         "Discover the vibrant city of Colombo, where rich cultural heritage blends seamlessly with modern advancements, offering a unique fusion of old and new.",
       header: <div></div>,
       image: "/colombo.jpg",
-      imageclass: "",
+      link: "",
       icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     },
     {
@@ -31,7 +31,7 @@ const Second = () => {
         "Immerse yourself in the serene beauty of Ella, where lush landscapes, breathtaking waterfalls, and scenic hikes provide the perfect retreat for nature lovers and adventurers alike.",
       header: <div></div>,
       image: "/ella.jpg",
-      imageclass: "",
+      link: "/cities/ella",
       icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     },
     {
@@ -40,7 +40,7 @@ const Second = () => {
         "Experience the vibrant charm of Hikkaduwa, where pristine beaches, colorful coral reefs, and a lively atmosphere invite you to relax, explore, and enjoy the best of Sri Lanka’s coastal life.",
       header: <div></div>,
       image: "/hikkaduwa.jpg",
-      imageclass: "",
+      link: "",
       icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     },
     {
@@ -49,7 +49,7 @@ const Second = () => {
         "Step into the heart of northern Sri Lanka, where rich Tamil heritage, ancient temples, and a resilient spirit combine to offer a unique glimpse into the island's diverse history and culture.",
       header: <div></div>,
       image: "/jaffna.jpg",
-      imageclass: "",
+      link: "",
       icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
     {
@@ -58,7 +58,7 @@ const Second = () => {
         "Escape to the cool, misty hills of Nuwara Eliya, where colonial charm meets lush tea plantations, offering a refreshing retreat amidst breathtaking landscapes and serene gardens.",
       header: <div></div>,
       image: "/nuwara.jpg",
-      imageclass: "",
+      link: "",
       icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
     },
   ];
@@ -94,7 +94,7 @@ const Second = () => {
               header={item.header}
               icon={item.icon}
               image={item.image}
-              imgClassName={item.imageclass}
+              link={item.link}
               className={i === 0 ? "md:col-span-2" : ""}
             />
           ))}

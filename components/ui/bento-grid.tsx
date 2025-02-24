@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 export const BentoGrid = ({
   className,
@@ -27,7 +28,7 @@ export const BentoGridItem = ({
   header,
   icon,
   image,
-  imgClassName,
+  link,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -35,7 +36,7 @@ export const BentoGridItem = ({
   header?: React.ReactNode;
   icon?: React.ReactNode;
   image: any;
-  imgClassName: string;
+  link: string;
 }) => {
   return (
     <div
@@ -49,7 +50,7 @@ export const BentoGridItem = ({
           <img
             src={image}
             alt={image}
-            className={cn(imgClassName, "z-0 object-cover w-full h-full")}
+            className={cn(link, "z-0 object-cover w-full h-full")}
           />
         )}
       </div>
@@ -65,9 +66,11 @@ export const BentoGridItem = ({
           {description}
         </div>
 
-        <button className="px-4 py-2 text-black backdrop-blur-sm rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-sm transition duration-200 my-2">
-          Learn More
-        </button>
+        <Link href={link}>
+          <button className="px-4 py-2 text-black backdrop-blur-sm rounded-md hover:shadow-[0px_0px_4px_4px_rgba(0,0,0,0.1)] bg-white/[0.2] text-sm transition duration-200 my-2">
+            Learn More
+          </button>
+        </Link>
       </div>
     </div>
   );
