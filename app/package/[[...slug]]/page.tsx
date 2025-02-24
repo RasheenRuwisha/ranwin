@@ -26,38 +26,39 @@ import {
   Card as CardPackage2,
 } from "@/components/ui/apple-cards-carousel";
 import Footer from "@/components/Footer";
-
-const UNSPLASH_API_KEY = "5A1syFn-66a7EdWUbqkCmXZQl7VpPloEApn02a64Su0";
-const UNSPLASH_URL = "https://api.unsplash.com/search/photos";
+import { navItems } from "@/data";
+import { FloatingNav } from "@/components/ui/navbar-menu";
 
 export default function PackagePage({ params }) {
   const [packages, setPackages] = useState(null);
   const [hoveredImage, setHoveredImage] = useState(null);
   const [loading, setLoading] = useState(false);
-  const hideTimeoutRef = useRef(null);
-  const [lastFetchedActivity, setLastFetchedActivity] = useState(null);
 
   const data = [
     {
       category: "5 Days",
-      title: "You can do more with AI.",
-      src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Sri Lankan Coastal Escape",
+      src: "/5.jpg",
+      link: "/package/coastal-escape",
     },
     {
-      category: "8 Days",
-      title: "Enhance your productivity.",
-      src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "7 Days",
+      title: "Southern Wonders of Sri Lanka",
+      src: "/7.jpg",
+      link: "/package/southern-wonders",
     },
     {
-      category: "10 Days",
-      title: "Launching the new Apple Vision Pro.",
-      src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "6 Days",
+      title: "Cultural Heart of Sri Lanka",
+      src: "/6.jpg",
+      link: "/package/cultural-heart",
     },
 
     {
-      category: "10 Days",
-      title: "Maps for your iPhone 15 Pro Max.",
-      src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      category: "15 Days",
+      title: "Sri Lanka’s Scenic & Cultural Odyssey",
+      src: "/15.jpg",
+      link: "/package/scenic-odyysey",
     },
   ];
 
@@ -68,7 +69,7 @@ export default function PackagePage({ params }) {
   console.log(cards);
 
   useEffect(() => {
-    if (params?.slug?.[0] === "kandy-5-day") {
+    if (params?.slug?.[0] === "nature-escape") {
       setPackages(package1);
     }
   }, [params]);
@@ -88,6 +89,8 @@ export default function PackagePage({ params }) {
 
   return (
     <div>
+      <FloatingNav navItems={navItems} />
+
       <div className="max-w-7xl mx-auto p-6 space-y-6">
         {/* Title & Rating */}
         <div className="flex flex-col space-y-2 text-center md:text-left">

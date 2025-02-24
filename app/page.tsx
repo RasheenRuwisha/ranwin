@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Second from "@/components/Second";
 import WorldMap from "@/components/ui/world-map";
 import Destinations from "@/components/Destinations";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           </div>
         </div>
         <Destinations />
+        <Footer />
       </div>
     </main>
   );

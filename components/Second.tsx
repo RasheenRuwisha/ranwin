@@ -17,43 +17,47 @@ import {
 const Second = () => {
   const items = [
     {
-      title: "The Dawn of Innovation",
-      description: "Explore the birth of groundbreaking ideas and inventions.",
+      title: "Colombo: Where Tradition Meets Innovation",
+      description:
+        "Discover the vibrant city of Colombo, where rich cultural heritage blends seamlessly with modern advancements, offering a unique fusion of old and new.",
       header: <div></div>,
-      image: "/backdrop.jpg",
+      image: "/colombo.jpg",
       imageclass: "",
       icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Digital Revolution",
-      description: "Dive into the transformative power of technology.",
+      title: "Ella: Nature's Tranquil Escape",
+      description:
+        "Immerse yourself in the serene beauty of Ella, where lush landscapes, breathtaking waterfalls, and scenic hikes provide the perfect retreat for nature lovers and adventurers alike.",
       header: <div></div>,
-      image: "/backdrop.jpg",
+      image: "/ella.jpg",
       imageclass: "",
       icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Art of Design",
-      description: "Discover the beauty of thoughtful and functional design.",
+      title: "Hikkaduwa: The Coastal Paradise",
+      description:
+        "Experience the vibrant charm of Hikkaduwa, where pristine beaches, colorful coral reefs, and a lively atmosphere invite you to relax, explore, and enjoy the best of Sri Lanka’s coastal life.",
       header: <div></div>,
-      image: "/backdrop.jpg",
+      image: "/hikkaduwa.jpg",
       imageclass: "",
       icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Power of Communication",
+      title: "Jaffna: A Journey Through Culture and Resilience",
       description:
-        "Understand the impact of effective communication in our lives.",
+        "Step into the heart of northern Sri Lanka, where rich Tamil heritage, ancient temples, and a resilient spirit combine to offer a unique glimpse into the island's diverse history and culture.",
       header: <div></div>,
-      image: "/backdrop.jpg",
+      image: "/jaffna.jpg",
       imageclass: "",
       icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
     },
     {
-      title: "The Pursuit of Knowledge",
-      description: "Join the quest for understanding and enlightenment.",
+      title: "Nuwara Eliya: The Little England of Sri Lanka",
+      description:
+        "Escape to the cool, misty hills of Nuwara Eliya, where colonial charm meets lush tea plantations, offering a refreshing retreat amidst breathtaking landscapes and serene gardens.",
       header: <div></div>,
-      image: "/backdrop.jpg",
+      image: "/nuwara.jpg",
       imageclass: "",
       icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
     },
@@ -62,7 +66,7 @@ const Second = () => {
   return (
     <div
       className="pb-20 pt-36 mx-[2rem] sm:mx-[2rem] xl:mx-[15rem]"
-      id="header"
+      id="about"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-end">
         <div className="text-4xl lg:text-6xl">

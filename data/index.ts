@@ -2,8 +2,42 @@ import { title } from "process";
 
 export const navItems = [
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Contact", link: "#contact" },
+  { name: "Packages", link: "#packages" },
+  { name: "Contact", link: "#footer" },
+];
+
+export const dataCaro = [
+  {
+    category: "5 Days",
+    title: "Culture & Nature Escape",
+    src: "/5-1.jpg",
+    link: "/package/nature-escape",
+  },
+  {
+    category: "5 Days",
+    title: "Sri Lankan Coastal Escape",
+    src: "/5.jpg",
+    link: "/package/coastal-escape",
+  },
+  {
+    category: "7 Days",
+    title: "Southern Wonders of Sri Lanka",
+    src: "/7.jpg",
+    link: "/package/southern-wonders",
+  },
+  {
+    category: "6 Days",
+    title: "Cultural Heart of Sri Lanka",
+    src: "/6.jpg",
+    link: "/package/cultural-heart",
+  },
+
+  {
+    category: "15 Days",
+    title: "Sri Lanka’s Scenic & Cultural Odyssey",
+    src: "/15.jpg",
+    link: "/package/scenic-odyysey",
+  },
 ];
 
 export const socialMedia = [
