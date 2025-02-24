@@ -48,7 +48,7 @@ export const FloatingNav = ({
       <motion.div
         initial={{
           opacity: 1,
-          y: 100,
+          y: -100,
         }}
         animate={{
           y: visible ? 0 : -100,
