@@ -255,7 +255,11 @@ export default function PackagePage({ params }) {
 
             <Card className="p-4">
               <CardContent>
-                <Map waypoints={packages?.waypoints} />
+                {packages != null ? (
+                  <Map waypoints={packages?.waypoints} />
+                ) : (
+                  <></>
+                )}
               </CardContent>
             </Card>
           </div>
