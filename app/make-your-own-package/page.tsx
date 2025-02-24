@@ -61,6 +61,8 @@ const DraggableMarker = ({ marker, index, moveMarker, removeMarker }) => {
 
 const Map = ({ waypoints }: MapProps) => {
   const [loading, setLoading] = useState(false);
+  const [disabled, setDisabled] = useState(true);
+
   const { toast } = useToast();
 
   const mapContainer = useRef(null);
@@ -123,6 +125,7 @@ const Map = ({ waypoints }: MapProps) => {
         // Fetch route only if there are at least two markers
         if (updatedMarkers.length > 1) {
           fetchRoute(updatedMarkers.map((marker) => marker.coords));
+          setDisabled(false);
         }
         return updatedMarkers;
       });
@@ -249,7 +252,9 @@ const Map = ({ waypoints }: MapProps) => {
       // Fetch route only if there are at least two markers remaining
       if (updatedMarkers.length > 1) {
         fetchRoute(updatedMarkers.map((marker) => marker.coords));
+        setDisabled(false);
       } else {
+        setDisabled(true);
         const routeSource = map.current?.getSource(
           "route"
         ) as mapboxgl.GeoJSONSource;
@@ -387,8 +392,12 @@ const Map = ({ waypoints }: MapProps) => {
             ))}
           </ul>
 
-          <div className="self-end align-bottom mt-20">
-            <LoadingButton loading={loading} onClick={() => onSubmit()}>
+          <div className="self-end align-bottom mt-10">
+            <LoadingButton
+              loading={loading}
+              onClick={() => onSubmit()}
+              disabled={disabled}
+            >
               Submit Route Request
             </LoadingButton>
           </div>
