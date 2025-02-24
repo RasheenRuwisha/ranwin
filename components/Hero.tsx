@@ -1,6 +1,6 @@
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import Image from "next/image";
-import backdrop from "@/assets/backdrop.jpg";
+import backdrop from "@/assets/ella.jpg";
 import { InteractiveHoverButton } from "./ui/interactive-hover-button";
 import { socialMedia } from "@/data";
 const Hero = () => {

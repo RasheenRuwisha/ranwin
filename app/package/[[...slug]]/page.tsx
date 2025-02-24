@@ -7,7 +7,7 @@ import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Map from "@/components/Map";
-import { package1 } from "@/data";
+import { dataCaro, package1 } from "@/data";
 import {
   Accordion,
   AccordionItem,
@@ -31,45 +31,22 @@ import { FloatingNav } from "@/components/ui/navbar-menu";
 
 export default function PackagePage({ params }) {
   const [packages, setPackages] = useState(null);
+  const [url, setUrl] = useState("");
+
   const [hoveredImage, setHoveredImage] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const data = [
-    {
-      category: "5 Days",
-      title: "Sri Lankan Coastal Escape",
-      src: "/5.jpg",
-      link: "/package/coastal-escape",
-    },
-    {
-      category: "7 Days",
-      title: "Southern Wonders of Sri Lanka",
-      src: "/7.jpg",
-      link: "/package/southern-wonders",
-    },
-    {
-      category: "6 Days",
-      title: "Cultural Heart of Sri Lanka",
-      src: "/6.jpg",
-      link: "/package/cultural-heart",
-    },
-
-    {
-      category: "15 Days",
-      title: "Sri Lanka’s Scenic & Cultural Odyssey",
-      src: "/15.jpg",
-      link: "/package/scenic-odyysey",
-    },
-  ];
-
-  const cards = data.map((card, index) => (
-    <CardPackage2 key={card.src} card={card} index={index} layout={true} />
-  ));
+  const cards = dataCaro
+    .filter((card) => !card.link.includes(url))
+    .map((card, index) => (
+      <CardPackage2 key={card.src} card={card} index={index} layout={true} />
+    ));
 
   console.log(cards);
 
   useEffect(() => {
     if (params?.slug?.[0] === "nature-escape") {
+      setUrl(params?.slug?.[0]);
       setPackages(package1);
     }
   }, [params]);
@@ -78,14 +55,6 @@ export default function PackagePage({ params }) {
     const imageUrl = activity?.image || null;
     setHoveredImage(imageUrl);
   };
-
-  const waypoints = [
-    [79.88452, 7.17929], // Example waypoint 1
-    [80.649991, 7.292631], // Example waypoint 2
-    [80.69836, 7.01334], // Example waypoint 3
-    [79.97408, 6.87053], // Example waypoint 3
-    [79.88452, 7.17929], // Example waypoint 3
-  ];
 
   return (
     <div>
@@ -286,7 +255,7 @@ export default function PackagePage({ params }) {
 
             <Card className="p-4">
               <CardContent>
-                <Map waypoints={waypoints} />
+                <Map waypoints={packages?.waypoints} />
               </CardContent>
             </Card>
           </div>

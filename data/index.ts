@@ -1,9 +1,10 @@
 import { title } from "process";
 
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Packages", link: "#packages" },
-  { name: "Contact", link: "#footer" },
+  { name: "Home", link: "/#" },
+  { name: "About", link: "/#about" },
+  { name: "Packages", link: "/#packages" },
+  { name: "Contact", link: "/#footer" },
 ];
 
 export const dataCaro = [
@@ -55,6 +56,13 @@ export const socialMedia = [
 
 export const package1 = {
   price_with_hotel: 750,
+  waypoints: [
+    [79.88452, 7.17929], // Example waypoint 1
+    [80.649991, 7.292631], // Example waypoint 2
+    [80.69836, 7.01334], // Example waypoint 3
+    [79.97408, 6.87053], // Example waypoint 3
+    [79.88452, 7.17929], // Example waypoint 3
+  ],
   image_1:
     "https://images.pexels.com/photos/1998440/pexels-photo-1998440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   image_2: "https://simpsonsforest.com/wp-content/uploads/2024/03/01-1.jpg",
