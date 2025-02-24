@@ -27,7 +27,9 @@ export const socialMedia = [
 export const package1 = {
   price_with_hotel: 750,
   price: 225,
-  title: "Traditional Kandy tour",
+  number_of_days: 5,
+  short_title: "Sri Lanka: Culture & Nature Escape",
+  title: " Sri Lanka’s 5-Day Journey: Culture, Nature, and Adventure Awaits",
   route: {
     1: "BIA",
     2: "Kandy",
@@ -76,6 +78,70 @@ export const package1 = {
     "Gem Museum",
     "Wood Carving Center",
   ],
+  day_break_down: {
+    1: {
+      start: "BIA",
+      end: "Kandy",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        { name: "Pinnawala Elephant Orphanage", image: "" },
+        { name: "Kandy Spice Garden", image: "" },
+        { name: "Tooth Relic Temple", image: "" },
+        { name: "Kandy View Point", image: "" },
+        { name: "Traditional Kandy Dancers", image: "" },
+      ],
+    },
+    2: {
+      start: "Kandy",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        { name: "Nuwara Eliya Gem Museum", image: "" },
+        { name: "Wood Carving Center", image: "" },
+        { name: "Peradeniya Botanical Garden", image: "" },
+        { name: "Tea Factory", image: "" },
+        { name: "Ramboda waterfall", image: "" },
+        { name: "Hanuman Temple", image: "" },
+      ],
+    },
+    3: {
+      start: "Nuwara Eliya",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        { name: "Pink Post Office", image: "" },
+        { name: "Rama Seetha Temple", image: "" },
+        { name: "Haggala Garden", image: "" },
+        { name: "Gregory Lake Boat Ride", image: "" },
+      ],
+    },
+    4: {
+      start: "Nuwara Eliya",
+      end: "Colombo",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        { name: "Ambewela Farm", image: "" },
+        { name: "Devon Waterfall", image: "" },
+        { name: "Saint Clair Waterfall", image: "" },
+        { name: "Kithulgala White Water Rafting", image: "" },
+      ],
+    },
+    5: {
+      start: "Colombo",
+      end: "BIA",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [{ name: "Colombo City Tour (Tuktuk or Car)", image: "" }],
+    },
+  },
+  short_description:
+    "A scenic 5-day journey through Sri Lanka, featuring Kandy’s cultural heritage, Nuwara Eliya’s picturesque landscapes, and Colombo’s bustling city life.",
+  description:
+    "Explore the beauty and culture of Sri Lanka in this 5-day adventure. Start in Kandy, where you’ll visit the Tooth Relic Temple and the Pinnawala Elephant Orphanage. Head to Nuwara Eliya for a taste of Sri Lanka’s tea history and stunning waterfalls, before finishing in Colombo with a city tour and a Tuk Tuk ride. A perfect mix of nature, history, and city life!",
 };
 
 export const package2 = {
