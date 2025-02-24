@@ -4,6 +4,12 @@ import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import { DndProvider, useDrag, useDrop } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import { FloatingNav } from "@/components/ui/navbar-menu-second";
+import { navItems } from "@/data";
+import LoadingButton from "@/components/loading-buttom";
+import emailjs from "@emailjs/browser";
+import { useToast } from "@/hooks/use-toast";
+import { GripVertical, Trash2 } from "lucide-react";
 
 interface MapProps {
   waypoints: [number, number][];
@@ -39,7 +45,7 @@ const DraggableMarker = ({ marker, index, moveMarker, removeMarker }) => {
           ref={ref} // Attach the drag handle reference here
           className="cursor-grab p-2 mr-2"
         >
-          &#x21C5; {/* A simple drag handle */}
+          <GripVertical size={16} /> {/* A simple drag handle */}
         </span>
         {`Marker ${index + 1}: ${marker.location}`}
       </span>
@@ -47,13 +53,16 @@ const DraggableMarker = ({ marker, index, moveMarker, removeMarker }) => {
         onClick={() => removeMarker(index)}
         className="ml-2 bg-red-500 text-white p-1 rounded"
       >
-        Remove
+        <Trash2 size={16} />
       </button>
     </li>
   );
 };
 
 const Map = ({ waypoints }: MapProps) => {
+  const [loading, setLoading] = useState(false);
+  const { toast } = useToast();
+
   const mapContainer = useRef(null);
   const map = useRef<mapboxgl.Map | null>(null);
   const [markers, setMarkers] = useState<
@@ -295,11 +304,47 @@ const Map = ({ waypoints }: MapProps) => {
     }
   };
 
+  const onSubmit = async () => {
+    const formattedLocations = markers
+      .map((item) => item.location) // Extract only the locations
+      .join("\n");
+    setLoading(true);
+    emailjs
+      .send(
+        "service_o84afms",
+        "template_t7q55yo",
+        {
+          message: formattedLocations, // Use 'name' as a key for the name value
+        },
+        {
+          publicKey: "Ou__g4P_FnfVHN688",
+        }
+      )
+      .then(
+        () => {
+          toast({
+            title: "Request Sent.",
+            description: "We will get back to you soon",
+          });
+          setLoading(false);
+          setOpen(false);
+        },
+        (error) => {
+          toast({
+            title: "Uh oh! Something went wrong.",
+            description: "There was a problem with your request.",
+          });
+        }
+      );
+  };
+
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex h-screen">
+        <FloatingNav navItems={navItems} />
+
         <div className="w-2/5 p-4 overflow-y-auto">
-          <h3 className="text-lg font-bold mb-2">Markers List:</h3>
+          <h3 className="text-lg font-bold mb-2">Route:</h3>
           <div className="flex flex-col mb-4">
             <div className="relative mb-4">
               <input
@@ -341,6 +386,12 @@ const Map = ({ waypoints }: MapProps) => {
               />
             ))}
           </ul>
+
+          <div className="self-end align-bottom mt-20">
+            <LoadingButton loading={loading} onClick={() => onSubmit()}>
+              Submit Route Request
+            </LoadingButton>
+          </div>
         </div>
         <div ref={mapContainer} className="w-3/5" />
       </div>
