@@ -9,32 +9,23 @@ export default function Footer() {
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <Link href="https://flowbite.com" className="flex items-center">
+            <Link href="https://ranwintours.com" className="flex items-center">
               <Image
-                src="https://flowbite.com/docs/images/logo.svg"
-                width={32}
-                height={32}
-                alt="FlowBite Logo"
-                className="mr-3 h-8"
+                src="/img-white.png"
+                width={120}
+                height={100}
+                alt="Ranwin Logo"
+                style={{ width: "auto", height: "100%" }}
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
-              </span>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-            <FooterColumn title="Resources">
-              <FooterLink href="https://flowbite.com">Flowbite</FooterLink>
-              <FooterLink href="https://tailwindcss.com/">
-                Tailwind CSS
-              </FooterLink>
-            </FooterColumn>
             <FooterColumn title="Follow us">
               <FooterLink href="https://github.com/themesberg/flowbite">
-                Github
+                Instagram
               </FooterLink>
               <FooterLink href="https://discord.gg/4eeurUVvTy">
-                Discord
+                Facebook
               </FooterLink>
             </FooterColumn>
             <FooterColumn title="Legal">
@@ -48,7 +39,7 @@ export default function Footer() {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2022{" "}
             <Link href="https://flowbite.com" className="hover:underline">
-              Flowbite™
+              Ranwin Tours and Travels (PVT) LTD
             </Link>
             . All Rights Reserved.
           </span>

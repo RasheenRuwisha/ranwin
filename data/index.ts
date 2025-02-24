@@ -42,11 +42,6 @@ export const dataCaro = [
 
 export const socialMedia = [
   {
-    id: 1,
-    img: "/git.svg",
-    link: "https://www.instagram.com/rasheen_ruwisha/",
-  },
-  {
     id: 2,
     img: "/twit.svg",
     link: "https://x.com/RRuwisha",
