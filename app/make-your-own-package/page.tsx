@@ -362,6 +362,41 @@ const Map = ({ waypoints }: MapProps) => {
       .join("\n");
     setLoading(true);
 
+    if (!name.trim()) {
+      toast({
+        title: "Name is required.",
+        description: "Please enter your name.",
+        variant: "destructive", // You can set a variant for error styling
+      });
+      setLoading(false);
+
+      return;
+    }
+
+    // Validate email format
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailRegex.test(email)) {
+      toast({
+        title: "Invalid Email.",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      setLoading(false);
+      return;
+    }
+
+    // Validate phone number (only digits, length 10-15)
+    const phoneRegex = /^\d{10,15}$/;
+    if (!phoneRegex.test(phone)) {
+      toast({
+        title: "Invalid Phone Number.",
+        description: "Please enter a valid phone number (10-15 digits).",
+        variant: "destructive",
+      });
+      setLoading(false);
+      return;
+    }
+
     const userInfo = `
     Name: ${name}
     Email: ${email}
