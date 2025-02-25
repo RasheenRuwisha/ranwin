@@ -232,6 +232,8 @@ const Map = ({ waypoints }: MapProps) => {
   };
 
   const handleSearch = async () => {
+    console.log(waypoints);
+
     if (!searchQuery) {
       setSuggestions([]); // Clear suggestions if the search query is empty
       return;
