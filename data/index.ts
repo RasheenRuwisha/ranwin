@@ -654,7 +654,7 @@ export const trincomalee = {
 export const galle = {
   title: "Galle: A Colonial Gem by the Sea",
   image_1: "/galle-4.jpg",
-  image_2: "/galle-2.jpg",
+  image_2: "/galle-6.jpg",
   image_3: "/galle-1.jpg",
   description: `Galle, a UNESCO World Heritage Site, is a charming city that blends colonial history with coastal beauty. Famous for its well-preserved fort, stunning beaches, and vibrant arts scene, Galle is an unforgettable destination.`,
   conclusion:
@@ -668,7 +668,7 @@ export const galle = {
     {
       section: "Galle Lighthouse: A Picture-Perfect Landmark",
       text: "Sri Lanka’s oldest lighthouse stands tall within Galle Fort, offering a scenic coastal view and a great photo opportunity.",
-      image: "/galle-2.jpg",
+      image: "/galle-9.jpg",
     },
     {
       section: "Unawatuna Beach: A Tropical Paradise",
@@ -688,7 +688,7 @@ export const galle = {
     {
       section: "Explore Galle’s Art Scene",
       text: "Galle is home to vibrant art galleries and boutique shops, perfect for discovering local artists and unique souvenirs.",
-      image: "/galle-9.jpg",
+      image: "/galle-6.jpg",
     },
     {
       section: "Visit the Maritime Archaeology Museum",
