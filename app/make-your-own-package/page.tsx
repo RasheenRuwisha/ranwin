@@ -403,7 +403,12 @@ const Map = ({ waypoints }: MapProps) => {
     Phone: ${phone}
   `;
 
-    const message = `${userInfo}\n\nRoute:\n${formattedLocations}`;
+    const mapboxUrl = `https://www.google.com/maps/dir/${markers
+      .map((marker) => `${marker.coords[1]},${marker.coords[0]}`)
+      .join("/")}`;
+
+    const message = `${userInfo}\n\nRoute:\n${formattedLocations}\n\nView Map: ${mapboxUrl}`;
+
     emailjs
       .send(
         "service_o84afms",
