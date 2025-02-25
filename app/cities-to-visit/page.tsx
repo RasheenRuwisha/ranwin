@@ -89,7 +89,7 @@ const items = [
     title: "Galle: A Colonial Gem by the Sea",
     description: `Galle, a UNESCO World Heritage Site, is a charming city that blends colonial history with coastal beauty. Famous for its well-preserved fort, stunning beaches, and vibrant arts scene, Galle is an unforgettable destination.`,
     header: <div></div>,
-    image: "/galle-2.jpg",
+    image: "/galle-4.jpg",
     link: "/cities/galle",
     icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
   },
