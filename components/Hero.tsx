@@ -3,6 +3,7 @@ import Image from "next/image";
 import backdrop from "@/assets/ella.jpg";
 import { InteractiveHoverButton } from "./ui/interactive-hover-button";
 import { socialMedia } from "@/data";
+import Link from "next/link";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36 mx-auto sm:px-10 px-5" id="header">
@@ -38,7 +39,9 @@ const Hero = () => {
           />
         </div>
       </div>
-      <InteractiveHoverButton>Explore Now</InteractiveHoverButton>
+      <Link href="/cities-to-visit">
+        <InteractiveHoverButton>Explore Now</InteractiveHoverButton>
+      </Link>
 
       <div className="flex  flex-row lg:flex-col items-end md:gap-3 gap-6 mt-40">
         {socialMedia.map((info) => (

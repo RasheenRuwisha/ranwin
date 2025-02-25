@@ -43,8 +43,6 @@ export default function PackagePage({ params }) {
       <CardPackage2 key={card.src} card={card} index={index} layout={true} />
     ));
 
-  console.log(cards);
-
   useEffect(() => {
     if (params?.slug?.[0] === "nature-escape") {
       setUrl(params?.slug?.[0]);

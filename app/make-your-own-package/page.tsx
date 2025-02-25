@@ -10,6 +10,7 @@ import LoadingButton from "@/components/loading-buttom";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@/hooks/use-toast";
 import { GripVertical, Trash2 } from "lucide-react";
+import { useRouter } from "next/navigation"; // For page redirection
 
 interface MapProps {
   waypoints: [number, number][];
@@ -19,7 +20,13 @@ const ItemTypes = {
   MARKER: "marker",
 };
 
-const DraggableMarker = ({ marker, index, moveMarker, removeMarker }) => {
+const DraggableMarker = ({
+  marker,
+  index,
+  moveMarker,
+  removeMarker,
+  updateDays, // New prop for updating days
+}) => {
   const [, ref] = useDrag({
     type: ItemTypes.MARKER,
     item: { index },
@@ -38,17 +45,29 @@ const DraggableMarker = ({ marker, index, moveMarker, removeMarker }) => {
   return (
     <li
       ref={(node) => ref(drop(node))}
-      className="text-sm flex justify-between items-center"
+      className="text-sm grid   md:grid-cols-[60%,35.5%,4.5%]  items-center"
     >
-      <span className="flex items-center">
+      <span className="flex items-center ">
         <span
           ref={ref} // Attach the drag handle reference here
           className="cursor-grab p-2 mr-2"
         >
           <GripVertical size={16} /> {/* A simple drag handle */}
         </span>
-        {`Marker ${index + 1}: ${marker.location}`}
+        {`Location ${index + 1}: ${marker.location}`}
       </span>
+      <div className="ml-4 flex items-center">
+        <label htmlFor={`days-input-${index}`} className="mr-2">
+          Days:
+        </label>
+        <input
+          id={`days-input-${index}`}
+          value={marker.days || ""}
+          min="1"
+          onChange={(e) => updateDays(index, parseInt(e.target.value))}
+          className="border p-1 rounded w-16"
+        />
+      </div>
       <button
         onClick={() => removeMarker(index)}
         className="ml-2 bg-red-500 text-white p-1 rounded"
@@ -64,11 +83,25 @@ const Map = ({ waypoints }: MapProps) => {
   const [disabled, setDisabled] = useState(true);
 
   const { toast } = useToast();
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if the device is mobile or tablet
+    const isMobileOrTablet = /Mobi|Android|iPad|iPhone/i.test(
+      navigator.userAgent
+    );
+
+    if (isMobileOrTablet) {
+      // Optionally, redirect or show a message
+      alert("This page is not available on mobile or tablet devices.");
+      router.push("/"); // Redirect to the homepage or any other page
+    }
+  }, []);
 
   const mapContainer = useRef(null);
   const map = useRef<mapboxgl.Map | null>(null);
   const [markers, setMarkers] = useState<
-    { coords: [number, number]; location: string }[]
+    { coords: [number, number]; location: string; days: number | null }[]
   >([]);
   const [mapMarkers, setMapMarkers] = useState<mapboxgl.Marker[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -86,8 +119,8 @@ const Map = ({ waypoints }: MapProps) => {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/dark-v11",
-      center: [80.278469, 7.156788],
-      zoom: 8.8,
+      center: [80.860663, 7.554045],
+      zoom: 7.5,
     });
 
     map.current.on("load", () => {
@@ -121,7 +154,10 @@ const Map = ({ waypoints }: MapProps) => {
 
       // Update the markers state
       setMarkers((prev) => {
-        const updatedMarkers = [...prev, { coords, location: locationName }];
+        const updatedMarkers = [
+          ...prev,
+          { coords, location: locationName, days: null },
+        ];
         // Fetch route only if there are at least two markers
         if (updatedMarkers.length > 1) {
           fetchRoute(updatedMarkers.map((marker) => marker.coords));
@@ -160,7 +196,6 @@ const Map = ({ waypoints }: MapProps) => {
 
   const fetchRoute = async (coords: [number, number][]) => {
     if (coords.length < 2) {
-      console.error("Not enough coordinates to fetch route.");
       return;
     }
 
@@ -171,7 +206,6 @@ const Map = ({ waypoints }: MapProps) => {
     );
 
     if (!response.ok) {
-      console.error("Error fetching route:", response.statusText);
       return;
     }
 
@@ -194,7 +228,6 @@ const Map = ({ waypoints }: MapProps) => {
         });
       }
     } else {
-      console.log("No routes found.");
     }
   };
 
@@ -216,7 +249,6 @@ const Map = ({ waypoints }: MapProps) => {
         setSuggestions([]); // Clear suggestions if no results
       }
     } else {
-      console.error("Error fetching suggestions:", response.statusText);
       setSuggestions([]); // Clear suggestions on error
     }
   };
@@ -233,7 +265,7 @@ const Map = ({ waypoints }: MapProps) => {
     setMarkers((prev) => {
       const updatedMarkers = [
         ...prev,
-        { coords: [lng, lat], location: locationName },
+        { coords: [lng, lat], location: locationName, days: null },
       ];
       // Fetch route only if there are at least two markers
       if (updatedMarkers.length > 1) {
@@ -309,9 +341,17 @@ const Map = ({ waypoints }: MapProps) => {
     }
   };
 
+  const updateDays = (index: number, days: number) => {
+    setMarkers((prev) => {
+      const updatedMarkers = [...prev];
+      updatedMarkers[index].days = days;
+      return updatedMarkers;
+    });
+  };
+
   const onSubmit = async () => {
     const formattedLocations = markers
-      .map((item) => item.location) // Extract only the locations
+      .map((item) => `${item.location} - Days: ${item.days ?? "N/A"}`)
       .join("\n");
     setLoading(true);
     emailjs
@@ -332,7 +372,7 @@ const Map = ({ waypoints }: MapProps) => {
             description: "We will get back to you soon",
           });
           setLoading(false);
-          setOpen(false);
+          setDisabled(true);
         },
         (error) => {
           toast({
@@ -388,6 +428,7 @@ const Map = ({ waypoints }: MapProps) => {
                 index={index}
                 moveMarker={moveMarker}
                 removeMarker={removeMarker}
+                updateDays={updateDays} // Pass the updateDays function
               />
             ))}
           </ul>

@@ -57,7 +57,6 @@ export function BookButton({
   const [loading, setLoading] = useState(false);
 
   const onSubmit = async (data) => {
-    console.log(date);
     setLoading(true);
     emailjs
       .send(

@@ -7,7 +7,20 @@ import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Map from "@/components/Map";
-import { dataCaro, ella, package1 } from "@/data";
+import {
+  anuradhapura,
+  arugambay,
+  colombo,
+  dataCaro,
+  ella,
+  galle,
+  hikkaduwa,
+  jaffna,
+  kandy,
+  nuwara_eliya,
+  sigiriya,
+  trincomalee,
+} from "@/data";
 import {
   Accordion,
   AccordionItem,
@@ -43,12 +56,40 @@ export default function PackagePage({ params }) {
       <CardPackage2 key={card.src} card={card} index={index} layout={true} />
     ));
 
-  console.log(cards);
-
   useEffect(() => {
     if (params?.slug?.[0] === "ella") {
       setUrl(params?.slug?.[0]);
       setPackages(ella);
+    } else if (params?.slug?.[0] === "colombo") {
+      setUrl(params?.slug?.[0]);
+      setPackages(colombo);
+    } else if (params?.slug?.[0] === "hikkaduwa") {
+      setUrl(params?.slug?.[0]);
+      setPackages(hikkaduwa);
+    } else if (params?.slug?.[0] === "jaffna") {
+      setUrl(params?.slug?.[0]);
+      setPackages(jaffna);
+    } else if (params?.slug?.[0] === "nuwara-eliya") {
+      setUrl(params?.slug?.[0]);
+      setPackages(nuwara_eliya);
+    } else if (params?.slug?.[0] === "trincomalee") {
+      setUrl(params?.slug?.[0]);
+      setPackages(trincomalee);
+    } else if (params?.slug?.[0] === "galle") {
+      setUrl(params?.slug?.[0]);
+      setPackages(galle);
+    } else if (params?.slug?.[0] === "kandy") {
+      setUrl(params?.slug?.[0]);
+      setPackages(kandy);
+    } else if (params?.slug?.[0] === "anuradhapura") {
+      setUrl(params?.slug?.[0]);
+      setPackages(anuradhapura);
+    } else if (params?.slug?.[0] === "arugambay") {
+      setUrl(params?.slug?.[0]);
+      setPackages(arugambay);
+    } else if (params?.slug?.[0] === "sigiriya") {
+      setUrl(params?.slug?.[0]);
+      setPackages(sigiriya);
     }
   }, [params]);
 
