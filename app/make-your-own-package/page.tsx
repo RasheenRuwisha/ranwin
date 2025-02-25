@@ -11,6 +11,8 @@ import emailjs from "@emailjs/browser";
 import { useToast } from "@/hooks/use-toast";
 import { GripVertical, Trash2 } from "lucide-react";
 import { useRouter } from "next/navigation"; // For page redirection
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 interface MapProps {
   waypoints: [number, number][];
@@ -81,6 +83,9 @@ const DraggableMarker = ({
 const Map = ({ waypoints }: MapProps) => {
   const [loading, setLoading] = useState(false);
   const [disabled, setDisabled] = useState(true);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const { toast } = useToast();
   const router = useRouter();
@@ -356,12 +361,20 @@ const Map = ({ waypoints }: MapProps) => {
       .map((item) => `${item.location} - Days: ${item.days ?? "N/A"}`)
       .join("\n");
     setLoading(true);
+
+    const userInfo = `
+    Name: ${name}
+    Email: ${email}
+    Phone: ${phone}
+  `;
+
+    const message = `${userInfo}\n\nRoute:\n${formattedLocations}`;
     emailjs
       .send(
         "service_o84afms",
         "template_t7q55yo",
         {
-          message: formattedLocations, // Use 'name' as a key for the name value
+          message: message, // Use 'name' as a key for the name value
         },
         {
           publicKey: "Ou__g4P_FnfVHN688",
@@ -436,6 +449,47 @@ const Map = ({ waypoints }: MapProps) => {
           </ul>
 
           <div className="self-end align-bottom mt-10">
+            <div className="flex flex-col mb-4">
+              <Label htmlFor="name" className="mb-1">
+                Name:
+              </Label>
+              <Input
+                id="name"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Enter your name"
+                className="border p-2 rounded w-full"
+              />
+            </div>
+            <div className="grid grid-cols-2 mb-4 gap-5">
+              <div className="flex flex-col mb-4">
+                <Label htmlFor="email" className="mb-1">
+                  Email:
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email"
+                  className="border p-2 rounded w-full"
+                />
+              </div>
+              <div className="flex flex-col mb-4">
+                <Label htmlFor="phone" className="mb-1">
+                  Phone:
+                </Label>
+                <Input
+                  id="phone"
+                  type="text"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  placeholder="Enter your phone number"
+                  className="border p-2 rounded w-full"
+                />
+              </div>
+            </div>
             <LoadingButton
               loading={loading}
               onClick={() => onSubmit()}
