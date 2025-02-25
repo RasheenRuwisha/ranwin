@@ -688,7 +688,7 @@ export const galle = {
     {
       section: "Explore Galle’s Art Scene",
       text: "Galle is home to vibrant art galleries and boutique shops, perfect for discovering local artists and unique souvenirs.",
-      image: "/galle-6.jpg",
+      image: "/galle-9.jpg",
     },
     {
       section: "Visit the Maritime Archaeology Museum",
