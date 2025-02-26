@@ -29,13 +29,33 @@ import Footer from "@/components/Footer";
 import { navItems } from "@/data";
 import { FloatingNav } from "@/components/ui/navbar-menu";
 import { BookButton } from "@/components/book-button";
+import { FileUpload } from "@/components/ui/file-upload";
+import { Textarea } from "@/components/ui/textarea";
+import LoadingButton from "@/components/loading-buttom";
+import { setCookie, getCookie } from "cookies-next/client";
+import { v4 as uuidv4 } from "uuid";
+import { Rating } from "@smastrom/react-rating";
+import "@smastrom/react-rating/style.css";
+
+import { addReview, getReviews } from "./actions";
+import { useToast } from "@/hooks/use-toast";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 export default function PackagePage({ params }) {
   const [packages, setPackages] = useState(null);
   const [url, setUrl] = useState("");
-
+  const [files, setFiles] = useState<File[]>([]);
+  const [rating, setRating] = useState(0);
   const [hoveredImage, setHoveredImage] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [rloading, setRloading] = useState(false);
+  const [review, setReview] = useState("");
+  const [reviews, setReviews] = useState([]);
+  const [name, setName] = useState("");
+
+  const { toast } = useToast();
 
   const cards = dataCaro
     .filter((card) => !card.link.includes(url))
@@ -44,15 +64,89 @@ export default function PackagePage({ params }) {
     ));
 
   useEffect(() => {
-    if (params?.slug?.[0] === "nature-escape") {
-      setUrl(params?.slug?.[0]);
-      setPackages(package1);
-    }
-  }, [params]);
+    const fetchData = async () => {
+      if (params?.slug?.[0] === "nature-escape") {
+        setUrl(params.slug[0]);
+        setPackages(package1);
+      }
+
+      const reviews = await getReviews(params?.slug?.[0]);
+      setReviews(reviews);
+    };
+
+    fetchData();
+  }, [params?.slug?.[0]]);
 
   const handleMouseEnter = (activity) => {
     const imageUrl = activity?.image || null;
     setHoveredImage(imageUrl);
+  };
+
+  const handleFileUpload = (files: File[]) => {
+    setFiles(files);
+    console.log(reviews);
+  };
+
+  const uploadReview = async () => {
+    try {
+      setRloading(true);
+      let token = getCookie("ranwin-user-token-reviews");
+
+      if (!token) {
+        token = uuidv4();
+        setCookie("ranwin-user-token-reviews", token);
+      }
+
+      const newReview = {
+        id: crypto.randomUUID(), // Temporary ID for UI consistency
+        packageId: params?.slug?.[0] || "default-package",
+        rating,
+        comment: review,
+        media: files,
+        name,
+        tokenId: token,
+        createdAt: new Date().toISOString(), // Ensure ordering consistency
+      };
+
+      // Optimistically update UI
+      setReviews((prevReviews) => [newReview, ...prevReviews]);
+
+      // Reset form
+      setReview("");
+      setName("");
+
+      // Send to backend
+      const response = await addReview(newReview);
+      console.log("Review added:", response);
+
+      // If the backend returns an actual ID, update it in state
+      if (response?.id) {
+        setReviews((prevReviews) =>
+          prevReviews.map((review) =>
+            review.id === newReview.id ? { ...review, id: response.id } : review
+          )
+        );
+      }
+
+      toast({
+        title: "Review submitted",
+        description: "Your review has been added successfully.",
+      });
+    } catch (error) {
+      console.error("Error uploading review:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong while submitting your review.",
+        variant: "destructive",
+      });
+
+      // Rollback UI update if the request fails
+      setReviews((prevReviews) =>
+        prevReviews.filter((r) => r.id !== newReview.id)
+      );
+    } finally {
+      setRloading(false);
+    }
   };
 
   return (
@@ -363,8 +457,61 @@ export default function PackagePage({ params }) {
             <Carousel items={cards} />
           </div>
         </div>
-      </div>
 
+        <div className=" pt-5 lg:pt:36" id="header">
+          <div className="text-2xl  text-left">Reviews</div>
+
+          <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+            {reviews.length > 0 ? (
+              <InfiniteMovingCards
+                items={reviews}
+                direction="right"
+                speed="fast"
+              />
+            ) : (
+              <></>
+            )}
+          </div>
+
+          <div className="text-2xl  text-left">Leave a review</div>
+
+          <div className="flex gap-5 flex-col">
+            <Rating
+              style={{ maxWidth: 150, height: 100 }}
+              value={rating}
+              onChange={setRating}
+            />
+
+            <div>
+              <Label>Name</Label>
+              <Input
+                onChange={(e) => setName(e.target.value)}
+                value={name}
+                className="border p-2 w-full rounded"
+              />
+            </div>
+            <div className="grid md:grid-cols-2 grid-cols-2 gap-10">
+              <Textarea
+                value={review}
+                rows={10}
+                onChange={(e) => setReview(e.target.value)}
+              />
+
+              <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg">
+                <FileUpload onChange={handleFileUpload} />
+              </div>
+            </div>
+
+            <LoadingButton
+              onClick={() => uploadReview()}
+              loading={rloading}
+              disabled={rloading}
+            >
+              Submit Review
+            </LoadingButton>
+          </div>
+        </div>
+      </div>
       <Footer />
     </div>
   );
