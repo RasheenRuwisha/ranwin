@@ -130,7 +130,6 @@ export default function PackagePage({ params }) {
       };
 
       // Optimistically update UI
-      setReviews((prevReviews) => [newReview, ...prevReviews]);
 
       // Reset form
       setReview("");
@@ -143,13 +142,6 @@ export default function PackagePage({ params }) {
       console.log("Review added:", response);
 
       // If the backend returns an actual ID, update it in state
-      if (response?.id) {
-        setReviews((prevReviews) =>
-          prevReviews.map((review) =>
-            review.id === newReview.id ? { ...review, id: response.id } : review
-          )
-        );
-      }
 
       toast({
         title: "Review submitted",
