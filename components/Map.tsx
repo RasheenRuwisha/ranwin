@@ -21,7 +21,7 @@ const Map = ({ waypoints }: MapProps) => {
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/dark-v11",
       center: [80.278469, 7.156788],
-      zoom: 8.8,
+      zoom: 7,
       interactive: false,
       attributionControl: false,
     });
