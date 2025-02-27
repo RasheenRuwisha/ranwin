@@ -47,6 +47,7 @@ export default function PackagePage({ params }) {
   const fileUploadRef = useRef(null);
 
   const [packages, setPackages] = useState(null);
+  const [packagesR, setPackagesR] = useState(null);
   const [url, setUrl] = useState("");
   const [files, setFiles] = useState<File[]>([]);
   const [rating, setRating] = useState(0);
@@ -86,7 +87,7 @@ export default function PackagePage({ params }) {
 
       const reviews = await getReviews(params?.slug?.[0]);
       setReviews(reviews);
-
+      setPackagesR(params?.slug?.[0]);
       console.log(reviews);
     };
 
@@ -142,10 +143,15 @@ export default function PackagePage({ params }) {
       console.log("Review added:", response);
 
       // If the backend returns an actual ID, update it in state
+      if (response) {
+        const reviews = await getReviews(packagesR);
+        setReviews(reviews);
+      }
 
       toast({
         title: "Review submitted",
-        description: "Your review has been added successfully.",
+        description:
+          "Your review has been added successfully. Please wait a couple of seconds for it to appear.",
       });
     } catch (error) {
       console.error("Error uploading review:", error);
