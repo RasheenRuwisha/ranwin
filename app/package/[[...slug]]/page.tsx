@@ -7,7 +7,7 @@ import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Map from "@/components/Map";
-import { dataCaro, package1 } from "@/data";
+import { dataCaro, package1, package2, package3, package4 } from "@/data";
 import {
   Accordion,
   AccordionItem,
@@ -44,6 +44,8 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 
 export default function PackagePage({ params }) {
+  const fileUploadRef = useRef(null);
+
   const [packages, setPackages] = useState(null);
   const [url, setUrl] = useState("");
   const [files, setFiles] = useState<File[]>([]);
@@ -65,13 +67,27 @@ export default function PackagePage({ params }) {
 
   useEffect(() => {
     const fetchData = async () => {
+      let userName = getCookie("ranwin-user-token-name");
+      setName(userName);
+
       if (params?.slug?.[0] === "nature-escape") {
         setUrl(params.slug[0]);
         setPackages(package1);
+      } else if (params?.slug?.[0] === "coastal-escape") {
+        setUrl(params.slug[0]);
+        setPackages(package2);
+      } else if (params?.slug?.[0] === "southern-wonders") {
+        setUrl(params.slug[0]);
+        setPackages(package3);
+      } else if (params?.slug?.[0] === "cultural-heart") {
+        setUrl(params.slug[0]);
+        setPackages(package4);
       }
 
       const reviews = await getReviews(params?.slug?.[0]);
       setReviews(reviews);
+
+      console.log(reviews);
     };
 
     fetchData();
@@ -91,10 +107,15 @@ export default function PackagePage({ params }) {
     try {
       setRloading(true);
       let token = getCookie("ranwin-user-token-reviews");
+      let userName = getCookie("ranwin-user-token-name");
 
       if (!token) {
         token = uuidv4();
         setCookie("ranwin-user-token-reviews", token);
+      }
+
+      if (!userName) {
+        setCookie("ranwin-user-token-name", name);
       }
 
       const newReview = {
@@ -113,7 +134,9 @@ export default function PackagePage({ params }) {
 
       // Reset form
       setReview("");
-      setName("");
+      setRating(0);
+      setName(userName);
+      fileUploadRef.current?.clearFiles();
 
       // Send to backend
       const response = await addReview(newReview);
@@ -214,7 +237,7 @@ export default function PackagePage({ params }) {
         <div className="grid grid-cols-1 md:grid-cols-[40%,60%] gap-6">
           <Card>
             <CardContent className="mt-6 space-y-4">
-              <h2 className="text-xl font-semibold">{packages?.title}</h2>
+              <h2 className="text-xl font-semibold">{packages?.short_title}</h2>
               <p className="text-gray-600">{packages?.short_description}</p>
               <div className="flex flex-wrap gap-3">
                 {[
@@ -461,47 +484,54 @@ export default function PackagePage({ params }) {
         <div className=" pt-5 lg:pt:36" id="header">
           <div className="text-2xl  text-left">Reviews</div>
 
-          <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <div className="h-[20rem] mt-10 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
             {reviews.length > 0 ? (
               <InfiniteMovingCards
                 items={reviews}
                 direction="right"
-                speed="fast"
+                speed="normal"
               />
             ) : (
               <></>
             )}
           </div>
 
-          <div className="text-2xl  text-left">Leave a review</div>
+          <div className="mt-10 flex flex-col gap-5">
+            <div className="text-2xl text-left">Leave a review</div>
 
-          <div className="flex gap-5 flex-col">
-            <Rating
-              style={{ maxWidth: 150, height: 100 }}
-              value={rating}
-              onChange={setRating}
-            />
+            <div className="flex gap-5 flex-col">
+              <div className="grid md:grid-cols-2 grid-cols-2 gap-10">
+                <div className="flex gap-2 flex-col">
+                  <div className="grid grid-cols-2  gap-10 ">
+                    <div className="justify-center align-center content-center">
+                      <Label>Name</Label>
+                      <Input
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        className="border p-2 w-full rounded"
+                      />
+                    </div>
+                    <div className="f justify-center align-center content-center">
+                      <Label>Star Rating</Label>
+                      <Rating
+                        style={{ maxWidth: 150 }}
+                        value={rating}
+                        onChange={setRating}
+                      />
+                    </div>
+                  </div>
+                  <Textarea
+                    value={review}
+                    rows={20}
+                    onChange={(e) => setReview(e.target.value)}
+                  />
+                </div>
 
-            <div>
-              <Label>Name</Label>
-              <Input
-                onChange={(e) => setName(e.target.value)}
-                value={name}
-                className="border p-2 w-full rounded"
-              />
-            </div>
-            <div className="grid md:grid-cols-2 grid-cols-2 gap-10">
-              <Textarea
-                value={review}
-                rows={10}
-                onChange={(e) => setReview(e.target.value)}
-              />
-
-              <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg">
-                <FileUpload onChange={handleFileUpload} />
+                <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-white dark:bg-black border-neutral-200 dark:border-neutral-800 rounded-lg">
+                  <FileUpload ref={fileUploadRef} onChange={handleFileUpload} />
+                </div>
               </div>
             </div>
-
             <LoadingButton
               onClick={() => uploadReview()}
               loading={rloading}

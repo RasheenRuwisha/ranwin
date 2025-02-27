@@ -6,8 +6,7 @@ import { del, put } from "@vercel/blob";
 import path from "path";
 
 export async function addReview(values: ReviewValues) {
-  let images: string[] = [];
-  console.log(values);
+  console.log("Received values:", values);
 
   const token =
     "vercel_blob_rw_YzvovUTt5SYI9LSY_AGz3Eq3zosirQ85kKIuhdDRmtu5Cp0";
@@ -15,31 +14,44 @@ export async function addReview(values: ReviewValues) {
   const { packageId, rating, comment, name, media, tokenId, ...reviewValues } =
     reviewSchema.parse(values);
 
+  // Check if token exists
   const existingToken = await prisma.userToken.findUnique({
     where: { token: tokenId },
   });
 
   if (!existingToken) {
-    const userToken = await prisma.userToken.create({
-      data: {
-        token: tokenId,
-      },
+    await prisma.userToken.create({
+      data: { token: tokenId },
     });
   }
 
-  for (const photo of media) {
+  console.log("Processing media files:", media);
+
+  // Process media uploads in parallel
+  const imageUploadPromises = media.map(async (photo, index) => {
     if (photo instanceof File) {
-      const blob = await put(`ranwin/${path.extname(photo.name)}`, photo, {
-        access: "public",
-        token: token,
-      });
+      try {
+        const uniqueFilename = `ranwin/${Date.now()}_${index}_${photo.name}`;
+        console.log(`Uploading ${photo.name} as ${uniqueFilename}...`);
 
-      images.push(blob.url);
+        const blob = await put(uniqueFilename, photo, {
+          access: "public",
+          token: token,
+        });
+
+        console.log(`Uploaded ${photo.name} -> ${blob.url}`);
+        return blob.url;
+      } catch (error) {
+        console.error(`Failed to upload ${photo.name}:`, error);
+        return null;
+      }
     }
-  }
+    return null;
+  });
 
-  console.log("sdd");
-  console.log(images);
+  const images = (await Promise.all(imageUploadPromises)).filter(Boolean); // Remove null values
+
+  console.log("Final Uploaded Images Array:", images);
 
   return prisma.review.create({
     data: { packageId, rating, comment, media: images, tokenId, name },

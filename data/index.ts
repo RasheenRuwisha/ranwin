@@ -65,11 +65,9 @@ export const package1 = {
     [79.97408, 6.87053], // Example waypoint 3
     [79.88452, 7.17929], // Example waypoint 3
   ],
-  image_1:
-    "https://images.pexels.com/photos/1998440/pexels-photo-1998440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  image_2: "https://simpsonsforest.com/wp-content/uploads/2024/03/01-1.jpg",
-  image_3:
-    "https://www.andbeyond.com/wp-content/uploads/sites/5/colombo-sri-lanka.jpg",
+  image_3: "/nuwaraeliya-3.jpg",
+  image_2: "/kandy-3.jpg",
+  image_1: "/colomboa.jpg",
   price: 225,
   number_of_days: 5,
   short_title: "Sri Lanka: Culture & Nature Escape",
@@ -131,28 +129,23 @@ export const package1 = {
       things_to_do: [
         {
           name: "Pinnawala Elephant Orphanage",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Pinnawala_01.jpg/1200px-Pinnawala_01.jpg",
+          image: "/pinnawala.jpg",
         },
         {
           name: "Kandy Spice Garden",
-          image:
-            "https://travelinfosrilanka.com/wp-content/uploads/2023/09/Spice-Garden-Sri-Lanka.jpg",
+          image: "/kandy-5.jpg",
         },
         {
           name: "Tooth Relic Temple",
-          image:
-            "https://srisrilanka.com/wp-content/uploads/2023/06/temple-of-the-sacred-tooth-relic-kandy.jpg",
+          image: "/kandy-1.jpg",
         },
         {
           name: "Kandy View Point",
-          image:
-            "https://www.attractionsinsrilanka.com/wp-content/uploads/2019/07/kandyviewpoint-.jpg",
+          image: "/kandy-4.jpg",
         },
         {
           name: "Traditional Kandy Dancers",
-          image:
-            "https://assets.roar.media/Life/2017/09/Featured-Image-e1505121383658.jpg?w=1200",
+          image: "/kandy-6.jpg",
         },
       ],
     },
@@ -164,33 +157,27 @@ export const package1 = {
       things_to_do: [
         {
           name: "Nuwara Eliya Gem Museum",
-          image:
-            "https://www.attractionsinsrilanka.com/wp-content/uploads/2019/07/Natural-Gems-and-Gemological-Museum.jpg",
+          image: "/gem.jpg",
         },
         {
           name: "Wood Carving Center",
-          image:
-            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/f7/55/ae/caption.jpg?w=900&h=500&s=1",
+          image: "/galle-6.jpg",
         },
         {
           name: "Peradeniya Botanical Garden",
-          image:
-            "https://simpsonsforest.com/wp-content/uploads/2024/03/01-1.jpg",
+          image: "/nuwaraeliya-4.jpg",
         },
         {
           name: "Tea Factory",
-          image:
-            "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/fe/8d/e7.jpg",
+          image: "/ella-4.jpg",
         },
         {
           name: "Ramboda waterfall",
-          image:
-            "https://www.lankatourexperts.com/wp-content/uploads/2018/12/Ramboda-Falls-Sri-Lanka-Economy-Tours.png",
+          image: "/ramboda.png",
         },
         {
           name: "Hanuman Temple",
-          image:
-            "https://www.ceylonexpeditions.com/medias/destination_places/big/79/shri-bhakta-hanuman-temple-ramboda-sri-lanka-ramayana-ceylon-expedition-travels-3-1.jpg",
+          image: "/hanuman.jpg",
         },
       ],
     },
@@ -202,23 +189,19 @@ export const package1 = {
       things_to_do: [
         {
           name: "Pink Post Office",
-          image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeOJZwv4Th-5AS4HPp3RINurWGcsrmilRbg&s",
+          image: "/pink.jpg",
         },
         {
           name: "Rama Seetha Temple",
-          image:
-            "https://pyt-blogs.imgix.net/2021/06/Depositphotos_158390642_s-2019.jpg?auto=format&ixlib=php-3.3.0",
+          image: "/rama.jpg",
         },
         {
           name: "Haggala Garden",
-          image:
-            "https://lp-cms-production.imgix.net/2023-05/shutterstock_639029941.jpg?fit=crop&ar=1%3A1&w=1200&auto=format&q=75",
+          image: "/haggala.jpg",
         },
         {
           name: "Gregory Lake Boat Ride",
-          image:
-            "https://yannaratawate.lk/images/nuwara-eliya/gregory-lake-nuwara-eliya-31.jpg",
+          image: "/kandy-2.jpg",
         },
       ],
     },
@@ -230,23 +213,19 @@ export const package1 = {
       things_to_do: [
         {
           name: "Ambewela Farm",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/4/4d/Ambewela_farm_%28Cattle%29.jpg",
+          image: "/ambewela.jpg",
         },
         {
           name: "Devon Waterfall",
-          image:
-            "https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/devon-waterfalls-in-sri-lanka-s-central-highlands-940_orig.jpg",
+          image: "/devon.jpg",
         },
         {
           name: "Saint Clair Waterfall",
-          image:
-            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/86/ab/e8/st-clair-s-falls.jpg?w=900&h=500&s=1",
+          image: "/stclar.jpg",
         },
         {
           name: "Kithulgala White Water Rafting",
-          image:
-            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/1e/31/caption.jpg?w=1200&h=-1&s=1",
+          image: "/waterratft.jpg",
         },
       ],
     },
@@ -258,8 +237,7 @@ export const package1 = {
       things_to_do: [
         {
           name: "Colombo City Tour (Tuktuk or Car)",
-          image:
-            "https://www.andbeyond.com/wp-content/uploads/sites/5/colombo-sri-lanka.jpg",
+          image: "/colomboa.jpg",
         },
       ],
     },
@@ -271,14 +249,30 @@ export const package1 = {
 };
 
 export const package2 = {
-  price_with_hotel: 750,
-  price: 225,
-  title: "Traditional Kandy tour",
+  price_with_hotel: 800,
+  waypoints: [
+    [79.88452, 7.17929], // Example waypoint 1
+    [79.997854, 6.421528], // Example waypoint 2
+    [80.108277, 6.135434], // Example waypoint 3
+    [80.214955, 6.032814], // Example waypoint 3
+    [80.247484, 6.020177], // Example waypoint 3
+    [80.455813, 5.949363], // Example waypoint 3
+    [79.88452, 7.17929], // Example waypoint 1
+  ],
+  image_1: "/galle-9.jpg",
+  image_2: "/galle-3.jpg",
+  image_3: "/hikkaduwa-2.jpg",
+  price: 285,
+  number_of_days: 5,
+  short_title: "Sri Lankan Coastal Escape",
+  title: "Sri Lanka’s Coastal Escape: From Golden Shores to Coastal Charms",
   route: {
     1: "BIA",
-    2: "Kandy",
-    3: "Nuwara Eliya",
-    4: "Colombo",
+    2: "Bentota",
+    3: "Hikkaduwa",
+    4: "Galle",
+    5: "Unawatuna",
+    6: "Mirissa",
   },
   itenary: [
     {
@@ -315,13 +309,492 @@ export const package2 = {
       },
     },
   ],
-  whats_included: ["Sim card", "Water Bottle"],
+  whats_included: ["Sim card", "Bottled Water"],
   tickets_included: [
     "Spice Garden",
     "Tea Factory",
     "Gem Museum",
     "Wood Carving Center",
   ],
+  day_break_down: {
+    1: {
+      start: "BIA",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Water Sports",
+          image: "/water-sport.jpg",
+        },
+        {
+          name: "Bentota Beach",
+          image: "/bentota-beach.jpg",
+        },
+      ],
+    },
+    2: {
+      start: "Bentota",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Turtle Conservatory",
+          image: "/turtle.jpg",
+        },
+        {
+          name: "Mangrove Boat Ride",
+          image: "/mangrove.jpg",
+        },
+        {
+          name: "Fish Therapy",
+          image: "/fish.jpg",
+        },
+      ],
+    },
+    3: {
+      start: "Benota",
+      end: "Hikkaduwa -> Mirissa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Glass Bottom Boat Ride",
+          image: "/glass.jpg",
+        },
+        {
+          name: "Snorkeling",
+          image: "/hikkaduwa-1.jpg",
+        },
+        {
+          name: "Galle Fort",
+          image: "/galle-1.jpg",
+        },
+        {
+          name: "Galle Light House",
+          image: "/galle-9.jpg",
+        },
+        {
+          name: "Unawatuna Jungle Beach",
+          image: "/galle-5.jpg",
+        },
+      ],
+    },
+    4: {
+      start: "Mirissa",
+      end: "Mirissa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Whale watching",
+          image: "/whale.jpg",
+        },
+        {
+          name: "Still fishermen",
+          image: "/fisher.jpg",
+        },
+      ],
+    },
+    5: {
+      start: "Mirissa",
+      end: "BIA",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [],
+    },
+  },
+  short_description:
+    "Discover Sri Lanka’s breathtaking southern coastline, where pristine beaches and rich history meet.",
+  description:
+    "Starting from Bandaranaike International Airport (BIA), this route takes you to the serene beaches of Bentota and the lively surf town of Hikkaduwa. Explore the colonial charm of Galle and the turquoise waters of Unawatuna before unwinding in the tropical paradise of Mirissa. Enjoy sun-kissed beaches, vibrant marine life, and a perfect blend of relaxation and adventure.",
+};
+
+export const package3 = {
+  price_with_hotel: 1100,
+  waypoints: [
+    [79.88452, 7.17929], // Example waypoint 1
+    [79.997854, 6.421528], // Example waypoint 2
+    [80.108277, 6.135434], // Example waypoint 3
+    [80.214955, 6.032814], // Example waypoint 3
+    [80.455813, 5.949363], // Example waypoint 3
+    [81.399583, 6.515248], // Example waypoint 3
+    [79.88452, 7.17929], // Example waypoint 1
+  ],
+  image_1: "/galle-9.jpg",
+  image_2: "/mirissa.jpg",
+  image_3: "/yala.jpg",
+  price: 375,
+  number_of_days: 5,
+  short_title: "Southern Wonders of Sri Lanka",
+  title:
+    "Coastal Wonders & Wildlife: A Journey Through Sri Lanka’s Southern Beauty",
+  route: {
+    1: "BIA",
+    2: "Bentota",
+    3: "Hikkaduwa",
+    4: "Galle",
+    5: "Mirissa",
+    6: "Yala",
+  },
+  itenary: [
+    {
+      1: {
+        title: "Bentota",
+        duration: "2 Night",
+        things_to_do: [
+          "Water spots",
+          "Mangrove Boat ride",
+          "Fish Therapy",
+          "Turtle conservation center",
+        ],
+      },
+      2: {
+        title: "Hikkaduwa",
+        duration: "1 Night",
+        things_to_do: ["Glass Bottom Boat Ride", "Snorkeling"],
+      },
+      3: {
+        title: "Galle",
+        duration: "1 Night",
+        things_to_do: [
+          "Galle Fort",
+          "Galle Light house",
+          "Wood carving center",
+        ],
+      },
+      4: {
+        title: "Unawatuna",
+        duration: "1 Night",
+        things_to_do: ["Jungle Beach"],
+      },
+      5: {
+        title: "Mirissa",
+        duration: "2 Night",
+        things_to_do: ["Whale Watching", "Still Fishermen"],
+      },
+      6: {
+        title: "Yala",
+        duration: "2 Night",
+        things_to_do: ["Yala Safari"],
+      },
+    },
+  ],
+  whats_included: ["Sim card", "Bottled Water"],
+  tickets_included: [
+    "Spice Garden",
+    "Tea Factory",
+    "Gem Museum",
+    "Wood Carving Center",
+  ],
+  day_break_down: {
+    1: {
+      start: "BIA",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Water Sports",
+          image: "/water-sport.jpg",
+        },
+        {
+          name: "Bentota Beach",
+          image: "/bentota-beach.jpg",
+        },
+      ],
+    },
+    2: {
+      start: "Bentota",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Turtle Conservatory",
+          image: "/turtle.jpg",
+        },
+        {
+          name: "Mangrove Boat Ride",
+          image: "/mangrove.jpg",
+        },
+        {
+          name: "Fish Therapy",
+          image: "/fish.jpg",
+        },
+      ],
+    },
+    3: {
+      start: "Benota",
+      end: "Hikkaduwa -> Mirissa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Glass Bottom Boat Ride",
+          image: "/glass.jpg",
+        },
+        {
+          name: "Snorkeling",
+          image: "/hikkaduwa-1.jpg",
+        },
+        {
+          name: "Galle Fort",
+          image: "/galle-1.jpg",
+        },
+        {
+          name: "Galle Light House",
+          image: "/galle-9.jpg",
+        },
+        {
+          name: "Unawatuna Jungle Beach",
+          image: "/galle-5.jpg",
+        },
+      ],
+    },
+    4: {
+      start: "Mirissa",
+      end: "Mirissa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Whale watching",
+          image: "/whale.jpg",
+        },
+        {
+          name: "Still fishermen",
+          image: "/fisher.jpg",
+        },
+      ],
+    },
+    5: {
+      start: "Mirissa",
+      end: "Yala",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Katharagama Temple",
+          image: "/katharagama.jpg",
+        },
+      ],
+    },
+    6: {
+      start: "Yala",
+      end: "Yala",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Yala Safari",
+          image: "/yala.jpg",
+        },
+      ],
+    },
+    7: {
+      start: "Yala",
+      end: "BIA",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [],
+    },
+  },
+  short_description:
+    "Explore Sri Lanka’s stunning southern coastline, from golden beaches to wildlife adventures.",
+  description:
+    "Starting at Bandaranaike International Airport (BIA), this route takes you through the tropical paradise of Bentota and the vibrant surf town of Hikkaduwa. Continue to the historic city of Galle, known for its Dutch fort, then unwind on the pristine beaches of Mirissa. End your journey with an exhilarating safari at Yala National Park, home to leopards, elephants, and diverse wildlife. Experience the best of Sri Lanka’s southern coast on this unforgettable adventure!",
+};
+
+export const package4 = {
+  price_with_hotel: 900,
+  waypoints: [
+    [79.88452, 7.17929], // Example waypoint 1
+    [80.649991, 7.292631], // Example waypoint 2
+    [80.746205, 7.942106], // Example waypoint 3
+    [80.635036, 7.293121], // Example waypoint 3
+    [79.88452, 7.17929], // Example waypoint 3
+  ],
+  image_1: "/kandy-2.jpg",
+  image_2: "/colombo-2.jpg",
+  image_3: "/sigiriya-6.jpg",
+  price: 270,
+  number_of_days: 5,
+  short_title: "Cultural Heart of Sri Lanka",
+  title:
+    "Exploring Sri Lanka’s Cultural Heritage: From Colombo to the Sacred City of Kandy",
+  route: {
+    1: "BIA",
+    2: "Colombo",
+    3: "Sigiriya",
+    4: "Kandy",
+  },
+  itenary: [
+    {
+      1: {
+        title: "Colombo",
+        duration: "1 Night",
+        things_to_do: ["City tour", "Galle Face Green", "Lotus Tower"],
+      },
+      2: {
+        title: "Sigiriya",
+        duration: "2 Nights",
+        things_to_do: [
+          "Pinnawala Elephant Orphanage",
+          "Sigiriya Rock",
+          "Pollonawa Ruins",
+          "Habarna Safari",
+          "Sigiriya Safari",
+          "Elephant Back Safari",
+          "Dambulla Cave Temple",
+          "Spice Garden",
+        ],
+      },
+      3: {
+        title: "Kandy",
+        duration: "2 Nights",
+        things_to_do: [
+          "Tooth Relic Temple",
+          "Kandy View Point",
+          "Peradeniya Botanical Garden",
+          "Gem Museum",
+          "Wood Carving Center",
+          "Traditional Kandy Dance",
+          "Tea Factory",
+        ],
+      },
+    },
+  ],
+  whats_included: ["Sim card", "Bottled Water"],
+  tickets_included: [
+    "Spice Garden",
+    "Tea Factory",
+    "Gem Museum",
+    "Wood Carving Center",
+  ],
+  day_break_down: {
+    1: {
+      start: "BIA",
+      end: "Colombo",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "City Tour",
+          image: "/colombo-5.jpg",
+        },
+        {
+          name: "Lotus Tower",
+          image: "/lotus-tower.jpg",
+        },
+      ],
+    },
+    2: {
+      start: "Colombo",
+      end: "Sigiya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Pinnawala Elephant Orphanage",
+          image: "/pinnawala.jpg",
+        },
+        {
+          name: "Sigiya Rock",
+          image: "/sigiriya-1.jpg",
+        },
+      ],
+    },
+    3: {
+      start: "Sigiya",
+      end: "Sigiya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Habarna Safari",
+          image: "/habarana.jpg",
+        },
+        {
+          name: "Ancient Pollonaruwa Ruins",
+          image: "/pollonaruwa.jpg",
+        },
+        {
+          name: "Sigiriya Safari",
+          image: "/sigiriya-7.jpg",
+        },
+        {
+          name: "Elephant Back Safari",
+          image: "/elephant.jpg",
+        },
+      ],
+    },
+    4: {
+      start: "Sigiya",
+      end: "Kandy",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Damubulla Cave Temple",
+          image: "/sigiriya-8.jpg",
+        },
+        {
+          name: "Spice Garden",
+          image: "/kandy-5.jpg",
+        },
+        {
+          name: "Tooth Relic Temple",
+          image: "/kandy-1.jpg",
+        },
+      ],
+    },
+    5: {
+      start: "Kandy",
+      end: "Kandy",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Gem Museum",
+          image: "/gem.jpg",
+        },
+        {
+          name: "Wood Carving Center",
+          image: "/galle-6.jpg",
+        },
+        {
+          name: "Peradeniya Botanical Garden",
+          image: "/nuwaraeliya-4.jpg",
+        },
+        {
+          name: "Traditional Kandy Dance",
+          image: "/kandy-6.jpg",
+        },
+      ],
+    },
+    6: {
+      start: "Kandy",
+      end: "BIA",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Kandy View Point",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Tea Factory",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+  },
+  short_description:
+    "A journey through Sri Lanka’s rich cultural heritage, from the bustling capital to ancient wonders and sacred cities.",
+  description:
+    "This route takes you from Bandaranaike International Airport (BIA) to the vibrant city of Colombo, then to the historic rock fortress of Sigiriya. Continue to Kandy, the cultural capital, home to the revered Temple of the Tooth. Experience Sri Lanka’s deep-rooted history, breathtaking landscapes, and rich traditions along the way.",
 };
 
 export const ella = {
