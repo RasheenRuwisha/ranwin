@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://www.ranwintours.com",
-    title: "Ranwin Tours & Travels - Best Sri Lanka Travel Experiences",
+    title: "Ranwin Tours & Travels",
     description:
       "Plan your dream vacation in Sri Lanka with Ranwin Tours & Travels. Custom tour packages, expert guides, and stunning destinations await!",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@ranwin_tours",
-    title: "Ranwin Tours & Travels - Best Sri Lanka Travel Experiences",
+    title: "Ranwin Tours & Travels",
     description:
       "Explore the best of Sri Lanka with our customized tour packages. Experience adventure, culture, and relaxation like never before!",
     images: ["/ol-graph.svg"],
