@@ -46,7 +46,7 @@ export const dataCaro = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/facebook.svg",
+    img: "/facebook.png",
     link: "https://www.facebook.com/people/Ranwin-Tours-Travels/61571960647288/",
   },
 
