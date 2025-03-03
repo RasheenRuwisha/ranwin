@@ -21,24 +21,28 @@ export default function Footer() {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <FooterColumn title="Follow us">
-              <FooterLink href="https://github.com/themesberg/flowbite">
+              <FooterLink href="https://www.instagram.com/ranwin.tours/">
                 Instagram
               </FooterLink>
-              <FooterLink href="https://discord.gg/4eeurUVvTy">
+              <FooterLink href="https://www.facebook.com/share/16KW3uMiNY/">
                 Facebook
               </FooterLink>
             </FooterColumn>
-            <FooterColumn title="Legal">
-              <FooterLink href="#">Privacy Policy</FooterLink>
-              <FooterLink href="#">Terms & Conditions</FooterLink>
+            <FooterColumn title="Contact Us">
+              <FooterLink href="tel:+94-76-798-4452">
+                +94 76 798 4452 (Sri Lanka)
+              </FooterLink>
+              <FooterLink href="tel:+1-437-673-4518">
+                +1 437 673 4518 (Canada)
+              </FooterLink>
             </FooterColumn>
           </div>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2022{" "}
-            <Link href="https://flowbite.com" className="hover:underline">
+            © 2024{" "}
+            <Link href="/" className="hover:underline">
               Ranwin Tours and Travels (PVT) LTD
             </Link>
             . All Rights Reserved.
