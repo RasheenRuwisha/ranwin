@@ -16,8 +16,47 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ranwin tours and Travels",
-  description: "One of Sri Lanka's leading travel agencies",
+  title: "Ranwin Tours & Travels - Best Sri Lanka Travel Experiences",
+  description:
+    "Discover Sri Lanka with Ranwin Tours & Travels. Explore custom travel packages, breathtaking destinations, and unforgettable experiences. Book now!",
+  keywords: [
+    "Sri Lanka tours",
+    "travel packages",
+    "best travel agency",
+    "holiday trips",
+    "guided tours",
+    "adventure travel",
+    "Ranwin Tours & Travels",
+  ],
+  metadataBase: new URL("https://www.ranwintours.com"),
+  openGraph: {
+    type: "website",
+    url: "https://www.ranwintours.com",
+    title: "Ranwin Tours & Travels - Best Sri Lanka Travel Experiences",
+    description:
+      "Plan your dream vacation in Sri Lanka with Ranwin Tours & Travels. Custom tour packages, expert guides, and stunning destinations await!",
+    images: [
+      {
+        url: "/ol-graph.svg",
+        width: 800,
+        height: 400,
+        alt: "Ranwin Tours & Travels Cover Image",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@ranwin_tours",
+    title: "Ranwin Tours & Travels - Best Sri Lanka Travel Experiences",
+    description:
+      "Explore the best of Sri Lanka with our customized tour packages. Experience adventure, culture, and relaxation like never before!",
+    images: ["/ol-graph.svg"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  robots: "index, follow",
 };
 
 export default function RootLayout({

@@ -24,7 +24,7 @@ export default function Footer() {
               <FooterLink href="https://www.instagram.com/ranwin.tours/">
                 Instagram
               </FooterLink>
-              <FooterLink href="https://www.facebook.com/share/16KW3uMiNY/">
+              <FooterLink href="https://www.facebook.com/people/Ranwin-Tours-Travels/61571960647288/">
                 Facebook
               </FooterLink>
             </FooterColumn>
