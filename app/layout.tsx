@@ -131,7 +131,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <CookieManagerWrapper />
+          {/* <CookieManagerWrapper /> */}
 
           <Toaster />
         </ThemeProvider>
