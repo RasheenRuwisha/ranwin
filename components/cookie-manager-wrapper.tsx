@@ -2,9 +2,10 @@
 import dynamic from "next/dynamic";
 
 // Dynamically import the component with SSR disabled
-const CookieManager = dynamic(() => import("react-cookie-manager"), {
-  ssr: false,
-});
+const CookieManager = dynamic(
+  () => import("react-cookie-manager").then((mod) => mod.CookieManager),
+  { ssr: false, loading: () => null }
+);
 
 export default function CookieManagerWrapper() {
   return (
