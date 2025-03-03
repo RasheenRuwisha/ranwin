@@ -7,12 +7,14 @@ import Second from "@/components/Second";
 import WorldMap from "@/components/ui/world-map";
 import Destinations from "@/components/Destinations";
 import Footer from "@/components/Footer";
+import CookieManagerWrapper from "@/components/cookie-manager-wrapper";
 
 export default function Home() {
   return (
     <main className="relative flex justify-center items-center flex-col overflow-hidden ">
       <div className="w-full">
         <FloatingNav navItems={navItems} />
+        <CookieManagerWrapper />
 
         <Hero />
         <Second />
