@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import { Toaster } from "@/components/ui/toaster";
 import Script from "next/script";
 import "react-cookie-manager/style.css";
+import CookieManagerWrapper from "@/components/cookie-manager-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -130,6 +131,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <CookieManagerWrapper />
+
           <Toaster />
         </ThemeProvider>
       </body>

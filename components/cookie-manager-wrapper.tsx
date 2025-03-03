@@ -1,5 +1,10 @@
 "use client";
-import { CookieManager } from "react-cookie-manager";
+import dynamic from "next/dynamic";
+
+// Dynamically import the component with SSR disabled
+const CookieManager = dynamic(() => import("react-cookie-manager"), {
+  ssr: false,
+});
 
 export default function CookieManagerWrapper() {
   return (
@@ -21,6 +26,8 @@ export default function CookieManagerWrapper() {
           console.log("Cookie preferences updated:", preferences);
         }
       }}
-    />
+    >
+      <p>We use cookies to improve your experience on our website.</p>
+    </CookieManager>
   );
 }
