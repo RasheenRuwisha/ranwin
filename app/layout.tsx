@@ -4,6 +4,7 @@ import "./globals.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "@/components/ui/toaster";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -83,6 +84,39 @@ export default function RootLayout({
               `,
           }}
         ></script>
+
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              name: "Ranwin Tours & Travels",
+              url: "https://www.ranwintours.com/",
+              logo: "https://www.ranwintours.com/logo.png",
+              description:
+                "Sri Lanka's premier travel agency offering tailor-made tour packages, adventure trips, and cultural experiences.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "65-8K 1 Kahawita mw Atthidiya",
+                addressLocality: "Dehiwala",
+                addressRegion: "Colombo, Sri Lanka",
+                addressCountry: "LK",
+              },
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+94767984452",
+                contactType: "customer service",
+              },
+              sameAs: [
+                "https://www.facebook.com/people/Ranwin-Tours-Travels/61571960647288/",
+                "https://www.instagram.com/ranwin.tours/",
+                "https://www.twitter.com/ranwin_tours",
+              ],
+            }),
+          }}
+        />
       </head>
 
       <body

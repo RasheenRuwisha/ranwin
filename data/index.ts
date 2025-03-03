@@ -45,14 +45,20 @@ export const dataCaro = [
 
 export const socialMedia = [
   {
-    id: 2,
+    id: 1,
     img: "/facebook.svg",
     link: "https://www.facebook.com/people/Ranwin-Tours-Travels/61571960647288/",
   },
+
   {
-    id: 3,
+    id: 2,
     img: "/insta.svg",
     link: "https://www.instagram.com/ranwin.tours/",
+  },
+  {
+    id: 23,
+    img: "/twit.svg",
+    link: "https://www.twitter.com/ranwin_tours",
   },
 ];
 
