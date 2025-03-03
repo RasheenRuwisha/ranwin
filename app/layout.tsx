@@ -5,6 +5,8 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "@/components/ui/toaster";
 import Script from "next/script";
+import "react-cookie-manager/style.css";
+import CookieManagerWrapper from "@/components/cookie-manager-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ranwin Tours & Travels - Best Sri Lanka Travel Experiences",
+  title: "Ranwin Tours & Travels",
   description:
     "Discover Sri Lanka with Ranwin Tours & Travels. Explore custom travel packages, breathtaking destinations, and unforgettable experiences. Book now!",
   keywords: [
@@ -128,6 +130,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <CookieManagerWrapper />
           {children}
           <Toaster />
         </ThemeProvider>
