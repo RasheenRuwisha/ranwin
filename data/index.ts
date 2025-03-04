@@ -803,6 +803,714 @@ export const package4 = {
     "This route takes you from Bandaranaike International Airport (BIA) to the vibrant city of Colombo, then to the historic rock fortress of Sigiriya. Continue to Kandy, the cultural capital, home to the revered Temple of the Tooth. Experience Sri Lanka’s deep-rooted history, breathtaking landscapes, and rich traditions along the way.",
 };
 
+export const package5 = {
+  price_with_hotel: 2200,
+  waypoints: [
+    [79.88452, 7.17929], // Example waypoint 1
+    [80.649991, 7.292631], // Example waypoint 2
+    [80.746205, 7.942106], // Example waypoint 3
+    [80.635036, 7.293121], // Example waypoint 3
+    [79.88452, 7.17929], // Example waypoint 3
+  ],
+  image_1: "/kandy-2.jpg",
+  image_2: "/colombo-2.jpg",
+  image_3: "/sigiriya-6.jpg",
+  price: 675,
+  number_of_days: 14,
+  short_title: "Sri Lanka’s Scenic & Cultural Odyssey",
+  title: "Ultimate Sri Lanka Adventure: From Heritage to Coast",
+  route: {
+    1: "BIA",
+    2: "Colombo",
+    3: "Polonnaruwa",
+    4: "Sigiriya",
+    5: "Kandy",
+    6: "Nuwara Eliya",
+    7: "Ella",
+    8: "Yala",
+    9: "Mirissa",
+    10: "Bentota",
+  },
+  itenary: [
+    {
+      1: {
+        title: "Colombo",
+        duration: "1 Night",
+        things_to_do: ["City tour", "Galle Face Green", "Lotus Tower"],
+      },
+      2: {
+        title: "Sigiriya",
+        duration: "2 Nights",
+        things_to_do: [
+          "Pinnawala Elephant Orphanage",
+          "Sigiriya Rock",
+          "Pollonawa Ruins",
+          "Habarna Safari",
+          "Sigiriya Safari",
+          "Elephant Back Safari",
+          "Dambulla Cave Temple",
+          "Spice Garden",
+        ],
+      },
+      3: {
+        title: "Kandy",
+        duration: "2 Nights",
+        things_to_do: [
+          "Tooth Relic Temple",
+          "Kandy View Point",
+          "Peradeniya Botanical Garden",
+          "Gem Museum",
+          "Wood Carving Center",
+          "Traditional Kandy Dance",
+          "Tea Factory",
+        ],
+      },
+    },
+  ],
+  whats_included: ["Sim card", "Bottled Water"],
+  tickets_included: [
+    "Spice Garden",
+    "Tea Factory",
+    "Gem Museum",
+    "Wood Carving Center",
+  ],
+  day_break_down: {
+    1: {
+      start: "BIA",
+      end: "Colombo",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "City Tour",
+          image: "/colombo-5.jpg",
+        },
+        {
+          name: "Lotus Tower",
+          image: "/lotus-tower.jpg",
+        },
+      ],
+    },
+    2: {
+      start: "Colombo",
+      end: "Pollonaruwa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Pinnawala Elephant Orphanage",
+          image: "/pinnawala.jpg",
+        },
+        {
+          name: "Ancient Pollonaruwa Ruins",
+          image: "/pollonaruwa.jpg",
+        },
+        {
+          name: "Parakrama Samudra",
+          image: "/sigiriya-1.jpg",
+        },
+      ],
+    },
+    3: {
+      start: "Pollonaruwa",
+      end: "Sigiya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Habarna Safari",
+          image: "/habarana.jpg",
+        },
+        {
+          name: "Elephant Back Safari",
+          image: "/elephant.jpg",
+        },
+      ],
+    },
+    4: {
+      start: "Sigiya",
+      end: "Sigiya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Sigiriya Rock",
+          image: "/sigiriya-8.jpg",
+        },
+        {
+          name: "Sigiriya Safari",
+          image: "/kandy-5.jpg",
+        },
+      ],
+    },
+    5: {
+      start: "Sigiya",
+      end: "Kandy",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Damubulla Cave Temple",
+          image: "/sigiriya-8.jpg",
+        },
+        {
+          name: "Spice Garden",
+          image: "/kandy-5.jpg",
+        },
+        {
+          name: "Tooth Relic Temple",
+          image: "/kandy-1.jpg",
+        },
+        {
+          name: "Gem Museum",
+          image: "/kandy-1.jpg",
+        },
+        {
+          name: "Wood Carving Center",
+          image: "/kandy-1.jpg",
+        },
+        {
+          name: "Kandy Traditional Dance",
+          image: "/kandy-1.jpg",
+        },
+      ],
+    },
+    6: {
+      start: "Kandy",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Kandy View Point",
+          image: "/gem.jpg",
+        },
+        {
+          name: "Wood Carving Center",
+          image: "/galle-6.jpg",
+        },
+        {
+          name: "Peradeniya Botanical Garden",
+          image: "/nuwaraeliya-4.jpg",
+        },
+        {
+          name: "Tea Factory",
+          image: "/kandy-6.jpg",
+        },
+        {
+          name: "Ramboda Waterfall",
+          image: "/kandy-6.jpg",
+        },
+        {
+          name: "Hanuman Temple",
+          image: "/kandy-6.jpg",
+        },
+      ],
+    },
+    7: {
+      start: "Nuwara Eliya",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Rama seetha temple",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Haggala Garden",
+          image: "/ella-4.jpg",
+        },
+        {
+          name: "Gregory Lake Boat Ride",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+    8: {
+      start: "Nuwara Eliya",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Pink Post Office",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Ambevela Farm",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+    9: {
+      start: "Nuwara Eliya",
+      end: "Ella (by train)",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Nine arches bridge",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Rawana Waterfall",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+    10: {
+      start: "Ella",
+      end: "Yala",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Little Adam's Peak",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Katagarama Temple",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+    11: {
+      start: "Yala",
+      end: "Yala",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Yala Safari",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    12: {
+      start: "Yala",
+      end: "Mirissa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Whale watching",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    13: {
+      start: "Mirissa",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Waligama Still Fishermen",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Galle Fort",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Hikkaduwa Glass Bottom Boat Ride",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Turtle Conservation Center",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    14: {
+      start: "Bentota",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Water Sports",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Mongrove Boat Ride",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Fish Therapy",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    15: {
+      start: "Bentota",
+      end: "BIA",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [],
+    },
+  },
+  short_description:
+    "Discover Sri Lanka’s best destinations on this all-encompassing route, covering history, nature, wildlife, and stunning beaches from Colombo to Bentota.",
+  description:
+    "Embark on an unforgettable journey through Sri Lanka, from the bustling capital to ancient cities, misty highlands, and breathtaking coastal escapes. Explore cultural landmarks in Polonnaruwa and Sigiriya, experience the charm of Kandy and Nuwara Eliya, and enjoy the scenic beauty of Ella. Encounter wildlife in Yala before unwinding on the golden beaches of Mirissa and Bentota.",
+};
+
+export const package6 = {
+  price_with_hotel: 900,
+  waypoints: [
+    [79.88452, 7.17929], // Example waypoint 1
+    [80.649991, 7.292631], // Example waypoint 2
+    [80.746205, 7.942106], // Example waypoint 3
+    [80.635036, 7.293121], // Example waypoint 3
+    [79.88452, 7.17929], // Example waypoint 3
+  ],
+  image_1: "/kandy-2.jpg",
+  image_2: "/colombo-2.jpg",
+  image_3: "/sigiriya-6.jpg",
+  price: 270,
+  number_of_days: 14,
+  short_title: "Sri Lanka’s Scenic & Cultural Odyssey",
+  title: "Ultimate Sri Lanka Adventure: From Heritage to Coast",
+  route: {
+    1: "BIA",
+    2: "Colombo",
+    3: "Polonnaruwa",
+    4: "Sigiriya",
+    5: "Kandy",
+    6: "Nuwara Eliya",
+    7: "Ella",
+    8: "Yala",
+    9: "Mirissa",
+    10: "Bentota",
+  },
+  itenary: [
+    {
+      1: {
+        title: "Colombo",
+        duration: "1 Night",
+        things_to_do: ["City tour", "Galle Face Green", "Lotus Tower"],
+      },
+      2: {
+        title: "Sigiriya",
+        duration: "2 Nights",
+        things_to_do: [
+          "Pinnawala Elephant Orphanage",
+          "Sigiriya Rock",
+          "Pollonawa Ruins",
+          "Habarna Safari",
+          "Sigiriya Safari",
+          "Elephant Back Safari",
+          "Dambulla Cave Temple",
+          "Spice Garden",
+        ],
+      },
+      3: {
+        title: "Kandy",
+        duration: "2 Nights",
+        things_to_do: [
+          "Tooth Relic Temple",
+          "Kandy View Point",
+          "Peradeniya Botanical Garden",
+          "Gem Museum",
+          "Wood Carving Center",
+          "Traditional Kandy Dance",
+          "Tea Factory",
+        ],
+      },
+    },
+  ],
+  whats_included: ["Sim card", "Bottled Water"],
+  tickets_included: [
+    "Spice Garden",
+    "Tea Factory",
+    "Gem Museum",
+    "Wood Carving Center",
+  ],
+  day_break_down: {
+    1: {
+      start: "BIA",
+      end: "Colombo",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "City Tour",
+          image: "/colombo-5.jpg",
+        },
+        {
+          name: "Lotus Tower",
+          image: "/lotus-tower.jpg",
+        },
+      ],
+    },
+    2: {
+      start: "Colombo",
+      end: "Pollonaruwa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Pinnawala Elephant Orphanage",
+          image: "/pinnawala.jpg",
+        },
+        {
+          name: "Ancient Pollonaruwa Ruins",
+          image: "/pollonaruwa.jpg",
+        },
+        {
+          name: "Parakrama Samudra",
+          image: "/sigiriya-1.jpg",
+        },
+      ],
+    },
+    3: {
+      start: "Pollonaruwa",
+      end: "Sigiya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Habarna Safari",
+          image: "/habarana.jpg",
+        },
+        {
+          name: "Elephant Back Safari",
+          image: "/elephant.jpg",
+        },
+      ],
+    },
+    4: {
+      start: "Sigiya",
+      end: "Sigiya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Sigiriya Rock",
+          image: "/sigiriya-8.jpg",
+        },
+        {
+          name: "Sigiriya Safari",
+          image: "/kandy-5.jpg",
+        },
+      ],
+    },
+    5: {
+      start: "Sigiya",
+      end: "Kandy",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Damubulla Cave Temple",
+          image: "/sigiriya-8.jpg",
+        },
+        {
+          name: "Spice Garden",
+          image: "/kandy-5.jpg",
+        },
+        {
+          name: "Tooth Relic Temple",
+          image: "/kandy-1.jpg",
+        },
+        {
+          name: "Gem Museum",
+          image: "/kandy-1.jpg",
+        },
+        {
+          name: "Wood Carving Center",
+          image: "/kandy-1.jpg",
+        },
+        {
+          name: "Kandy Traditional Dance",
+          image: "/kandy-1.jpg",
+        },
+      ],
+    },
+    6: {
+      start: "Kandy",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Kandy View Point",
+          image: "/gem.jpg",
+        },
+        {
+          name: "Wood Carving Center",
+          image: "/galle-6.jpg",
+        },
+        {
+          name: "Peradeniya Botanical Garden",
+          image: "/nuwaraeliya-4.jpg",
+        },
+        {
+          name: "Tea Factory",
+          image: "/kandy-6.jpg",
+        },
+        {
+          name: "Ramboda Waterfall",
+          image: "/kandy-6.jpg",
+        },
+        {
+          name: "Hanuman Temple",
+          image: "/kandy-6.jpg",
+        },
+      ],
+    },
+    7: {
+      start: "Nuwara Eliya",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Rama seetha temple",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Haggala Garden",
+          image: "/ella-4.jpg",
+        },
+        {
+          name: "Gregory Lake Boat Ride",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+    8: {
+      start: "Nuwara Eliya",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Pink Post Office",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Ambevela Farm",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+    9: {
+      start: "Nuwara Eliya",
+      end: "Ella (by train)",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Nine arches bridge",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Rawana Waterfall",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+    10: {
+      start: "Ella",
+      end: "Yala",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Little Adam's Peak",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Katagarama Temple",
+          image: "/ella-4.jpg",
+        },
+      ],
+    },
+    11: {
+      start: "Yala",
+      end: "Yala",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Yala Safari",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    12: {
+      start: "Yala",
+      end: "Mirissa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Whale watching",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    13: {
+      start: "Mirissa",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Waligama Still Fishermen",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Galle Fort",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Hikkaduwa Glass Bottom Boat Ride",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Turtle Conservation Center",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    14: {
+      start: "Bentota",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Water Sports",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Mongrove Boat Ride",
+          image: "/kandy-2.jpg",
+        },
+        {
+          name: "Fish Therapy",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    15: {
+      start: "Bentota",
+      end: "BIA",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [],
+    },
+  },
+  short_description:
+    "Discover Sri Lanka’s best destinations on this all-encompassing route, covering history, nature, wildlife, and stunning beaches from Colombo to Bentota.",
+  description:
+    "Embark on an unforgettable journey through Sri Lanka, from the bustling capital to ancient cities, misty highlands, and breathtaking coastal escapes. Explore cultural landmarks in Polonnaruwa and Sigiriya, experience the charm of Kandy and Nuwara Eliya, and enjoy the scenic beauty of Ella. Encounter wildlife in Yala before unwinding on the golden beaches of Mirissa and Bentota.",
+};
+
 export const ella = {
   title: "Ella: Nature's Tranquil Escape",
   image_1: "/ella.jpg",

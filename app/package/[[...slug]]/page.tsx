@@ -7,7 +7,14 @@ import { useEffect, useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Map from "@/components/Map";
-import { dataCaro, package1, package2, package3, package4 } from "@/data";
+import {
+  dataCaro,
+  package1,
+  package2,
+  package3,
+  package4,
+  package5,
+} from "@/data";
 import {
   Accordion,
   AccordionItem,
@@ -83,6 +90,9 @@ export default function PackagePage({ params }) {
       } else if (params?.slug?.[0] === "cultural-heart") {
         setUrl(params.slug[0]);
         setPackages(package4);
+      } else if (params?.slug?.[0] === "scenic-odyysey") {
+        setUrl(params.slug[0]);
+        setPackages(package5);
       }
 
       const reviews = await getReviews(params?.slug?.[0]);
