@@ -20,6 +20,19 @@ import {
   nuwara_eliya,
   sigiriya,
   trincomalee,
+  mirissa,
+  yala,
+  bentota,
+  katharagama,
+  pinnawala,
+  udawalawa,
+  habarana,
+  haputale,
+  pasikuda,
+  negombo,
+  polonnaruwa,
+  riverston,
+  hortonPlains
 } from "@/data";
 import {
   Accordion,
@@ -90,6 +103,45 @@ export default function PackagePage({ params }) {
     } else if (params?.slug?.[0] === "sigiriya") {
       setUrl(params?.slug?.[0]);
       setPackages(sigiriya);
+    } else if (params?.slug?.[0] === "mirissa") {
+      setUrl(params?.slug?.[0]);
+      setPackages(mirissa);
+    } else if (params?.slug?.[0] === "yala") {
+      setUrl(params?.slug?.[0]);
+      setPackages(yala);
+    } else if (params?.slug?.[0] === "bentota") {
+      setUrl(params?.slug?.[0]);
+      setPackages(bentota);
+    } else if (params?.slug?.[0] === "katharagama") {
+      setUrl(params?.slug?.[0]);
+      setPackages(katharagama);
+    } else if (params?.slug?.[0] === "pinnawala") {
+      setUrl(params?.slug?.[0]);
+      setPackages(pinnawala);
+    } else if (params?.slug?.[0] === "udawalawa") {
+      setUrl(params?.slug?.[0]);
+      setPackages(udawalawa);
+    } else if (params?.slug?.[0] === "habarana") {
+      setUrl(params?.slug?.[0]);
+      setPackages(habarana);
+    } else if (params?.slug?.[0] === "haputale") {
+      setUrl(params?.slug?.[0]);
+      setPackages(haputale);
+    } else if (params?.slug?.[0] === "pasikuda") {
+      setUrl(params?.slug?.[0]);
+      setPackages(pasikuda);
+    } else if (params?.slug?.[0] === "negombo") {
+      setUrl(params?.slug?.[0]);
+      setPackages(negombo);
+    } else if (params?.slug?.[0] === "polonnaruwa") {
+      setUrl(params?.slug?.[0]);
+      setPackages(polonnaruwa);
+    } else if (params?.slug?.[0] === "riverston") {
+      setUrl(params?.slug?.[0]);
+      setPackages(riverston);
+    } else if (params?.slug?.[0] === "horton-plains") {
+      setUrl(params?.slug?.[0]);
+      setPackages(hortonPlains);
     }
   }, [params]);
 

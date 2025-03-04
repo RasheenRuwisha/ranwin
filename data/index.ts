@@ -2097,3 +2097,861 @@ export const sigiriya = {
     },
   ],
 };
+
+export const mirissa = {
+  title: "Mirissa: A Tropical Paradise for Beach Lovers",
+  image_1: "/mirissa.jpg",
+  image_2: "/mirissa-10.jpg",
+  image_3: "/mirissa-2.jpg",
+  description: `Mirissa is one of Sri Lanka’s most famous beach destinations, known for its golden sands, turquoise waters, and vibrant nightlife. This coastal town is a haven for surfers, whale watchers, and travelers seeking a laid-back tropical escape.
+
+  Whether you want to relax under a palm tree, embark on a whale-watching adventure, or enjoy fresh seafood at a beachfront café, Mirissa has it all. The town’s relaxed vibe and stunning sunsets make it a must-visit destination.`,
+
+  conclusion:
+    "With its pristine beaches, thrilling ocean adventures, and relaxing atmosphere, Mirissa is a tropical paradise that offers something for everyone. Whether you're seeking adventure or relaxation, this coastal gem is the perfect getaway.",
+
+  things_to_do: [
+    {
+      section: "Mirissa Beach: A Coastal Dream",
+      text: "Mirissa Beach is the heart of the town, offering soft golden sands and clear waters. It’s perfect for sunbathing, swimming, and enjoying the lively beach bars.",
+      image: "/mirissa-1.jpg",
+    },
+    {
+      section: "Whale Watching: A Majestic Experience",
+      text: "Mirissa is one of the best places in the world to spot blue whales and dolphins. Take a boat tour early in the morning for an unforgettable wildlife encounter.",
+      image: "/mirissa-2.jpg",
+    },
+    {
+      section: "Coconut Tree Hill: A Picture-Perfect View",
+      text: "One of the most Instagrammable spots in Sri Lanka, Coconut Tree Hill offers breathtaking views of the ocean framed by swaying palm trees.",
+      image: "/mirissa-3.jpg",
+    },
+    {
+      section: "Secret Beach: A Hidden Gem",
+      text: "Escape the crowds and relax at Secret Beach, a secluded and tranquil spot ideal for unwinding in nature.",
+      image: "/mirissa-4.jpg",
+    },
+    {
+      section: "Parrot Rock: A Mini Adventure",
+      text: "Climb Parrot Rock for panoramic views of Mirissa Beach. It’s a great place to watch the sunset and feel the ocean breeze.",
+      image: "/mirissa-5.jpg",
+    },
+    {
+      section: "Surfing in Mirissa",
+      text: "Mirissa offers excellent waves for both beginners and experienced surfers. Rent a board or take a lesson from a local surf school.",
+      image: "/mirissa-6.jpg",
+    },
+    {
+      section: "Turtle Bay: Swim with Sea Turtles",
+      text: "Snorkel in Turtle Bay, where you can swim alongside gentle sea turtles in their natural habitat.",
+      image: "/mirissa-7.jpg",
+    },
+    {
+      section: "Nightlife and Beach Parties",
+      text: "Mirissa is known for its lively beach parties. Enjoy music, cocktails, and a vibrant atmosphere at the many beachfront bars.",
+      image: "/mirissa-8.jpg",
+    },
+    {
+      section: "Weligama: A Surfer’s Haven",
+      text: "Just a short drive from Mirissa, Weligama is a great spot for surfing, with gentle waves perfect for beginners.",
+      image: "/mirissa-9.jpg",
+    },
+    {
+      section: "Dondra Head Lighthouse: A Historic Landmark",
+      text: "Visit the southernmost point of Sri Lanka at Dondra Head Lighthouse, offering spectacular ocean views.",
+      image: "/mirissa-10.jpg",
+    },
+  ],
+};
+
+export const yala = {
+  title: "Yala: Sri Lanka’s Ultimate Safari Destination",
+  image_1: "/yala.jpg",
+  image_2: "/yala-10.jpg",
+  image_3: "/yala-2.jpg",
+  description: `Yala National Park is Sri Lanka’s most famous wildlife sanctuary, offering visitors an unparalleled safari experience. Home to the elusive Sri Lankan leopard, elephants, crocodiles, and a rich variety of birdlife, Yala is a paradise for nature lovers.
+
+  The park’s diverse landscapes, ranging from dense jungles to coastal lagoons, create a unique ecosystem that supports a wide array of wildlife. A safari here is a must for any traveler seeking adventure and close encounters with nature.`,
+
+  conclusion:
+    "Yala National Park is an unforgettable destination for wildlife enthusiasts. Whether you're spotting leopards, elephants, or exotic birds, the experience of being in nature’s wild heart is truly mesmerizing.",
+
+  things_to_do: [
+    {
+      section: "Leopard Safari: Spot the King of Yala",
+      text: "Yala is one of the best places in the world to see leopards in the wild. Join a guided safari to catch a glimpse of these majestic big cats.",
+      image: "/yala-1.jpg",
+    },
+    {
+      section: "Elephant Watching in the Wild",
+      text: "Large herds of elephants roam freely in Yala. Witness these gentle giants as they graze and interact in their natural habitat.",
+      image: "/yala-2.jpg",
+    },
+    {
+      section: "Birdwatching: A Paradise for Avian Enthusiasts",
+      text: "With over 200 species of birds, Yala is a birdwatcher’s haven. Spot colorful kingfishers, eagles, and flamingos.",
+      image: "/yala-3.jpg",
+    },
+    {
+      section: "Kumana National Park: Bird Sanctuary",
+      text: "Adjacent to Yala, Kumana is another incredible wildlife sanctuary, known especially for its rich birdlife.",
+      image: "/yala-4.jpg",
+    },
+    {
+      section: "Situlpawwa Rock Temple: A Spiritual Escape",
+      text: "This ancient Buddhist temple inside the park offers stunning panoramic views and a peaceful atmosphere.",
+      image: "/yala-5.jpg",
+    },
+    {
+      section: "Lagoons and Wetlands: Explore Diverse Ecosystems",
+      text: "The park features lagoons and wetlands teeming with crocodiles, water buffalo, and migratory birds.",
+      image: "/yala-6.jpg",
+    },
+    {
+      section: "Camping in Yala: A Night in the Wilderness",
+      text: "Stay overnight in a luxury campsite within the park to experience the raw beauty of nature under the stars.",
+      image: "/yala-7.jpg",
+    },
+    {
+      section: "Beach at Yala: A Secluded Coastal Gem",
+      text: "Yala’s coastline offers pristine, untouched beaches where you can relax and enjoy the natural surroundings.",
+      image: "/yala-8.jpg",
+    },
+    {
+      section: "Exploring Yala’s Ancient Ruins",
+      text: "Yala is home to ancient rock inscriptions and ruins that date back thousands of years, adding a historical dimension to your safari.",
+      image: "/yala-9.jpg",
+    },
+    {
+      section: "Sunrise and Sunset Safaris",
+      text: "The best time to spot wildlife is during early morning and late evening safaris when animals are most active.",
+      image: "/yala-10.jpg",
+    },
+  ],
+};
+
+export const bentota = {
+  title: "Bentota: A Serene Coastal Escape",
+  image_1: "/bentota.jpg",
+  image_2: "/bentota-10.jpg",
+  image_3: "/bentota-2.jpg",
+  description: `Bentota, a charming coastal town in Sri Lanka, is renowned for its pristine beaches, crystal-clear waters, and vibrant marine life. This tropical paradise is a perfect blend of relaxation and adventure, making it an ideal getaway for beach lovers and water sports enthusiasts. From sunbathing on golden sands to thrilling jet-skiing experiences, Bentota offers something for everyone.
+
+  Apart from its stunning coastline, Bentota is also home to scenic rivers, lush mangroves, and rich wildlife. The town is famous for its luxury resorts, Ayurvedic wellness centers, and cultural attractions, making it a great place for both leisure and exploration. Whether you're looking for a romantic escape or an adrenaline-filled adventure, Bentota has it all.`,
+
+  conclusion:
+    "Bentota is a must-visit destination in Sri Lanka, offering a mix of relaxation, adventure, and natural beauty. Whether you want to explore marine life, indulge in water sports, or simply soak up the sun, Bentota promises an unforgettable experience.",
+
+  things_to_do: [
+    {
+      section: "Bentota Beach: Sun, Sand, and Serenity",
+      text: "Bentota Beach is a paradise for beach lovers. The golden sands, swaying palm trees, and turquoise waters make it an ideal place for relaxation and fun. You can enjoy sunbathing, swimming, or even thrilling water sports like jet skiing and windsurfing.",
+      image: "/bentota-1.jpg",
+    },
+    {
+      section: "Bentota River Safari: A Journey Through Mangroves",
+      text: "Explore the beauty of Bentota River on an exciting boat safari. Cruise through lush mangroves, spot exotic birds, and witness monitor lizards and crocodiles in their natural habitat. It's a perfect way to connect with nature.",
+      image: "/bentota-2.jpg",
+    },
+    {
+      section: "Brief Garden: A Botanical Wonderland",
+      text: "Designed by Bevis Bawa, Brief Garden is a stunning landscape filled with exotic plants, sculptures, and artistic elements. This peaceful retreat is a must-visit for nature and art enthusiasts alike.",
+      image: "/bentota-3.jpg",
+    },
+    {
+      section: "Kosgoda Turtle Hatchery: A Conservation Experience",
+      text: "Visit the Kosgoda Turtle Hatchery to learn about sea turtle conservation. Here, you can see baby turtles being released into the ocean and gain insight into the importance of protecting these magnificent creatures.",
+      image: "/bentota-4.jpg",
+    },
+    {
+      section: "Galapata Vihara: A Historical Buddhist Temple",
+      text: "Galapata Vihara is an ancient Buddhist temple that dates back to the 12th century. It is known for its beautiful murals, stone carvings, and a secret underground tunnel, making it a fascinating cultural site.",
+      image: "/bentota-5.jpg",
+    },
+    {
+      section: "Cinnamon Island: A Spice Lover’s Delight",
+      text: "Take a tour of Cinnamon Island, where you can witness the process of cinnamon production. Learn about Sri Lanka’s spice heritage and enjoy the aromatic experience of fresh cinnamon.",
+      image: "/bentota-6.jpg",
+    },
+    {
+      section: "Lunuganga Estate: A Tranquil Retreat",
+      text: "Once the country estate of architect Geoffrey Bawa, Lunuganga is a beautifully landscaped garden offering breathtaking views. It's a great place to relax and appreciate stunning architectural artistry.",
+      image: "/bentota-7.jpg",
+    },
+    {
+      section: "Snorkeling and Diving at Barberyn Reef",
+      text: "Explore the underwater beauty of Bentota by snorkeling or diving at Barberyn Reef. Witness vibrant coral reefs, colorful fish, and marine life in this stunning aquatic paradise.",
+      image: "/bentota-8.jpg",
+    },
+    {
+      section: "Ayurvedic Spa Retreats: A Wellness Escape",
+      text: "Bentota is known for its Ayurvedic wellness centers, offering traditional Sri Lankan healing therapies. Indulge in relaxing massages and herbal treatments for a rejuvenating experience.",
+      image: "/bentota-9.jpg",
+    },
+    {
+      section: "Bentota Bazaar: A Shopping and Cultural Hub",
+      text: "Visit the local markets of Bentota to shop for handicrafts, souvenirs, and fresh seafood. Experience the vibrant culture and hospitality of the locals.",
+      image: "/bentota-10.jpg",
+    },
+  ],
+};
+
+export const katharagama = {
+  title: "Katharagama: A Sacred Pilgrimage Destination",
+  image_1: "/katharagama.jpg",
+  image_2: "/katharagama-10.jpg",
+  image_3: "/katharagama-2.jpg",
+  description: `Katharagama, a revered pilgrimage town in Sri Lanka, is a place of deep spiritual significance for Buddhists, Hindus, Muslims, and indigenous Vedda communities. Nestled in the southeastern part of the island, this sacred town is best known for the Katharagama Devalaya, dedicated to the deity Skanda (Murugan). Devotees from all over the country visit Katharagama to seek blessings, perform rituals, and partake in the vibrant annual festival.
+
+  Beyond its religious importance, Katharagama is surrounded by natural beauty, with lush forests, serene rivers, and abundant wildlife. The town serves as a gateway to Yala National Park, making it an ideal destination for both spiritual seekers and nature lovers.`,  
+
+  conclusion:
+    "Katharagama is a unique blend of spirituality, tradition, and natural beauty. Whether you’re a pilgrim, a history enthusiast, or an adventurer, this sacred town offers a profound and unforgettable experience.",  
+
+  things_to_do: [
+    {
+      section: "Katharagama Devalaya: A Sacred Shrine",
+      text: "The Katharagama Devalaya is the town’s most important religious site, dedicated to Lord Murugan. Pilgrims from various faiths visit this temple to offer prayers, light oil lamps, and perform age-old rituals.",
+      image: "/katharagama-1.jpg",
+    },
+    {
+      section: "Kirivehera: A Historic Buddhist Stupa",
+      text: "Kirivehera is an ancient Buddhist stupa believed to have been built by King Mahasena in the 3rd century BCE. It is a revered site where Buddhist monks and devotees engage in meditation and prayer.",
+      image: "/katharagama-2.jpg",
+    },
+    {
+      section: "Sella Katharagama: A Tranquil Pilgrimage Site",
+      text: "A short drive from the main temple complex, Sella Katharagama is a peaceful site with smaller shrines and scenic surroundings. It is believed to be a place where Lord Murugan rested on his journey.",
+      image: "/katharagama-3.jpg",
+    },
+    {
+      section: "Katharagama Festival: A Grand Religious Celebration",
+      text: "The annual Katharagama Esala Festival is a spectacular event featuring vibrant processions, fire-walking, and traditional dances. Thousands of devotees take part in this colorful and spiritual experience.",
+      image: "/katharagama-4.jpg",
+    },
+    {
+      section: "Manik Ganga: A Holy River for Ritual Bathing",
+      text: "Manik Ganga (River of Gems) is a sacred river where pilgrims take a ritual bath before visiting the temple. The river’s crystal-clear waters add to the serene and spiritual atmosphere.",
+      image: "/katharagama-5.jpg",
+    },
+    {
+      section: "Yala National Park: A Wildlife Adventure",
+      text: "Just a short distance from Katharagama, Yala National Park offers an incredible wildlife experience. Spot elephants, leopards, sloth bears, and exotic birds in one of Sri Lanka’s most famous national parks.",
+      image: "/katharagama-6.jpg",
+    },
+    {
+      section: "Wedihiti Kanda: A Sacred Mountain Trek",
+      text: "A trek to Wedihiti Kanda is a spiritual journey offering breathtaking views of the surrounding landscapes. It is believed to be a meditation spot for sages in ancient times.",
+      image: "/katharagama-7.jpg",
+    },
+    {
+      section: "Kebiliththa: A Remote and Sacred Pilgrimage Site",
+      text: "Kebiliththa is a deeply revered and remote jungle shrine believed to be a meditative site of Lord Kataragama. It requires a challenging off-road journey through dense forests, adding to its mystical aura.",
+      image: "/katharagama-8.jpg",
+    },
+    {
+      section: "Murugan Kovil: A Hindu Spiritual Haven",
+      text: "Katharagama is home to several Hindu temples dedicated to Lord Murugan. These shrines are significant for Tamil devotees and serve as centers of devotion and celebration.",
+      image: "/katharagama-9.jpg",
+    },
+    {
+      section: "Local Markets: A Taste of Culture and Tradition",
+      text: "Explore the bustling markets of Katharagama, where you can find religious artifacts, fresh fruits, and local delicacies. Experience the town’s vibrant cultural atmosphere.",
+      image: "/katharagama-10.jpg",
+    },
+  ],
+};
+
+export const pinnawala = {
+  title: "Pinnawala: The Land of Gentle Giants",
+  image_1: "/pinnawala.jpg",
+  image_2: "/pinnawala-10.jpg",
+  image_3: "/pinnawala-2.jpg",
+  description: `Pinnawala, a charming village in Sri Lanka, is world-famous for its elephant orphanage, where rescued and orphaned elephants are cared for. Located near Kegalle, this unique destination allows visitors to witness elephants up close, observe their daily routines, and even participate in feeding sessions. The sight of these majestic creatures bathing in the Maha Oya River is truly unforgettable.
+
+  Beyond the elephant orphanage, Pinnawala offers lush landscapes, serene river views, and cultural experiences. Whether you’re an animal lover or a nature enthusiast, Pinnawala provides a rare opportunity to connect with Sri Lanka’s gentle giants in a responsible and ethical way.`,
+
+  conclusion:
+    "Pinnawala is a must-visit for wildlife lovers, offering a rare chance to interact with elephants while supporting conservation efforts. From feeding baby elephants to watching them bathe in the river, this experience is both heartwarming and educational.",
+
+  things_to_do: [
+    {
+      section: "Pinnawala Elephant Orphanage: A Haven for Elephants",
+      text: "Visit the world-famous Pinnawala Elephant Orphanage and witness rescued elephants being cared for. Enjoy watching them roam freely, interact with caretakers, and learn about Sri Lanka's elephant conservation efforts.",
+      image: "/pinnawala-1.jpg",
+    },
+    {
+      section: "Elephant Bathing at Maha Oya River",
+      text: "Watch herds of elephants bathing in the Maha Oya River, a sight that is both peaceful and mesmerizing. Capture stunning photos as these gentle giants splash and play in the water.",
+      image: "/pinnawala-2.jpg",
+    },
+    {
+      section: "Elephant Feeding Sessions",
+      text: "Get the chance to bottle-feed baby elephants and hand-feed fruits to the older ones at the orphanage. This interactive experience allows you to connect with these magnificent animals in a meaningful way.",
+      image: "/pinnawala-3.jpg",
+    },
+    {
+      section: "Pinnawala Zoo: A Family-Friendly Wildlife Experience",
+      text: "Explore Pinnawala Zoo, home to a variety of animals, including birds, reptiles, and other mammals. A great place for families and nature lovers to learn about Sri Lanka’s diverse wildlife.",
+      image: "/pinnawala-4.jpg",
+    },
+    {
+      section: "Millennium Elephant Foundation: Ethical Elephant Encounters",
+      text: "Visit the Millennium Elephant Foundation for a more ethical approach to interacting with elephants. Learn about their conservation programs, walk with an elephant, and gain insight into their rehabilitation efforts.",
+      image: "/pinnawala-5.jpg",
+    },
+    {
+      section: "Pinnawala Handicrafts and Souvenirs",
+      text: "Shop for unique handicrafts, wooden carvings, and elephant-themed souvenirs at local stalls near the orphanage. Take home a meaningful memento of your visit.",
+      image: "/pinnawala-6.jpg",
+    },
+    {
+      section: "Cultural Performances and Traditional Music",
+      text: "Experience Sri Lankan culture through traditional dance performances and live drumming sessions held at select locations near Pinnawala.",
+      image: "/pinnawala-7.jpg",
+    },
+    {
+      section: "Scenic Walks and Photography",
+      text: "Enjoy a leisurely walk through the lush surroundings of Pinnawala and capture breathtaking photographs of elephants, rivers, and the tranquil landscape.",
+      image: "/pinnawala-8.jpg",
+    },
+    {
+      section: "Pinnawala Spice Garden: A Fragrant Retreat",
+      text: "Visit a local spice garden to learn about Sri Lanka’s rich spice heritage. Discover the medicinal and culinary uses of cinnamon, cardamom, and other exotic spices.",
+      image: "/pinnawala-9.jpg",
+    },
+    {
+      section: "Local Cuisine: Taste Authentic Sri Lankan Flavors",
+      text: "Indulge in delicious Sri Lankan cuisine at local restaurants, featuring traditional rice and curry, hoppers, and fresh tropical fruits.",
+      image: "/pinnawala-10.jpg",
+    },
+  ],
+};
+
+export const udawalawa = {
+  title: "Udawalawa: Sri Lanka’s Premier Wildlife Haven",
+  image_1: "/udawalawa.jpg",
+  image_2: "/udawalawa-10.jpg",
+  image_3: "/udawalawa-2.jpg",
+  description: `Udawalawa, home to the famous Udawalawe National Park, is a paradise for wildlife enthusiasts and nature lovers. Located in southern Sri Lanka, this vast sanctuary is best known for its large population of wild elephants, making it one of the best places in Asia to see these majestic creatures in their natural habitat. The park’s open grasslands, dense forests, and scenic reservoirs provide a stunning backdrop for an unforgettable safari experience.
+
+  Beyond elephants, Udawalawa boasts a rich variety of wildlife, including leopards, crocodiles, sloth bears, and hundreds of bird species. Whether you’re on a jeep safari, exploring the Elephant Transit Home, or admiring the breathtaking landscapes, Udawalawa offers a true escape into nature.`,
+
+  conclusion:
+    "Udawalawa is a must-visit destination for wildlife lovers, offering thrilling safaris, conservation experiences, and breathtaking natural scenery. Whether you seek adventure or relaxation, Udawalawa promises an unforgettable journey into the heart of Sri Lanka’s wilderness.",
+
+  things_to_do: [
+    {
+      section: "Udawalawe National Park Safari: A Wildlife Adventure",
+      text: "Embark on an exciting jeep safari through Udawalawe National Park and witness herds of wild elephants up close. Keep an eye out for leopards, deer, water buffalo, and a variety of bird species.",
+      image: "/udawalawa-1.jpg",
+    },
+    {
+      section: "Elephant Transit Home: A Conservation Initiative",
+      text: "Visit the Elephant Transit Home, where orphaned and injured elephants are rehabilitated before being released back into the wild. Observe feeding sessions and learn about conservation efforts.",
+      image: "/udawalawa-2.jpg",
+    },
+    {
+      section: "Birdwatching: A Paradise for Avian Enthusiasts",
+      text: "Udawalawa is a birdwatcher’s dream, with over 200 species of birds, including eagles, hornbills, and vibrant kingfishers. Bring your binoculars and enjoy spotting rare and exotic birds.",
+      image: "/udawalawa-3.jpg",
+    },
+    {
+      section: "Udawalawa Reservoir: A Scenic Escape",
+      text: "Relax by the picturesque Udawalawa Reservoir, a vital water source for wildlife. Enjoy stunning sunrise and sunset views while observing animals gathering at the water’s edge.",
+      image: "/udawalawa-4.jpg",
+    },
+    {
+      section: "Camping in Udawalawa: A Night Under the Stars",
+      text: "Experience the thrill of camping in the wilderness, surrounded by the sounds of nature. Several eco-lodges and campsites offer unique overnight stays near the park.",
+      image: "/udawalawa-5.jpg",
+    },
+    {
+      section: "Jungle Trekking and Nature Walks",
+      text: "Explore Udawalawa’s lush forests and trails on foot, discovering hidden waterfalls, exotic plants, and signs of wildlife along the way.",
+      image: "/udawalawa-6.jpg",
+    },
+    {
+      section: "Visit a Local Village: Experience Rural Sri Lanka",
+      text: "Get a glimpse of traditional village life by visiting a nearby rural community. Interact with locals, learn about their culture, and enjoy authentic Sri Lankan hospitality.",
+      image: "/udawalawa-7.jpg",
+    },
+    {
+      section: "Photography: Capture Sri Lanka’s Wild Beauty",
+      text: "With its diverse wildlife and breathtaking landscapes, Udawalawa is a photographer’s paradise. Bring your camera and capture stunning moments of animals in their natural environment.",
+      image: "/udawalawa-8.jpg",
+    },
+    {
+      section: "Explore Nearby Waterfalls",
+      text: "Take a short drive to visit beautiful waterfalls near Udawalawa, such as Diyaluma Falls and Elle Wala Waterfall, for a refreshing escape into nature.",
+      image: "/udawalawa-9.jpg",
+    },
+    {
+      section: "Taste Authentic Sri Lankan Cuisine",
+      text: "Indulge in traditional Sri Lankan flavors at local restaurants, offering delicious rice and curry, seafood dishes, and fresh tropical fruits.",
+      image: "/udawalawa-10.jpg",
+    },
+  ],
+};
+
+export const habarana = {
+  title: "Habarana: The Gateway to Sri Lanka’s Cultural Triangle",
+  image_1: "/habarana.jpg",
+  image_2: "/habarana-10.jpg",
+  image_3: "/habarana-2.jpg",
+  description: `Habarana, a peaceful town in Sri Lanka, serves as the perfect base for exploring the country’s Cultural Triangle. Surrounded by lush forests, scenic lakes, and historic sites, Habarana is a haven for nature lovers, adventure seekers, and history enthusiasts. The town’s central location makes it an ideal starting point for visiting UNESCO-listed sites like Sigiriya, Dambulla, and Polonnaruwa.
+
+  In addition to its cultural significance, Habarana is known for its rich wildlife. The nearby Minneriya and Kaudulla National Parks offer some of the best elephant safaris in Sri Lanka, while the serene Habarana Lake provides a tranquil retreat for birdwatching and scenic boat rides. Whether you seek history, nature, or relaxation, Habarana has something for everyone.`,
+
+  conclusion:
+    "Habarana is a must-visit destination for those exploring Sri Lanka’s Cultural Triangle. With its mix of history, wildlife, and natural beauty, this charming town offers a truly unforgettable experience for travelers.",
+
+  things_to_do: [
+    {
+      section: "Sigiriya Rock Fortress: A UNESCO World Heritage Site",
+      text: "Climb the iconic Sigiriya Rock Fortress and marvel at its ancient frescoes, breathtaking views, and fascinating ruins. This 5th-century marvel is one of Sri Lanka’s most famous landmarks.",
+      image: "/habarana-1.jpg",
+    },
+    {
+      section: "Minneriya National Park: Witness the Elephant Gathering",
+      text: "Go on a thrilling safari at Minneriya National Park, where you can witness the famous ‘Elephant Gathering’—one of the largest congregations of wild elephants in the world.",
+      image: "/habarana-2.jpg",
+    },
+    {
+      section: "Dambulla Cave Temple: A Spiritual and Artistic Wonder",
+      text: "Visit the Dambulla Cave Temple, home to stunning Buddhist murals and over 150 statues of the Buddha. This ancient rock temple is a UNESCO World Heritage Site and a must-see attraction.",
+      image: "/habarana-3.jpg",
+    },
+    {
+      section: "Habarana Lake: A Serene Escape",
+      text: "Enjoy a relaxing boat ride or a nature walk around Habarana Lake, a beautiful setting teeming with birdlife and surrounded by lush greenery.",
+      image: "/habarana-4.jpg",
+    },
+    {
+      section: "Kaudulla National Park: A Wildlife Safari Adventure",
+      text: "Embark on a jeep safari at Kaudulla National Park, known for its thriving elephant population, leopards, and diverse bird species.",
+      image: "/habarana-5.jpg",
+    },
+    {
+      section: "Polonnaruwa: Explore Ancient Ruins",
+      text: "Discover the ancient city of Polonnaruwa, a well-preserved UNESCO-listed site featuring stunning temples, palaces, and statues from Sri Lanka’s medieval era.",
+      image: "/habarana-6.jpg",
+    },
+    {
+      section: "Village Safari: Experience Traditional Sri Lankan Life",
+      text: "Take a guided village tour to experience the simple lifestyle of rural Sri Lanka. Enjoy a bullock cart ride, canoeing, and a traditional home-cooked meal.",
+      image: "/habarana-7.jpg",
+    },
+    {
+      section: "Pidurangala Rock: A Hiker’s Paradise",
+      text: "For a less crowded alternative to Sigiriya, climb Pidurangala Rock and enjoy breathtaking panoramic views of the surrounding landscapes.",
+      image: "/habarana-8.jpg",
+    },
+    {
+      section: "Birdwatching in Habarana",
+      text: "Habarana is a paradise for birdwatchers, with numerous species of endemic and migratory birds thriving in its lakes, wetlands, and forests.",
+      image: "/habarana-9.jpg",
+    },
+    {
+      section: "Ayurvedic Spa Retreats: Relax and Rejuvenate",
+      text: "Indulge in a traditional Ayurvedic spa experience, offering herbal treatments and relaxing massages to refresh your mind and body.",
+      image: "/habarana-10.jpg",
+    },
+  ],
+};
+
+export const haputale = {
+  title: "Haputale: A Hidden Gem in Sri Lanka's Hill Country",
+  image_1: "/haputale.jpg",
+  image_2: "/haputale-10.jpg",
+  image_3: "/haputale-2.jpg",
+  description: `Nestled in the heart of Sri Lanka's hill country, Haputale offers a peaceful escape surrounded by rolling hills, lush tea plantations, and cool mountain air. Located in the Badulla District, Haputale is less crowded than some of the more popular hill stations, making it the perfect place for nature lovers and those seeking tranquility. The town's elevation provides stunning views of the surrounding landscapes, including the famous Diyaluma Falls and the magical Horton Plains National Park.
+
+  Haputale’s cool climate and breathtaking views are complemented by its rich tea heritage. Visitors can enjoy exploring the tea estates, visiting local tea factories, and hiking through scenic trails. Whether you're seeking a quiet retreat or an adventurous hike, Haputale is a perfect destination for nature lovers and explorers alike.`,
+
+  conclusion:
+    "Haputale offers a unique and serene experience for travelers looking to explore Sri Lanka’s hill country. With its stunning landscapes, tea plantations, and tranquil atmosphere, it’s an ideal spot for those seeking a peaceful getaway.",
+
+  things_to_do: [
+    {
+      section: "Diyaluma Falls: A Majestic Waterfall",
+      text: "Visit Diyaluma Falls, Sri Lanka’s second-highest waterfall, where you can enjoy breathtaking views, take a refreshing dip in natural pools, or hike to the top for a panoramic vista.",
+      image: "/haputale-1.jpg",
+    },
+    {
+      section: "Horton Plains National Park: A Nature Lover’s Paradise",
+      text: "Hike through Horton Plains National Park, known for its spectacular landscapes, including the famous World's End cliff. The park is home to endemic species and offers a variety of hiking trails.",
+      image: "/haputale-2.jpg",
+    },
+    {
+      section: "Lipton's Seat: A Tea Plantation Panorama",
+      text: "Head to Lipton's Seat, a viewpoint located on a tea plantation that offers stunning views of the surrounding valleys, mountains, and tea fields. It’s the perfect spot for photography and relaxation.",
+      image: "/haputale-3.jpg",
+    },
+    {
+      section: "Tea Factory Tours: Discover the Art of Tea Making",
+      text: "Explore the local tea factories around Haputale, where you can learn about Sri Lanka's world-renowned tea production process. Enjoy guided tours and sample freshly brewed tea.",
+      image: "/haputale-4.jpg",
+    },
+    {
+      section: "Ella Rock: A Scenic Hike with Panoramic Views",
+      text: "Hike up to Ella Rock for panoramic views of the surrounding valleys, tea plantations, and distant mountains. It’s a challenging but rewarding hike for nature enthusiasts.",
+      image: "/haputale-5.jpg",
+    },
+    {
+      section: "Sita Amman Temple: A Spiritual Visit",
+      text: "Visit the Sita Amman Temple, a sacred Hindu site dedicated to the goddess Sita, located in the nearby village of Seetha Eliya. The temple is surrounded by serene landscapes and historical significance.",
+      image: "/haputale-6.jpg",
+    },
+    {
+      section: "Adisham Bungalow: A Colonial Retreat",
+      text: "Explore Adisham Bungalow, a British colonial-style mansion set amidst tea plantations. The bungalow offers beautiful gardens and panoramic views, making it a peaceful spot for a stroll or a picnic.",
+      image: "/haputale-7.jpg",
+    },
+    {
+      section: "Bambarakanda Falls: The Tallest Waterfall in Sri Lanka",
+      text: "Visit Bambarakanda Falls, the tallest waterfall in Sri Lanka, located a short drive from Haputale. This stunning cascade is surrounded by lush greenery and is perfect for a nature walk.",
+      image: "/haputale-8.jpg",
+    },
+    {
+      section: "Haputale Market: A Glimpse of Local Life",
+      text: "Visit the local market in Haputale to experience the vibrant culture and shop for fresh produce, spices, and handcrafted goods. It’s a great way to experience the daily life of the hill country locals.",
+      image: "/haputale-9.jpg",
+    },
+    {
+      section: "Sri Lanka’s Hill Country Cuisine: Taste the Flavors",
+      text: "Indulge in the flavors of Sri Lanka's hill country cuisine, with fresh vegetables, spices, and traditional dishes like rice and curry, served in local restaurants with scenic views.",
+      image: "/haputale-10.jpg",
+    },
+  ],
+};
+
+export const pasikuda = {
+  title: "Pasikuda: A Tropical Beach Paradise on Sri Lanka's East Coast",
+  image_1: "/pasikuda.jpg",
+  image_2: "/pasikuda-10.jpg",
+  image_3: "/pasikuda-2.jpg",
+  description: `Pasikuda, located on the east coast of Sri Lanka, is renowned for its stunning beaches, calm azure waters, and relaxed vibe. Known for one of the longest stretches of shallow, golden sand beaches in the world, Pasikuda is the perfect destination for those looking to unwind by the sea. The crystal-clear water is ideal for swimming, snorkeling, and other water sports, while the gentle waves make it a family-friendly beach destination.
+
+  This coastal town is not only a haven for beach lovers but also offers rich cultural experiences and nearby historical sites. Whether you’re looking to relax by the beach, indulge in fresh seafood, or explore cultural landmarks, Pasikuda provides a perfect blend of serenity and adventure.`,
+
+  conclusion:
+    "Pasikuda is an idyllic beach destination, offering a mix of relaxation, water activities, and cultural exploration. Whether you want to unwind or explore the wonders of Sri Lanka’s east coast, Pasikuda promises an unforgettable experience.",
+
+  things_to_do: [
+    {
+      section: "Pasikuda Beach: Sun, Sand, and Serenity",
+      text: "Spend your days relaxing on the golden sands of Pasikuda Beach. The shallow waters are perfect for swimming, and the beach offers excellent opportunities for sunbathing and water sports.",
+      image: "/pasikuda-1.jpg",
+    },
+    {
+      section: "Snorkeling and Diving: Explore the Underwater World",
+      text: "Discover the vibrant underwater world off Pasikuda’s coast by snorkeling or diving. See colorful coral reefs, exotic fish, and marine life in the crystal-clear waters of the Indian Ocean.",
+      image: "/pasikuda-2.jpg",
+    },
+    {
+      section: "Kalkudah Beach: A Quiet and Scenic Escape",
+      text: "Visit nearby Kalkudah Beach, known for its tranquil atmosphere and pristine beauty. Enjoy a peaceful day by the sea, far from the crowds, perfect for relaxation and solitude.",
+      image: "/pasikuda-3.jpg",
+    },
+    {
+      section: "Cultural Sites: Explore Historical Temples",
+      text: "Pasikuda is close to several historical temples and sites, including the ancient Buddhist temple of Koneswaram, located in Trincomalee. Visit these spiritual places to learn about the rich cultural heritage of the area.",
+      image: "/pasikuda-4.jpg",
+    },
+    {
+      section: "Fishing and Boat Tours: Experience Local Life",
+      text: "Take a traditional fishing boat tour, where you can experience the local fishing culture and enjoy a scenic cruise along the coast. You might even have the chance to catch some fresh fish for a beachside barbecue.",
+      image: "/pasikuda-5.jpg",
+    },
+    {
+      section: "Pasikuda Lagoon: A Nature Lover's Haven",
+      text: "Visit the Pasikuda Lagoon, a peaceful spot ideal for birdwatching, boat tours, and photography. The area is home to a variety of bird species and lush mangrove forests.",
+      image: "/pasikuda-6.jpg",
+    },
+    {
+      section: "Kalmunai: A Glimpse into Local Life",
+      text: "Explore the nearby town of Kalmunai, where you can experience the daily life of Sri Lankan coastal communities, visit local markets, and sample authentic Sri Lankan street food.",
+      image: "/pasikuda-7.jpg",
+    },
+    {
+      section: "Ayurvedic Spas: Relax and Rejuvenate",
+      text: "Unwind at one of Pasikuda’s luxury resorts or Ayurvedic spas, offering traditional treatments like massages, herbal therapies, and wellness services to relax and rejuvenate your body and mind.",
+      image: "/pasikuda-8.jpg",
+    },
+    {
+      section: "Pasikuda Sunrise and Sunset: A Perfect View",
+      text: "Wake up early for a mesmerizing sunrise over the horizon and end the day with a stunning sunset over the ocean. The panoramic views from the beach are simply breathtaking.",
+      image: "/pasikuda-9.jpg",
+    },
+    {
+      section: "Seafood Delights: Savor the Fresh Catch",
+      text: "Indulge in the freshest seafood at one of the local restaurants, offering delicious dishes like grilled fish, prawn curry, and calamari, all prepared with Sri Lankan spices and flavors.",
+      image: "/pasikuda-10.jpg",
+    },
+  ],
+};
+
+export const negombo = {
+  title: "Negombo: A Coastal Gem with Rich History and Vibrant Culture",
+  image_1: "/negombo.jpg",
+  image_2: "/negombo-10.jpg",
+  image_3: "/negombo-2.jpg",
+  description: `Located just a short drive from Colombo, Negombo is a bustling coastal town known for its beautiful beaches, lively markets, and rich cultural history. The town is renowned for its fishing industry, providing a glimpse into local life while offering stunning views of the Indian Ocean. With its wide range of attractions, from serene beaches to historical sites, Negombo is a great place to start or end your journey in Sri Lanka.
+
+  Aside from its beaches, Negombo is home to a vibrant mix of Portuguese, Dutch, and British influences, reflected in its architecture, culture, and cuisine. Whether you’re looking for relaxation or adventure, Negombo offers something for everyone, including boat tours, seafood feasts, and visits to ancient churches and temples.`,
+
+  conclusion:
+    "Negombo is a charming coastal town that perfectly blends history, culture, and natural beauty. Whether you're seeking a relaxing beach escape, a cultural adventure, or a taste of local life, Negombo offers an unforgettable experience.",
+
+  things_to_do: [
+    {
+      section: "Negombo Beach: Relax by the Ocean",
+      text: "Negombo Beach is a perfect spot to unwind, soak up the sun, and enjoy the tropical surroundings. The beach is known for its long stretch of golden sand and calm waters, ideal for swimming and leisurely walks.",
+      image: "/negombo-1.jpg",
+    },
+    {
+      section: "Negombo Lagoon: A Scenic Boat Ride",
+      text: "Take a boat ride along the serene Negombo Lagoon, where you can witness the local fishing methods, birdwatching opportunities, and explore the tranquil mangrove forests.",
+      image: "/negombo-2.jpg",
+    },
+    {
+      section: "Angurukaramulla Temple: A Spiritual Journey",
+      text: "Visit the Angurukaramulla Temple, a significant Buddhist site in Negombo. Admire its impressive murals, statues, and the massive Buddha statue, while experiencing the serene atmosphere.",
+      image: "/negombo-3.jpg",
+    },
+    {
+      section: "Dutch Fort: A Glimpse into the Past",
+      text: "Explore the remains of the Dutch Fort, built by the Portuguese in the 17th century. The fort offers a historical insight into Negombo’s colonial past and is located near the heart of the town.",
+      image: "/negombo-4.jpg",
+    },
+    {
+      section: "Negombo Fish Market: A Taste of Local Life",
+      text: "Visit the lively Negombo Fish Market, where you can see fishermen selling the day’s fresh catch. It's a vibrant place to experience the local fishing culture and taste some delicious seafood.",
+      image: "/negombo-5.jpg",
+    },
+    {
+      section: "St. Mary's Church: Colonial Architecture",
+      text: "St. Mary’s Church is an architectural gem in Negombo, known for its beautiful design and religious significance. The church is famous for its intricate ceiling murals and peaceful ambiance.",
+      image: "/negombo-6.jpg",
+    },
+    {
+      section: "Muthurajawela Marsh: Nature and Birdwatching",
+      text: "Explore the Muthurajawela Marsh, a vast wetland area that offers fantastic birdwatching opportunities and a chance to see unique wildlife in their natural habitat.",
+      image: "/negombo-7.jpg",
+    },
+    {
+      section: "Boat Tours: Discover the Local Life",
+      text: "Take a traditional boat tour through the canals of Negombo, offering an intimate view of the town’s waterways, local villages, and scenic landscapes.",
+      image: "/negombo-8.jpg",
+    },
+    {
+      section: "Buddhist Temples: A Spiritual Experience",
+      text: "Negombo is home to several Buddhist temples that offer spiritual insights and beautiful surroundings. Take time to explore and appreciate the peaceful atmosphere and stunning architecture.",
+      image: "/negombo-9.jpg",
+    },
+    {
+      section: "Seafood Feast: Savor the Fresh Catch",
+      text: "Negombo is famous for its seafood, offering delicious dishes like crab curry, prawn and fish delicacies, all prepared using fresh, local ingredients. Enjoy a seafood feast by the beach or at a local restaurant.",
+      image: "/negombo-10.jpg",
+    },
+  ],
+};
+
+export const polonnaruwa = {
+  title: "Polonnaruwa: A Journey Through Sri Lanka’s Ancient Capital",
+  image_1: "/polonnaruwa.jpg",
+  image_2: "/polonnaruwa-10.jpg",
+  image_3: "/polonnaruwa-2.jpg",
+  description: `Polonnaruwa, once the ancient capital of Sri Lanka, is a UNESCO World Heritage site filled with historical ruins, Buddhist temples, and stunning archaeological landmarks. Located in the North Central Province, Polonnaruwa offers a glimpse into Sri Lanka's rich cultural heritage, dating back to the 11th century. Visitors can explore the remnants of royal palaces, statues of Buddha, and ancient reservoirs that showcase the architectural brilliance of the Chola and Sinhalese kingdoms.
+
+  The archaeological park in Polonnaruwa is a treasure trove of history, where visitors can see well-preserved ruins, intricate carvings, and beautiful lotus ponds. Whether you’re a history enthusiast, a photographer, or just seeking a quiet, peaceful experience, Polonnaruwa’s ancient charm promises an unforgettable journey back in time.`,
+
+  conclusion:
+    "Polonnaruwa is an ancient city that offers a unique window into Sri Lanka’s rich history and culture. With its remarkable ruins, temples, and serene surroundings, Polonnaruwa is a must-visit destination for history lovers and cultural explorers.",
+
+  things_to_do: [
+    {
+      section: "The Royal Palace: A Glimpse of Royal Life",
+      text: "Explore the remains of the Royal Palace, once home to the kings of Polonnaruwa. The complex includes impressive stone structures and views of the surrounding gardens and lakes.",
+      image: "/polonnaruwa-1.jpg",
+    },
+    {
+      section: "Gal Vihara: The Rock Temple of Polonnaruwa",
+      text: "Visit Gal Vihara, a remarkable rock temple known for its stunning Buddha statues carved directly into the rock. The serene atmosphere and artistic grandeur make it a must-see site.",
+      image: "/polonnaruwa-2.jpg",
+    },
+    {
+      section: "Parakrama Samudra: A Massive Reservoir",
+      text: "Admire the grandeur of Parakrama Samudra, an ancient reservoir built by King Parakramabahu I. The vast waterbody reflects the ingenuity of ancient Sri Lankan engineering.",
+      image: "/polonnaruwa-3.jpg",
+    },
+    {
+      section: "The Quadrangle: A Historical Complex",
+      text: "The Quadrangle in Polonnaruwa houses some of the most well-preserved ruins of the city. Visit the ancient temples and structures that were once the heart of religious and royal life.",
+      image: "/polonnaruwa-4.jpg",
+    },
+    {
+      section: "Lankatilaka Temple: Ancient Architecture",
+      text: "Visit Lankatilaka Temple, known for its massive structure and impressive murals. The temple was once one of the most important religious sites in Polonnaruwa.",
+      image: "/polonnaruwa-5.jpg",
+    },
+    {
+      section: "Kiri Vihara: A Sacred Buddhist Stupa",
+      text: "Explore the Kiri Vihara stupa, one of the most sacred religious sites in Polonnaruwa. Its beautiful white dome and tranquil surroundings make it a peaceful spot for reflection.",
+      image: "/polonnaruwa-6.jpg",
+    },
+    {
+      section: "The Archaeological Museum: Uncover Ancient Artifacts",
+      text: "Visit the Archaeological Museum of Polonnaruwa to see a collection of ancient artifacts, sculptures, and relics that offer insight into the rich history of this ancient city.",
+      image: "/polonnaruwa-7.jpg",
+    },
+    {
+      section: "The Lotus Pond: A Beautiful Reflection",
+      text: "Relax at the Lotus Pond, a tranquil spot known for its beautiful stone carvings of lotus flowers. The pond is a serene and picturesque place to take a break and enjoy the peaceful surroundings.",
+      image: "/polonnaruwa-8.jpg",
+    },
+    {
+      section: "Safari at Minneriya National Park: See the Elephants",
+      text: "Take a safari at nearby Minneriya National Park, famous for its large herds of elephants. It’s a great opportunity to spot wildlife and experience Sri Lanka’s natural beauty.",
+      image: "/polonnaruwa-9.jpg",
+    },
+    {
+      section: "Polonnaruwa Market: Local Culture and Crafts",
+      text: "Explore the local markets of Polonnaruwa, where you can shop for handmade crafts, fresh produce, and traditional Sri Lankan goods. It’s a perfect spot to experience the local culture and buy souvenirs.",
+      image: "/polonnaruwa-10.jpg",
+    },
+  ],
+};
+
+export const riverston = {
+  title: "Riverston: A Hidden Gem in Sri Lanka’s Mountainous Heart",
+  image_1: "/riverston.jpg",
+  image_2: "/riverston-10.jpg",
+  image_3: "/riverston-2.jpg",
+  description: `Nestled in the central highlands of Sri Lanka, Riverston is a tranquil haven known for its breathtaking landscapes, misty mountains, and serene surroundings. Often referred to as the "Little Scotland of Sri Lanka," Riverston offers spectacular views, diverse flora and fauna, and a peaceful atmosphere perfect for nature lovers and adventure enthusiasts. The region is part of the Knuckles Mountain Range and is home to cascading waterfalls, lush forests, and vibrant wildlife.
+
+  Riverston is an ideal spot for hiking, trekking, and birdwatching. The area’s untouched beauty makes it a hidden gem for those seeking an off-the-beaten-path escape. Whether you're exploring nature trails, taking in panoramic views, or relaxing by the waterfalls, Riverston offers an unforgettable natural experience.`,
+
+  conclusion:
+    "Riverston is a pristine escape into nature, offering stunning landscapes, hiking opportunities, and a peaceful environment. Whether you’re looking to reconnect with nature or embark on an adventurous trek, Riverston is an unmissable destination for nature lovers.",
+
+  things_to_do: [
+    {
+      section: "Riverston Peak: A Hiker's Paradise",
+      text: "Hike to the top of Riverston Peak for panoramic views of the surrounding mountains, valleys, and forests. The trail offers a rewarding experience with stunning vistas along the way.",
+      image: "/riverston-1.jpg",
+    },
+    {
+      section: "Waterfalls of Riverston: Nature's Beauty",
+      text: "Explore the enchanting waterfalls in Riverston, including the famous “Riverston Falls.” These scenic falls offer great spots for photography, picnicking, or simply relaxing in nature.",
+      image: "/riverston-2.jpg",
+    },
+    {
+      section: "Knuckles Mountain Range: Trekking Adventures",
+      text: "Embark on an unforgettable trek through the Knuckles Mountain Range, known for its diverse ecosystems, rich biodiversity, and dramatic landscapes. Riverston serves as the perfect gateway to explore this UNESCO World Heritage site.",
+      image: "/riverston-3.jpg",
+    },
+    {
+      section: "Birdwatching in Riverston: A Paradise for Ornithologists",
+      text: "Riverston is a birdwatcher’s paradise, with over 200 species of birds to spot. The misty forests and mountains provide a habitat for many endemic bird species, making it an ideal destination for birdwatching.",
+      image: "/riverston-4.jpg",
+    },
+    {
+      section: "Nature Trails: Immerse Yourself in Wilderness",
+      text: "Take a leisurely walk or hike through the lush green nature trails of Riverston. The peaceful ambiance, vibrant flora, and fresh mountain air make it a perfect place for nature enthusiasts.",
+      image: "/riverston-5.jpg",
+    },
+    {
+      section: "Haththikuchchi Cave: A Historical Site",
+      text: "Visit Haththikuchchi Cave, a historical Buddhist site near Riverston. The cave has ancient inscriptions and provides a peaceful spot for reflection amidst the serene surroundings.",
+      image: "/riverston-6.jpg",
+    },
+    {
+      section: "Camping in Riverston: A Night Under the Stars",
+      text: "For adventure seekers, camping in Riverston offers a memorable experience. Spend the night surrounded by nature, under a starlit sky, with the sounds of the forest as your lullaby.",
+      image: "/riverston-7.jpg",
+    },
+    {
+      section: "Misty Views: Sunrise and Sunset at Riverston",
+      text: "Wake up early to catch the sunrise over the mist-covered mountains, or enjoy a breathtaking sunset as the sky is painted in hues of orange and pink. Riverston offers some of the most picturesque moments in Sri Lanka.",
+      image: "/riverston-8.jpg",
+    },
+    {
+      section: "Local Villages: Experience Rural Sri Lanka",
+      text: "Explore the nearby villages of Riverston, where you can experience rural Sri Lankan life. Meet the locals, learn about traditional farming practices, and enjoy authentic Sri Lankan hospitality.",
+      image: "/riverston-9.jpg",
+    },
+    {
+      section: "Relax and Unwind: Peaceful Escape",
+      text: "Riverston’s tranquil atmosphere makes it the perfect place to relax and unwind. Whether you prefer reading a book by the waterfall or simply soaking in the natural beauty, it’s a haven of peace and serenity.",
+      image: "/riverston-10.jpg",
+    },
+  ],
+};
+
+export const hortonPlains = {
+  title: "Horton Plains: A High-altitude Wilderness of Natural Beauty",
+  image_1: "/horton-plains.jpg",
+  image_2: "/horton-plains-10.jpg",
+  image_3: "/horton-plains-2.jpg",
+  description: `Horton Plains National Park, located in the central highlands of Sri Lanka, is a UNESCO World Heritage site renowned for its breathtaking landscapes, diverse wildlife, and unique ecosystems. With its rolling grasslands, cloud forests, and dramatic cliffs, Horton Plains offers a perfect blend of natural beauty and adventure. The park is famous for its two main attractions: World’s End and Baker’s Falls, which offer stunning vistas and a glimpse into the unspoiled beauty of Sri Lanka’s highlands.
+
+  The park is a haven for nature enthusiasts, birdwatchers, and trekkers. Its cool climate and rich biodiversity make it a perfect destination for exploring the island’s unique flora and fauna. Whether you're trekking to World’s End, admiring the waterfalls, or simply enjoying the peace of the wilderness, Horton Plains provides an unforgettable experience.`,
+
+  conclusion:
+    "Horton Plains is a must-visit destination for nature lovers, offering striking landscapes, remarkable wildlife, and hiking opportunities. The park’s natural beauty, tranquility, and dramatic views make it one of Sri Lanka’s most iconic natural sites.",
+
+  things_to_do: [
+    {
+      section: "World’s End: A Majestic Drop",
+      text: "Hike to World’s End, a sheer cliff with a drop of over 1,000 meters, offering one of the most stunning views in Sri Lanka. The view of the plains stretching out below is breathtaking, especially in the early morning mist.",
+      image: "/horton-plains-1.jpg",
+    },
+    {
+      section: "Baker’s Falls: A Serene Cascade",
+      text: "Visit Baker’s Falls, a picturesque waterfall nestled amidst the cloud forest of Horton Plains. The falls are surrounded by lush greenery, providing a tranquil setting for nature lovers and photographers.",
+      image: "/horton-plains-2.jpg",
+    },
+    {
+      section: "Nature Trails: Explore the Wilderness",
+      text: "Explore the various nature trails within Horton Plains, offering opportunities to witness the park's unique ecosystems, including grasslands, cloud forests, and diverse plant life. The trails are perfect for trekking and birdwatching.",
+      image: "/horton-plains-3.jpg",
+    },
+    {
+      section: "Wildlife Watching: Discover the Fauna",
+      text: "Horton Plains is home to a variety of wildlife, including sambar deer, purple-faced langurs, and a wide range of bird species. Keep an eye out for the endemic species that thrive in this high-altitude environment.",
+      image: "/horton-plains-4.jpg",
+    },
+    {
+      section: "Birdwatching: A Paradise for Ornithologists",
+      text: "Horton Plains is a haven for birdwatchers, with over 200 species of birds, including endemics like the Sri Lanka bush warbler and the Sri Lanka wood pigeon. The diverse habitats within the park make it ideal for spotting rare and unique species.",
+      image: "/horton-plains-5.jpg",
+    },
+    {
+      section: "The Mini World’s End: A Smaller, Yet Stunning View",
+      text: "For a shorter trek, visit the Mini World’s End, another cliff offering a beautiful view of the surrounding plains and forests. It’s less crowded than the main World’s End, offering a more peaceful experience.",
+      image: "/horton-plains-6.jpg",
+    },
+    {
+      section: "Lover’s Leap Waterfall: A Hidden Gem",
+      text: "Take a short detour to visit Lover’s Leap Waterfall, a hidden gem within the park. It’s a peaceful and picturesque waterfall, perfect for a quiet moment amidst the natural beauty of Horton Plains.",
+      image: "/horton-plains-7.jpg",
+    },
+    {
+      section: "Trekking: Challenging Yet Rewarding",
+      text: "Horton Plains offers various trekking routes, from easy walks to more challenging hikes. The trails provide an opportunity to explore the park’s diverse landscapes and ecosystems, making it an ideal destination for trekkers.",
+      image: "/horton-plains-8.jpg",
+    },
+    {
+      section: "Camping: Experience the Wilderness",
+      text: "For those seeking a deeper connection with nature, camping in Horton Plains offers a chance to spend the night surrounded by the park’s cool climate and serene atmosphere. Enjoy the sounds of the forest as you sleep under the stars.",
+      image: "/horton-plains-9.jpg",
+    },
+    {
+      section: "Photography: Capture the Beauty",
+      text: "With its dramatic landscapes, diverse wildlife, and stunning viewpoints, Horton Plains is a photographer’s paradise. Don’t forget your camera as you capture the breathtaking beauty of this unique national park.",
+      image: "/horton-plains-10.jpg",
+    },
+  ],
+};
