@@ -162,7 +162,7 @@ export const package1 = {
       duration: "3 hours",
       things_to_do: [
         {
-          name: "Nuwara Eliya Gem Museum",
+          name: "Gem Museum",
           image: "/gem.jpg",
         },
         {
@@ -806,11 +806,17 @@ export const package4 = {
 export const package5 = {
   price_with_hotel: 2200,
   waypoints: [
-    [79.88452, 7.17929], // Example waypoint 1
-    [80.649991, 7.292631], // Example waypoint 2
-    [80.746205, 7.942106], // Example waypoint 3
-    [80.635036, 7.293121], // Example waypoint 3
-    [79.88452, 7.17929], // Example waypoint 3
+    [79.88452, 7.17929],
+    [79.854113, 6.938747],
+    [80.991192, 7.93454],
+    [80.746205, 7.942106],
+    [80.635036, 7.293121],
+    [80.788197, 6.960166],
+    [81.048993, 6.873606],
+    [81.268922, 6.599943],
+    [80.455813, 5.949363],
+    [79.997854, 6.421528],
+    [79.88452, 7.17929],
   ],
   image_1: "/kandy-2.jpg",
   image_2: "/colombo-2.jpg",
@@ -907,7 +913,7 @@ export const package5 = {
         },
         {
           name: "Parakrama Samudra",
-          image: "/sigiriya-1.jpg",
+          image: "/polonnaruwa-3.jpg",
         },
       ],
     },
@@ -935,365 +941,11 @@ export const package5 = {
       things_to_do: [
         {
           name: "Sigiriya Rock",
-          image: "/sigiriya-8.jpg",
-        },
-        {
-          name: "Sigiriya Safari",
-          image: "/kandy-5.jpg",
-        },
-      ],
-    },
-    5: {
-      start: "Sigiya",
-      end: "Kandy",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Damubulla Cave Temple",
-          image: "/sigiriya-8.jpg",
-        },
-        {
-          name: "Spice Garden",
-          image: "/kandy-5.jpg",
-        },
-        {
-          name: "Tooth Relic Temple",
-          image: "/kandy-1.jpg",
-        },
-        {
-          name: "Gem Museum",
-          image: "/kandy-1.jpg",
-        },
-        {
-          name: "Wood Carving Center",
-          image: "/kandy-1.jpg",
-        },
-        {
-          name: "Kandy Traditional Dance",
-          image: "/kandy-1.jpg",
-        },
-      ],
-    },
-    6: {
-      start: "Kandy",
-      end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Kandy View Point",
-          image: "/gem.jpg",
-        },
-        {
-          name: "Wood Carving Center",
-          image: "/galle-6.jpg",
-        },
-        {
-          name: "Peradeniya Botanical Garden",
-          image: "/nuwaraeliya-4.jpg",
-        },
-        {
-          name: "Tea Factory",
-          image: "/kandy-6.jpg",
-        },
-        {
-          name: "Ramboda Waterfall",
-          image: "/kandy-6.jpg",
-        },
-        {
-          name: "Hanuman Temple",
-          image: "/kandy-6.jpg",
-        },
-      ],
-    },
-    7: {
-      start: "Nuwara Eliya",
-      end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Rama seetha temple",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Haggala Garden",
-          image: "/ella-4.jpg",
-        },
-        {
-          name: "Gregory Lake Boat Ride",
-          image: "/ella-4.jpg",
-        },
-      ],
-    },
-    8: {
-      start: "Nuwara Eliya",
-      end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Pink Post Office",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Ambevela Farm",
-          image: "/ella-4.jpg",
-        },
-      ],
-    },
-    9: {
-      start: "Nuwara Eliya",
-      end: "Ella (by train)",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Nine arches bridge",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Rawana Waterfall",
-          image: "/ella-4.jpg",
-        },
-      ],
-    },
-    10: {
-      start: "Ella",
-      end: "Yala",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Little Adam's Peak",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Katagarama Temple",
-          image: "/ella-4.jpg",
-        },
-      ],
-    },
-    11: {
-      start: "Yala",
-      end: "Yala",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Yala Safari",
-          image: "/kandy-2.jpg",
-        },
-      ],
-    },
-    12: {
-      start: "Yala",
-      end: "Mirissa",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Whale watching",
-          image: "/kandy-2.jpg",
-        },
-      ],
-    },
-    13: {
-      start: "Mirissa",
-      end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Waligama Still Fishermen",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Galle Fort",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Hikkaduwa Glass Bottom Boat Ride",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Turtle Conservation Center",
-          image: "/kandy-2.jpg",
-        },
-      ],
-    },
-    14: {
-      start: "Bentota",
-      end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Water Sports",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Mongrove Boat Ride",
-          image: "/kandy-2.jpg",
-        },
-        {
-          name: "Fish Therapy",
-          image: "/kandy-2.jpg",
-        },
-      ],
-    },
-    15: {
-      start: "Bentota",
-      end: "BIA",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [],
-    },
-  },
-  short_description:
-    "Discover Sri Lanka’s best destinations on this all-encompassing route, covering history, nature, wildlife, and stunning beaches from Colombo to Bentota.",
-  description:
-    "Embark on an unforgettable journey through Sri Lanka, from the bustling capital to ancient cities, misty highlands, and breathtaking coastal escapes. Explore cultural landmarks in Polonnaruwa and Sigiriya, experience the charm of Kandy and Nuwara Eliya, and enjoy the scenic beauty of Ella. Encounter wildlife in Yala before unwinding on the golden beaches of Mirissa and Bentota.",
-};
-
-export const package6 = {
-  price_with_hotel: 900,
-  waypoints: [
-    [79.88452, 7.17929], // Example waypoint 1
-    [80.649991, 7.292631], // Example waypoint 2
-    [80.746205, 7.942106], // Example waypoint 3
-    [80.635036, 7.293121], // Example waypoint 3
-    [79.88452, 7.17929], // Example waypoint 3
-  ],
-  image_1: "/kandy-2.jpg",
-  image_2: "/colombo-2.jpg",
-  image_3: "/sigiriya-6.jpg",
-  price: 270,
-  number_of_days: 14,
-  short_title: "Sri Lanka’s Scenic & Cultural Odyssey",
-  title: "Ultimate Sri Lanka Adventure: From Heritage to Coast",
-  route: {
-    1: "BIA",
-    2: "Colombo",
-    3: "Polonnaruwa",
-    4: "Sigiriya",
-    5: "Kandy",
-    6: "Nuwara Eliya",
-    7: "Ella",
-    8: "Yala",
-    9: "Mirissa",
-    10: "Bentota",
-  },
-  itenary: [
-    {
-      1: {
-        title: "Colombo",
-        duration: "1 Night",
-        things_to_do: ["City tour", "Galle Face Green", "Lotus Tower"],
-      },
-      2: {
-        title: "Sigiriya",
-        duration: "2 Nights",
-        things_to_do: [
-          "Pinnawala Elephant Orphanage",
-          "Sigiriya Rock",
-          "Pollonawa Ruins",
-          "Habarna Safari",
-          "Sigiriya Safari",
-          "Elephant Back Safari",
-          "Dambulla Cave Temple",
-          "Spice Garden",
-        ],
-      },
-      3: {
-        title: "Kandy",
-        duration: "2 Nights",
-        things_to_do: [
-          "Tooth Relic Temple",
-          "Kandy View Point",
-          "Peradeniya Botanical Garden",
-          "Gem Museum",
-          "Wood Carving Center",
-          "Traditional Kandy Dance",
-          "Tea Factory",
-        ],
-      },
-    },
-  ],
-  whats_included: ["Sim card", "Bottled Water"],
-  tickets_included: [
-    "Spice Garden",
-    "Tea Factory",
-    "Gem Museum",
-    "Wood Carving Center",
-  ],
-  day_break_down: {
-    1: {
-      start: "BIA",
-      end: "Colombo",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "City Tour",
-          image: "/colombo-5.jpg",
-        },
-        {
-          name: "Lotus Tower",
-          image: "/lotus-tower.jpg",
-        },
-      ],
-    },
-    2: {
-      start: "Colombo",
-      end: "Pollonaruwa",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Pinnawala Elephant Orphanage",
-          image: "/pinnawala.jpg",
-        },
-        {
-          name: "Ancient Pollonaruwa Ruins",
-          image: "/pollonaruwa.jpg",
-        },
-        {
-          name: "Parakrama Samudra",
           image: "/sigiriya-1.jpg",
         },
-      ],
-    },
-    3: {
-      start: "Pollonaruwa",
-      end: "Sigiya",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Habarna Safari",
-          image: "/habarana.jpg",
-        },
-        {
-          name: "Elephant Back Safari",
-          image: "/elephant.jpg",
-        },
-      ],
-    },
-    4: {
-      start: "Sigiya",
-      end: "Sigiya",
-      distance: "115km",
-      duration: "3 hours",
-      things_to_do: [
-        {
-          name: "Sigiriya Rock",
-          image: "/sigiriya-8.jpg",
-        },
         {
           name: "Sigiriya Safari",
-          image: "/kandy-5.jpg",
+          image: "/sigiriya-7.jpg",
         },
       ],
     },
@@ -1317,15 +969,15 @@ export const package6 = {
         },
         {
           name: "Gem Museum",
-          image: "/kandy-1.jpg",
+          image: "/gem.jpg",
         },
         {
           name: "Wood Carving Center",
-          image: "/kandy-1.jpg",
+          image: "/galle-6.jpg",
         },
         {
           name: "Kandy Traditional Dance",
-          image: "/kandy-1.jpg",
+          image: "/kandy-6.jpg",
         },
       ],
     },
@@ -1337,7 +989,7 @@ export const package6 = {
       things_to_do: [
         {
           name: "Kandy View Point",
-          image: "/gem.jpg",
+          image: "/kandy-4.jpg",
         },
         {
           name: "Wood Carving Center",
@@ -1349,15 +1001,15 @@ export const package6 = {
         },
         {
           name: "Tea Factory",
-          image: "/kandy-6.jpg",
+          image: "/nuwaraeliya-3.jpg",
         },
         {
           name: "Ramboda Waterfall",
-          image: "/kandy-6.jpg",
+          image: "/ramboda.png",
         },
         {
           name: "Hanuman Temple",
-          image: "/kandy-6.jpg",
+          image: "/hanuman.jpg",
         },
       ],
     },
@@ -1369,15 +1021,15 @@ export const package6 = {
       things_to_do: [
         {
           name: "Rama seetha temple",
-          image: "/kandy-2.jpg",
+          image: "/rama.jpg",
         },
         {
           name: "Haggala Garden",
-          image: "/ella-4.jpg",
+          image: "/haggala.jpg",
         },
         {
           name: "Gregory Lake Boat Ride",
-          image: "/ella-4.jpg",
+          image: "/nuwaraeliya-1.jpg",
         },
       ],
     },
@@ -1389,11 +1041,11 @@ export const package6 = {
       things_to_do: [
         {
           name: "Pink Post Office",
-          image: "/kandy-2.jpg",
+          image: "/pink.jpg",
         },
         {
-          name: "Ambevela Farm",
-          image: "/ella-4.jpg",
+          name: "Ambewela Farm",
+          image: "/nuwaraeliya-5.jpg",
         },
       ],
     },
@@ -1405,11 +1057,11 @@ export const package6 = {
       things_to_do: [
         {
           name: "Nine arches bridge",
-          image: "/kandy-2.jpg",
+          image: "/ella-1.jpg",
         },
         {
           name: "Rawana Waterfall",
-          image: "/ella-4.jpg",
+          image: "/rawana.jpg",
         },
       ],
     },
@@ -1421,11 +1073,11 @@ export const package6 = {
       things_to_do: [
         {
           name: "Little Adam's Peak",
-          image: "/kandy-2.jpg",
+          image: "/ella-3.jpg",
         },
         {
           name: "Katagarama Temple",
-          image: "/ella-4.jpg",
+          image: "/katharagama-1.jpg",
         },
       ],
     },
@@ -1437,7 +1089,7 @@ export const package6 = {
       things_to_do: [
         {
           name: "Yala Safari",
-          image: "/kandy-2.jpg",
+          image: "/yala.jpg",
         },
       ],
     },
@@ -1449,7 +1101,7 @@ export const package6 = {
       things_to_do: [
         {
           name: "Whale watching",
-          image: "/kandy-2.jpg",
+          image: "/whale.jpg",
         },
       ],
     },
@@ -1461,19 +1113,19 @@ export const package6 = {
       things_to_do: [
         {
           name: "Waligama Still Fishermen",
-          image: "/kandy-2.jpg",
+          image: "/fisher.jpg",
         },
         {
           name: "Galle Fort",
-          image: "/kandy-2.jpg",
+          image: "/galle-1.jpg",
         },
         {
           name: "Hikkaduwa Glass Bottom Boat Ride",
-          image: "/kandy-2.jpg",
+          image: "/glass.jpg",
         },
         {
           name: "Turtle Conservation Center",
-          image: "/kandy-2.jpg",
+          image: "/turtle.jpg",
         },
       ],
     },
@@ -1485,15 +1137,15 @@ export const package6 = {
       things_to_do: [
         {
           name: "Water Sports",
-          image: "/kandy-2.jpg",
+          image: "/water-sport.jpg",
         },
         {
-          name: "Mongrove Boat Ride",
-          image: "/kandy-2.jpg",
+          name: "Mangrove Boat Ride",
+          image: "/hikkaduwa-3.jpg",
         },
         {
           name: "Fish Therapy",
-          image: "/kandy-2.jpg",
+          image: "/fish.jpg",
         },
       ],
     },
@@ -2100,9 +1752,9 @@ export const sigiriya = {
 
 export const mirissa = {
   title: "Mirissa: A Tropical Paradise for Beach Lovers",
-  image_1: "/mirissa.jpg",
+  image_1: "/mirissa-3.jpg",
   image_2: "/mirissa-10.jpg",
-  image_3: "/mirissa-2.jpg",
+  image_3: "/mirissa-4.jpg",
   description: `Mirissa is one of Sri Lanka’s most famous beach destinations, known for its golden sands, turquoise waters, and vibrant nightlife. This coastal town is a haven for surfers, whale watchers, and travelers seeking a laid-back tropical escape.
 
   Whether you want to relax under a palm tree, embark on a whale-watching adventure, or enjoy fresh seafood at a beachfront café, Mirissa has it all. The town’s relaxed vibe and stunning sunsets make it a must-visit destination.`,
@@ -2166,9 +1818,9 @@ export const mirissa = {
 
 export const yala = {
   title: "Yala: Sri Lanka’s Ultimate Safari Destination",
-  image_1: "/yala.jpg",
+  image_1: "/yala-2.jpg",
   image_2: "/yala-10.jpg",
-  image_3: "/yala-2.jpg",
+  image_3: "/yala-6.jpg",
   description: `Yala National Park is Sri Lanka’s most famous wildlife sanctuary, offering visitors an unparalleled safari experience. Home to the elusive Sri Lankan leopard, elephants, crocodiles, and a rich variety of birdlife, Yala is a paradise for nature lovers.
 
   The park’s diverse landscapes, ranging from dense jungles to coastal lagoons, create a unique ecosystem that supports a wide array of wildlife. A safari here is a must for any traveler seeking adventure and close encounters with nature.`,
@@ -2232,7 +1884,7 @@ export const yala = {
 
 export const bentota = {
   title: "Bentota: A Serene Coastal Escape",
-  image_1: "/bentota.jpg",
+  image_1: "/bentota-7.jpg",
   image_2: "/bentota-10.jpg",
   image_3: "/bentota-2.jpg",
   description: `Bentota, a charming coastal town in Sri Lanka, is renowned for its pristine beaches, crystal-clear waters, and vibrant marine life. This tropical paradise is a perfect blend of relaxation and adventure, making it an ideal getaway for beach lovers and water sports enthusiasts. From sunbathing on golden sands to thrilling jet-skiing experiences, Bentota offers something for everyone.
@@ -2298,15 +1950,15 @@ export const bentota = {
 
 export const katharagama = {
   title: "Katharagama: A Sacred Pilgrimage Destination",
-  image_1: "/katharagama.jpg",
+  image_1: "/katharagama-2.jpeg",
   image_2: "/katharagama-10.jpg",
-  image_3: "/katharagama-2.jpg",
+  image_3: "/katharagama-4.jpg",
   description: `Katharagama, a revered pilgrimage town in Sri Lanka, is a place of deep spiritual significance for Buddhists, Hindus, Muslims, and indigenous Vedda communities. Nestled in the southeastern part of the island, this sacred town is best known for the Katharagama Devalaya, dedicated to the deity Skanda (Murugan). Devotees from all over the country visit Katharagama to seek blessings, perform rituals, and partake in the vibrant annual festival.
 
-  Beyond its religious importance, Katharagama is surrounded by natural beauty, with lush forests, serene rivers, and abundant wildlife. The town serves as a gateway to Yala National Park, making it an ideal destination for both spiritual seekers and nature lovers.`,  
+  Beyond its religious importance, Katharagama is surrounded by natural beauty, with lush forests, serene rivers, and abundant wildlife. The town serves as a gateway to Yala National Park, making it an ideal destination for both spiritual seekers and nature lovers.`,
 
   conclusion:
-    "Katharagama is a unique blend of spirituality, tradition, and natural beauty. Whether you’re a pilgrim, a history enthusiast, or an adventurer, this sacred town offers a profound and unforgettable experience.",  
+    "Katharagama is a unique blend of spirituality, tradition, and natural beauty. Whether you’re a pilgrim, a history enthusiast, or an adventurer, this sacred town offers a profound and unforgettable experience.",
 
   things_to_do: [
     {
@@ -2317,7 +1969,7 @@ export const katharagama = {
     {
       section: "Kirivehera: A Historic Buddhist Stupa",
       text: "Kirivehera is an ancient Buddhist stupa believed to have been built by King Mahasena in the 3rd century BCE. It is a revered site where Buddhist monks and devotees engage in meditation and prayer.",
-      image: "/katharagama-2.jpg",
+      image: "/katharagama-2.jpeg",
     },
     {
       section: "Sella Katharagama: A Tranquil Pilgrimage Site",
@@ -2364,8 +2016,8 @@ export const katharagama = {
 
 export const pinnawala = {
   title: "Pinnawala: The Land of Gentle Giants",
-  image_1: "/pinnawala.jpg",
-  image_2: "/pinnawala-10.jpg",
+  image_1: "/pinnawala-1.jpg",
+  image_2: "/pinnawala-8.jpg",
   image_3: "/pinnawala-2.jpg",
   description: `Pinnawala, a charming village in Sri Lanka, is world-famous for its elephant orphanage, where rescued and orphaned elephants are cared for. Located near Kegalle, this unique destination allows visitors to witness elephants up close, observe their daily routines, and even participate in feeding sessions. The sight of these majestic creatures bathing in the Maha Oya River is truly unforgettable.
 
@@ -2430,9 +2082,9 @@ export const pinnawala = {
 
 export const udawalawa = {
   title: "Udawalawa: Sri Lanka’s Premier Wildlife Haven",
-  image_1: "/udawalawa.jpg",
-  image_2: "/udawalawa-10.jpg",
-  image_3: "/udawalawa-2.jpg",
+  image_1: "/udawalawa-4.jpg",
+  image_2: "/udawalawa-3.jpg",
+  image_3: "/udawalawa-9.jpg",
   description: `Udawalawa, home to the famous Udawalawe National Park, is a paradise for wildlife enthusiasts and nature lovers. Located in southern Sri Lanka, this vast sanctuary is best known for its large population of wild elephants, making it one of the best places in Asia to see these majestic creatures in their natural habitat. The park’s open grasslands, dense forests, and scenic reservoirs provide a stunning backdrop for an unforgettable safari experience.
 
   Beyond elephants, Udawalawa boasts a rich variety of wildlife, including leopards, crocodiles, sloth bears, and hundreds of bird species. Whether you’re on a jeep safari, exploring the Elephant Transit Home, or admiring the breathtaking landscapes, Udawalawa offers a true escape into nature.`,
@@ -2496,7 +2148,7 @@ export const udawalawa = {
 
 export const habarana = {
   title: "Habarana: The Gateway to Sri Lanka’s Cultural Triangle",
-  image_1: "/habarana.jpg",
+  image_1: "/habarana-1.jpeg",
   image_2: "/habarana-10.jpg",
   image_3: "/habarana-2.jpg",
   description: `Habarana, a peaceful town in Sri Lanka, serves as the perfect base for exploring the country’s Cultural Triangle. Surrounded by lush forests, scenic lakes, and historic sites, Habarana is a haven for nature lovers, adventure seekers, and history enthusiasts. The town’s central location makes it an ideal starting point for visiting UNESCO-listed sites like Sigiriya, Dambulla, and Polonnaruwa.
@@ -2510,7 +2162,7 @@ export const habarana = {
     {
       section: "Sigiriya Rock Fortress: A UNESCO World Heritage Site",
       text: "Climb the iconic Sigiriya Rock Fortress and marvel at its ancient frescoes, breathtaking views, and fascinating ruins. This 5th-century marvel is one of Sri Lanka’s most famous landmarks.",
-      image: "/habarana-1.jpg",
+      image: "/habarana-1.jpeg",
     },
     {
       section: "Minneriya National Park: Witness the Elephant Gathering",
@@ -2520,7 +2172,7 @@ export const habarana = {
     {
       section: "Dambulla Cave Temple: A Spiritual and Artistic Wonder",
       text: "Visit the Dambulla Cave Temple, home to stunning Buddhist murals and over 150 statues of the Buddha. This ancient rock temple is a UNESCO World Heritage Site and a must-see attraction.",
-      image: "/habarana-3.jpg",
+      image: "/habarana-3.jpeg",
     },
     {
       section: "Habarana Lake: A Serene Escape",
@@ -2562,7 +2214,7 @@ export const habarana = {
 
 export const haputale = {
   title: "Haputale: A Hidden Gem in Sri Lanka's Hill Country",
-  image_1: "/haputale.jpg",
+  image_1: "/haputale-5.jpg",
   image_2: "/haputale-10.jpg",
   image_3: "/haputale-2.jpg",
   description: `Nestled in the heart of Sri Lanka's hill country, Haputale offers a peaceful escape surrounded by rolling hills, lush tea plantations, and cool mountain air. Located in the Badulla District, Haputale is less crowded than some of the more popular hill stations, making it the perfect place for nature lovers and those seeking tranquility. The town's elevation provides stunning views of the surrounding landscapes, including the famous Diyaluma Falls and the magical Horton Plains National Park.
@@ -2628,8 +2280,8 @@ export const haputale = {
 
 export const pasikuda = {
   title: "Pasikuda: A Tropical Beach Paradise on Sri Lanka's East Coast",
-  image_1: "/pasikuda.jpg",
-  image_2: "/pasikuda-10.jpg",
+  image_1: "/pasikuda-3.jpg",
+  image_2: "/pasikuda-8.jpg",
   image_3: "/pasikuda-2.jpg",
   description: `Pasikuda, located on the east coast of Sri Lanka, is renowned for its stunning beaches, calm azure waters, and relaxed vibe. Known for one of the longest stretches of shallow, golden sand beaches in the world, Pasikuda is the perfect destination for those looking to unwind by the sea. The crystal-clear water is ideal for swimming, snorkeling, and other water sports, while the gentle waves make it a family-friendly beach destination.
 
@@ -2694,8 +2346,8 @@ export const pasikuda = {
 
 export const negombo = {
   title: "Negombo: A Coastal Gem with Rich History and Vibrant Culture",
-  image_1: "/negombo.jpg",
-  image_2: "/negombo-10.jpg",
+  image_1: "/negombo-1.jpg",
+  image_2: "/negombo-7.jpg",
   image_3: "/negombo-2.jpg",
   description: `Located just a short drive from Colombo, Negombo is a bustling coastal town known for its beautiful beaches, lively markets, and rich cultural history. The town is renowned for its fishing industry, providing a glimpse into local life while offering stunning views of the Indian Ocean. With its wide range of attractions, from serene beaches to historical sites, Negombo is a great place to start or end your journey in Sri Lanka.
 
@@ -2760,8 +2412,8 @@ export const negombo = {
 
 export const polonnaruwa = {
   title: "Polonnaruwa: A Journey Through Sri Lanka’s Ancient Capital",
-  image_1: "/polonnaruwa.jpg",
-  image_2: "/polonnaruwa-10.jpg",
+  image_1: "/polonnaruwa-5.jpg",
+  image_2: "/polonnaruwa-1.jpg",
   image_3: "/polonnaruwa-2.jpg",
   description: `Polonnaruwa, once the ancient capital of Sri Lanka, is a UNESCO World Heritage site filled with historical ruins, Buddhist temples, and stunning archaeological landmarks. Located in the North Central Province, Polonnaruwa offers a glimpse into Sri Lanka's rich cultural heritage, dating back to the 11th century. Visitors can explore the remnants of royal palaces, statues of Buddha, and ancient reservoirs that showcase the architectural brilliance of the Chola and Sinhalese kingdoms.
 
@@ -2826,9 +2478,9 @@ export const polonnaruwa = {
 
 export const riverston = {
   title: "Riverston: A Hidden Gem in Sri Lanka’s Mountainous Heart",
-  image_1: "/riverston.jpg",
+  image_1: "/riverston-2.jpg",
   image_2: "/riverston-10.jpg",
-  image_3: "/riverston-2.jpg",
+  image_3: "/riverston-1.jpg",
   description: `Nestled in the central highlands of Sri Lanka, Riverston is a tranquil haven known for its breathtaking landscapes, misty mountains, and serene surroundings. Often referred to as the "Little Scotland of Sri Lanka," Riverston offers spectacular views, diverse flora and fauna, and a peaceful atmosphere perfect for nature lovers and adventure enthusiasts. The region is part of the Knuckles Mountain Range and is home to cascading waterfalls, lush forests, and vibrant wildlife.
 
   Riverston is an ideal spot for hiking, trekking, and birdwatching. The area’s untouched beauty makes it a hidden gem for those seeking an off-the-beaten-path escape. Whether you're exploring nature trails, taking in panoramic views, or relaxing by the waterfalls, Riverston offers an unforgettable natural experience.`,
@@ -2892,7 +2544,7 @@ export const riverston = {
 
 export const hortonPlains = {
   title: "Horton Plains: A High-altitude Wilderness of Natural Beauty",
-  image_1: "/horton-plains.jpg",
+  image_1: "/horton-plains-3.jpg",
   image_2: "/horton-plains-10.jpg",
   image_3: "/horton-plains-2.jpg",
   description: `Horton Plains National Park, located in the central highlands of Sri Lanka, is a UNESCO World Heritage site renowned for its breathtaking landscapes, diverse wildlife, and unique ecosystems. With its rolling grasslands, cloud forests, and dramatic cliffs, Horton Plains offers a perfect blend of natural beauty and adventure. The park is famous for its two main attractions: World’s End and Baker’s Falls, which offer stunning vistas and a glimpse into the unspoiled beauty of Sri Lanka’s highlands.
