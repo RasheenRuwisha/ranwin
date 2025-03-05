@@ -1,113 +1,109 @@
 "use client";
-
-import { cn } from "@/lib/utils";
+import React, { useState, useRef } from "react";
+import { IconArrowNarrowLeft, IconArrowNarrowRight } from "@tabler/icons-react";
 import { Rating } from "@smastrom/react-rating";
-import React, { useEffect, useState } from "react";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
-export const InfiniteMovingCards = ({
-  items,
-  direction = "left",
-  speed = "fast",
-  pauseOnHover = true,
-  className,
-}: {
-  items: {
-    comment: string;
-    name: string;
-    rating: number;
-    media?: string[];
-  }[];
-  direction?: "left" | "right";
-  speed?: "fast" | "normal" | "slow";
-  pauseOnHover?: boolean;
-  className?: string;
-}) => {
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const scrollerRef = React.useRef<HTMLUListElement>(null);
-  const [start, setStart] = useState(false);
-  const [selectedItem, setSelectedItem] = useState<{
-    comment: string;
-    name: string;
-    rating: number;
-    media?: string[];
-  } | null>(null);
+interface Review {
+  comment: string;
+  name: string;
+  rating: number;
+  media?: string[];
+}
 
-  useEffect(() => {
-    getDirection();
-    getSpeed();
-    setStart(true);
-  }, []);
+export const ReviewCarousel = ({ items }: { items: Review[] }) => {
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [selectedItem, setSelectedItem] = useState<Review | null>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const getDirection = () => {
-    if (containerRef.current) {
-      containerRef.current.style.setProperty(
-        "--animation-direction",
-        direction === "left" ? "forwards" : "reverse"
-      );
+  const checkScrollability = () => {
+    if (carouselRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = carouselRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft < scrollWidth - clientWidth);
     }
   };
 
-  const getSpeed = () => {
-    if (containerRef.current) {
-      const duration =
-        speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s";
-      containerRef.current.style.setProperty("--animation-duration", duration);
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
+      checkScrollability();
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
+      checkScrollability();
     }
   };
 
   return (
-    <div
-      ref={containerRef}
-      className={cn(
-        "scroller relative z-20 max-w-7xl overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
-      )}
-    >
-      <ul
-        ref={scrollerRef}
-        className={cn(
-          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
-        )}
+    <div className="relative w-full max-w-7xl mx-auto overflow-hidden px-12 bg-black">
+      {" "}
+      {/* Set background to black shade */}
+      <div className="absolute left-2 top-1/2 -translate-y-1/2 z-20">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={scrollLeft}
+          disabled={!canScrollLeft}
+        >
+          <IconArrowNarrowLeft className="w-6 h-6 text-gray-400" />{" "}
+          {/* Change icon color */}
+        </Button>
+      </div>
+      <div className="absolute right-2 top-1/2 -translate-y-1/2 z-20">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={scrollRight}
+          disabled={!canScrollRight}
+        >
+          <IconArrowNarrowRight className="w-6 h-6 text-gray-400" />{" "}
+          {/* Change icon color */}
+        </Button>
+      </div>
+      <div
+        ref={carouselRef}
+        className="flex gap-4 py-4 w-full overflow-x-hidden scrollbar-none scroll-smooth"
+        onScroll={checkScrollability}
       >
-        {[...items, ...items].map(
-          (
-            item,
-            idx // Map twice instead of cloning
-          ) => (
-            <li
-              key={idx}
-              className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px] cursor-pointer"
-              style={{
-                background:
-                  "linear-gradient(180deg, var(--slate-800), var(--slate-900))",
-              }}
-              onClick={() => setSelectedItem(item)}
-            >
-              <blockquote>
-                <span className="relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-                  {item.name}
-                </span>
-                <div className="relative z-20 mt-2 flex flex-col ">
-                  <span className="flex flex-col gap-1">
-                    <Rating
-                      readOnly={true}
-                      style={{ maxWidth: 100 }}
-                      value={item.rating}
-                    />
-                    <span className="text-sm mt-4 leading-[1.6] text-gray-400 font-normal">
-                      {item.comment}
-                    </span>
-                  </span>
+        {" "}
+        {/* Remove scrollbar */}
+        {items.map((item, idx) => (
+          <div
+            key={idx}
+            className="w-[350px] h-[300px] max-w-full border border-black rounded-xl p-6 flex-shrink-0 cursor-pointer bg-[#18181b] shadow-md"
+            onClick={() => setSelectedItem(item)}
+          >
+            <blockquote>
+              <span className="text-sm font-medium text-white-800">
+                {item.name}
+              </span>
+              <div className="mt-2 flex flex-col">
+                <Rating
+                  readOnly={true}
+                  style={{ maxWidth: 100 }}
+                  value={item.rating}
+                />
+        <span className="text-sm mt-4 text-white-600">
+  {item.comment.split(" ").length > 30
+    ? item.comment.split(" ").slice(0, 30).join(" ") + "..."
+    : item.comment}
+</span>
 
-                  <div className="mt-4 flex  flex-row gap-5">
+              </div>
+            </blockquote>
+
+            <div className="mt-4 flex  flex-row gap-5">
                     {item.media && item.media.length > 0 && (
                       <img
                         key={idx}
@@ -123,25 +119,20 @@ export const InfiniteMovingCards = ({
                       </div>
                     )}
                   </div>
-                </div>
-              </blockquote>
-            </li>
-          )
-        )}
-      </ul>
-      {/* Popup Dialog */}
+          </div>
+        ))}
+      </div>
       <Dialog open={!!selectedItem} onOpenChange={() => setSelectedItem(null)}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>{selectedItem?.name}</DialogTitle>
           </DialogHeader>
-          <p className="text-gray-100">{selectedItem?.comment}</p>
+          <p className="text-gray-800">{selectedItem?.comment}</p>
           <Rating
             readOnly={true}
             style={{ maxWidth: 100 }}
             value={selectedItem?.rating ?? 0}
           />
-
           {selectedItem?.media && selectedItem.media.length > 0 && (
             <div className="mt-4 grid grid-cols-2 gap-2">
               {selectedItem.media.map((image, idx) => (

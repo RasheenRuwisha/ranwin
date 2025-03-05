@@ -25,7 +25,10 @@ const Destinations = () => {
   ));
 
   return (
-    <div className="pb-20 pt-5 lg:pt:36 mx-[2rem] lg:mx-[8rem]" id="packages">
+    <div
+      className="pb-20 pt-36 mx-[2rem] sm:mx-[2rem] xl:mx-[15rem]"
+      id="packages"
+    >
       <div className="text-2xl lg:text-6xl text-center">
         A selection of exceptional destinations
       </div>

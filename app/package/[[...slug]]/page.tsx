@@ -47,7 +47,7 @@ import "@smastrom/react-rating/style.css";
 
 import { addReview, getReviews } from "./actions";
 import { useToast } from "@/hooks/use-toast";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
+import { ReviewCarousel } from "@/components/ui/infinite-moving-cards";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 
@@ -483,7 +483,7 @@ export default function PackagePage({ params }) {
           </div>
         </div>
 
-        <div className=" pt-5 lg:pt:36" id="header">
+        <div className=" pt-5 lg:pt:36">
           <div className="text-2xl  text-left">
             A selection of more exceptional destinations to explore
           </div>
@@ -496,16 +496,8 @@ export default function PackagePage({ params }) {
         <div className=" pt-5 lg:pt:36" id="header">
           <div className="text-2xl  text-left">Reviews</div>
 
-          <div className="h-[20rem] mt-10 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-            {reviews.length > 0 ? (
-              <InfiniteMovingCards
-                items={reviews}
-                direction="right"
-                speed="normal"
-              />
-            ) : (
-              <></>
-            )}
+          <div className="h-[22rem] mt-10 rounded-md flex flex-col antialiased dark:bg-black items-center justify-center relative overflow-hidden">
+            {reviews.length > 0 ? <ReviewCarousel items={reviews} /> : <></>}
           </div>
 
           <div className="mt-10 flex flex-col gap-5">
