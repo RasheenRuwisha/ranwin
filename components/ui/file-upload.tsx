@@ -36,6 +36,7 @@ export const FileUpload = forwardRef(
     const fileInputRef = useRef<HTMLInputElement>(null);
 
     useImperativeHandle(ref, () => ({
+      getFiles: files,
       clearFiles: () => setFiles([]),
     }));
 
@@ -56,6 +57,7 @@ export const FileUpload = forwardRef(
 
     const handleRemoveFile = (index: number) => {
       setFiles((prevFiles) => prevFiles.filter((_, idx) => idx !== index));
+      console.log(files);
     };
 
     const handleClick = () => {

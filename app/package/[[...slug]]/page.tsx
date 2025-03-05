@@ -113,9 +113,10 @@ export default function PackagePage({ params }) {
     setHoveredImage(imageUrl);
   };
 
-  const handleFileUpload = (files: File[]) => {
-    setFiles(files);
-    console.log(reviews);
+  const handleFileUpload = (newFiles: File[]) => {
+    setFiles([...files, ...newFiles]);
+
+    console.log(files);
   };
 
   const uploadReview = async () => {
@@ -138,11 +139,12 @@ export default function PackagePage({ params }) {
         packageId: params?.slug?.[0] || "default-package",
         rating,
         comment: review,
-        media: files,
+        media: fileUploadRef.current?.getFiles,
         name,
         tokenId: token,
         createdAt: new Date().toISOString(), // Ensure ordering consistency
       };
+      console.log(files);
 
       // Optimistically update UI
 

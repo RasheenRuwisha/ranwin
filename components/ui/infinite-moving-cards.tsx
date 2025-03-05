@@ -94,31 +94,30 @@ export const ReviewCarousel = ({ items }: { items: Review[] }) => {
                   style={{ maxWidth: 100 }}
                   value={item.rating}
                 />
-        <span className="text-sm mt-4 text-white-600">
-  {item.comment.split(" ").length > 30
-    ? item.comment.split(" ").slice(0, 30).join(" ") + "..."
-    : item.comment}
-</span>
-
+                <span className="text-sm mt-4 text-white-600">
+                  {item.comment.split(" ").length > 30
+                    ? item.comment.split(" ").slice(0, 30).join(" ") + "..."
+                    : item.comment}
+                </span>
               </div>
             </blockquote>
 
             <div className="mt-4 flex  flex-row gap-5">
-                    {item.media && item.media.length > 0 && (
-                      <img
-                        key={idx}
-                        src={item.media[0]}
-                        alt={`Image ${idx + 1}`}
-                        className="rounded-lg h-20 w-20"
-                      />
-                    )}
+              {item.media && item.media.length > 0 && (
+                <img
+                  key={idx}
+                  src={item.media[0]}
+                  alt={`Image ${idx + 1}`}
+                  className="rounded-lg h-20 w-20"
+                />
+              )}
 
-                    {item.media && item.media.length > 1 && (
-                      <div className="text-sm bg-black/50 rounded-md p-4 h-20 w-20 text-center align-center content-center">
-                        +{item.media.length - 1} image(s)
-                      </div>
-                    )}
-                  </div>
+              {item.media && item.media.length > 1 && (
+                <div className="text-sm bg-black/50 rounded-md p-4 h-20 w-20 text-center align-center content-center">
+                  +{item.media.length - 1} image(s)
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>
