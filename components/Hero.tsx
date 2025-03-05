@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="pb-20 pt-36 mx-auto sm:px-10 px-5" id="header">
       <div
-        className="h-[80vh] lg:h-[90vh] w-full 
+        className="h-[70vh] md:[80vh] lg:h-[90vh] w-full 
        absolute top-0 left-0 flex items-center justify-center"
       >
         <Image
