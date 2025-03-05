@@ -136,8 +136,8 @@ export const package1 = {
     1: {
       start: "BIA",
       end: "Kandy",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "114 km",
+      duration: "2 hours 32 mins",
       things_to_do: [
         {
           name: "Pinnawala Elephant Orphanage",
@@ -164,8 +164,8 @@ export const package1 = {
     2: {
       start: "Kandy",
       end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "76.2 km",
+      duration: "2 hours 27 mins",
       things_to_do: [
         {
           name: "Gem Museum",
@@ -196,8 +196,8 @@ export const package1 = {
     3: {
       start: "Nuwara Eliya",
       end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Pink Post Office",
@@ -220,8 +220,8 @@ export const package1 = {
     4: {
       start: "Nuwara Eliya",
       end: "Colombo",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "157 km",
+      duration: "4 hours 39 mins",
       things_to_do: [
         {
           name: "Ambewela Farm",
@@ -244,8 +244,8 @@ export const package1 = {
     5: {
       start: "Colombo",
       end: "BIA",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "32.4 km",
+      duration: "35 minutes",
       things_to_do: [
         {
           name: "Colombo City Tour (Tuktuk or Car)",
@@ -332,8 +332,8 @@ export const package2 = {
     1: {
       start: "BIA",
       end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "109 km",
+      duration: "1 hour 40 mins",
       things_to_do: [
         {
           name: "Water Sports",
@@ -348,8 +348,8 @@ export const package2 = {
     2: {
       start: "Bentota",
       end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Turtle Conservatory",
@@ -368,8 +368,8 @@ export const package2 = {
     3: {
       start: "Benota",
       end: "Hikkaduwa -> Mirissa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "99.3 km",
+      duration: "1 hour 47 mins",
       things_to_do: [
         {
           name: "Glass Bottom Boat Ride",
@@ -396,8 +396,8 @@ export const package2 = {
     4: {
       start: "Mirissa",
       end: "Mirissa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Whale watching",
@@ -412,8 +412,8 @@ export const package2 = {
     5: {
       start: "Mirissa",
       end: "BIA",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "177 km",
+      duration: "2 hours 44 mins",
       things_to_do: [],
     },
   },
@@ -504,8 +504,8 @@ export const package3 = {
     1: {
       start: "BIA",
       end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "109 km",
+      duration: "1 hour 40 mins",
       things_to_do: [
         {
           name: "Water Sports",
@@ -520,8 +520,8 @@ export const package3 = {
     2: {
       start: "Bentota",
       end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Turtle Conservatory",
@@ -540,8 +540,8 @@ export const package3 = {
     3: {
       start: "Benota",
       end: "Hikkaduwa -> Mirissa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "99.3 km",
+      duration: "1 hour 47 mins",
       things_to_do: [
         {
           name: "Glass Bottom Boat Ride",
@@ -568,8 +568,8 @@ export const package3 = {
     4: {
       start: "Mirissa",
       end: "Mirissa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Whale watching",
@@ -584,8 +584,8 @@ export const package3 = {
     5: {
       start: "Mirissa",
       end: "Yala",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "115 km",
+      duration: "2 hours 8 mins",
       things_to_do: [
         {
           name: "Katharagama Temple",
@@ -596,8 +596,8 @@ export const package3 = {
     6: {
       start: "Yala",
       end: "Yala",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Yala Safari",
@@ -608,8 +608,8 @@ export const package3 = {
     7: {
       start: "Yala",
       end: "BIA",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "77 km",
+      duration: "1 hour 19 mins",
       things_to_do: [],
     },
   },
@@ -689,8 +689,8 @@ export const package4 = {
     1: {
       start: "BIA",
       end: "Colombo",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "32.4 km",
+      duration: "35 minutes",
       things_to_do: [
         {
           name: "City Tour",
@@ -704,25 +704,25 @@ export const package4 = {
     },
     2: {
       start: "Colombo",
-      end: "Sigiya",
-      distance: "115km",
-      duration: "3 hours",
+      end: "Sigiriya",
+      distance: "177 km",
+      duration: "3 hours 27 mins",
       things_to_do: [
         {
           name: "Pinnawala Elephant Orphanage",
           image: "/pinnawala.jpg",
         },
         {
-          name: "Sigiya Rock",
+          name: "Sigiriya Rock",
           image: "/sigiriya-1.jpg",
         },
       ],
     },
     3: {
-      start: "Sigiya",
-      end: "Sigiya",
-      distance: "115km",
-      duration: "3 hours",
+      start: "Sigiriya",
+      end: "Sigiriya",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Habarna Safari",
@@ -743,10 +743,10 @@ export const package4 = {
       ],
     },
     4: {
-      start: "Sigiya",
+      start: "Sigiriya",
       end: "Kandy",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "89.3 km",
+      duration: "2 hours 24 mins",
       things_to_do: [
         {
           name: "Damubulla Cave Temple",
@@ -765,8 +765,8 @@ export const package4 = {
     5: {
       start: "Kandy",
       end: "Kandy",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Gem Museum",
@@ -789,8 +789,8 @@ export const package4 = {
     6: {
       start: "Kandy",
       end: "BIA",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "113 km",
+      duration: "2 hours 32 mins",
       things_to_do: [
         {
           name: "Kandy View Point",
@@ -890,8 +890,8 @@ export const package5 = {
     1: {
       start: "BIA",
       end: "Colombo",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "32.4 km",
+      duration: "35 minutes",
       things_to_do: [
         {
           name: "City Tour",
@@ -906,8 +906,8 @@ export const package5 = {
     2: {
       start: "Colombo",
       end: "Pollonaruwa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "231 km",
+      duration: "4 hours 22 mins",
       things_to_do: [
         {
           name: "Pinnawala Elephant Orphanage",
@@ -925,9 +925,9 @@ export const package5 = {
     },
     3: {
       start: "Pollonaruwa",
-      end: "Sigiya",
-      distance: "115km",
-      duration: "3 hours",
+      end: "Sigiriya",
+      distance: "57.9 km",
+      duration: "1 hour 14 mins",
       things_to_do: [
         {
           name: "Habarna Safari",
@@ -940,10 +940,10 @@ export const package5 = {
       ],
     },
     4: {
-      start: "Sigiya",
-      end: "Sigiya",
-      distance: "115km",
-      duration: "3 hours",
+      start: "Sigiriya",
+      end: "Sigiriya",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Sigiriya Rock",
@@ -956,10 +956,10 @@ export const package5 = {
       ],
     },
     5: {
-      start: "Sigiya",
+      start: "Sigiriya",
       end: "Kandy",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "89.3 km",
+      duration: "2 hours 24 mins",
       things_to_do: [
         {
           name: "Damubulla Cave Temple",
@@ -990,8 +990,8 @@ export const package5 = {
     6: {
       start: "Kandy",
       end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "76.2 km",
+      duration: "2 hours 27 mins",
       things_to_do: [
         {
           name: "Kandy View Point",
@@ -1022,8 +1022,8 @@ export const package5 = {
     7: {
       start: "Nuwara Eliya",
       end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Rama seetha temple",
@@ -1042,8 +1042,8 @@ export const package5 = {
     8: {
       start: "Nuwara Eliya",
       end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Pink Post Office",
@@ -1058,8 +1058,8 @@ export const package5 = {
     9: {
       start: "Nuwara Eliya",
       end: "Ella (by train)",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "54.5km",
+      duration: "2 hours",
       things_to_do: [
         {
           name: "Nine arches bridge",
@@ -1074,8 +1074,8 @@ export const package5 = {
     10: {
       start: "Ella",
       end: "Yala",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "54.5 km",
+      duration: "1 hour 50 mins",
       things_to_do: [
         {
           name: "Little Adam's Peak",
@@ -1090,8 +1090,8 @@ export const package5 = {
     11: {
       start: "Yala",
       end: "Yala",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Yala Safari",
@@ -1102,8 +1102,8 @@ export const package5 = {
     12: {
       start: "Yala",
       end: "Mirissa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "114 km",
+      duration: "2 hours 9 mins",
       things_to_do: [
         {
           name: "Whale watching",
@@ -1114,8 +1114,8 @@ export const package5 = {
     13: {
       start: "Mirissa",
       end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "96.6 km",
+      duration: "1 hour 42 mins",
       things_to_do: [
         {
           name: "Waligama Still Fishermen",
@@ -1138,8 +1138,8 @@ export const package5 = {
     14: {
       start: "Bentota",
       end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Water Sports",
@@ -1158,8 +1158,8 @@ export const package5 = {
     15: {
       start: "Bentota",
       end: "BIA",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "109 km",
+      duration: "1 hour 50 mins",
       things_to_do: [],
     },
   },
@@ -1263,8 +1263,8 @@ export const package6 = {
     1: {
       start: "BIA",
       end: "Negombo",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "10 km",
+      duration: "20 minutes",
       things_to_do: [
         {
           name: "Negombo fish market",
@@ -1279,8 +1279,8 @@ export const package6 = {
     2: {
       start: "Negombo",
       end: "Anuradhapura",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "172 km",
+      duration: "3 hours 33 mins",
       things_to_do: [
         {
           name: "Jaya Sri Maha Bodhiya",
@@ -1303,8 +1303,8 @@ export const package6 = {
     3: {
       start: "Anuradhapura",
       end: "Anuradhapura",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Lakes in Anuradhapura",
@@ -1319,8 +1319,8 @@ export const package6 = {
     4: {
       start: "Anuradhapura",
       end: "Jaffna",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "196 km",
+      duration: "3 hours 42 mins",
       things_to_do: [
         {
           name: "Jaffna Fort",
@@ -1335,8 +1335,8 @@ export const package6 = {
     5: {
       start: "Jaffna",
       end: "Jaffna",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Nagadeepa temple",
@@ -1347,8 +1347,8 @@ export const package6 = {
     6: {
       start: "Jaffna",
       end: "Jaffna",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Keerimalai Pond",
@@ -1371,8 +1371,8 @@ export const package6 = {
     7: {
       start: "Jaffna",
       end: "Trincomalee",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "232 km",
+      duration: "3 hours 56 mins",
       things_to_do: [
         {
           name: "Kanniya Hot water spring",
@@ -1392,8 +1392,8 @@ export const package6 = {
     8: {
       start: "Trincomalee",
       end: "Trincomalee",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Pigeon Island National Park",
@@ -1408,8 +1408,8 @@ export const package6 = {
     9: {
       start: "Trincomalee",
       end: "Pollonaruwa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "109 km",
+      duration: "2 hours",
       things_to_do: [
         {
           name: "Ancient Ruins",
@@ -1424,8 +1424,8 @@ export const package6 = {
     10: {
       start: "Pollonaruwa",
       end: "Sigiriya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "57.9 km",
+      duration: "1 hour 18 mins",
       things_to_do: [
         {
           name: "Habarana Safari",
@@ -1436,8 +1436,8 @@ export const package6 = {
     11: {
       start: "Sigiriya",
       end: "Sigiriya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Sigiriya Rock",
@@ -1448,8 +1448,8 @@ export const package6 = {
     12: {
       start: "Sigiriya",
       end: "Sigiriya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Sigiriya Safari",
@@ -1464,8 +1464,8 @@ export const package6 = {
     13: {
       start: "Sigiriya",
       end: "Kandy",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "89.3 km",
+      duration: "2 hours 40 mins",
       things_to_do: [
         {
           name: "Dambulla Cave Temple",
@@ -1484,8 +1484,8 @@ export const package6 = {
     14: {
       start: "Kandy",
       end: "Kandy",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Tooth Relic Temple",
@@ -1508,8 +1508,8 @@ export const package6 = {
     15: {
       start: "Kandy",
       end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "176.2 km",
+      duration: "2 hours 28mins",
       things_to_do: [
         {
           name: "Tea Factory",
@@ -1528,8 +1528,8 @@ export const package6 = {
     16: {
       start: "Nuwara Eliya",
       end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Pink Post Office",
@@ -1552,8 +1552,8 @@ export const package6 = {
     17: {
       start: "Nuwara Eliya",
       end: "Nuwara Eliya",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "World's End",
@@ -1568,15 +1568,15 @@ export const package6 = {
     18: {
       start: "Nuwara Eliya",
       end: "Ella (by train)",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "54.5km",
+      duration: "2 hours",
       things_to_do: [],
     },
     19: {
       start: "Ella",
       end: "Ella",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Little Adam's Peak",
@@ -1591,8 +1591,8 @@ export const package6 = {
     20: {
       start: "Ella",
       end: "Yala",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "54.5 km",
+      duration: "1 hour 50 mins",
       things_to_do: [
         {
           name: "Rawana Waterfall",
@@ -1603,8 +1603,8 @@ export const package6 = {
     21: {
       start: "Yala",
       end: "Yala",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Yala Safari",
@@ -1615,8 +1615,8 @@ export const package6 = {
     22: {
       start: "Yala",
       end: "Udawalawa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "121 km",
+      duration: "3 hours 10 mins",
       things_to_do: [
         {
           name: "Katharagama Temple",
@@ -1627,8 +1627,8 @@ export const package6 = {
     23: {
       start: "Udawalawa",
       end: "Udawalawa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Udawalawe Safari",
@@ -1639,8 +1639,8 @@ export const package6 = {
     24: {
       start: "Udawalawa",
       end: "Mirissa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "100 km",
+      duration: "2 hours",
       things_to_do: [
         {
           name: "Mirissa Beach",
@@ -1655,8 +1655,8 @@ export const package6 = {
     25: {
       start: "Mirissa",
       end: "Mirissa",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Whale watching",
@@ -1667,8 +1667,8 @@ export const package6 = {
     26: {
       start: "Mirissa",
       end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "96.6 km",
+      duration: "1 hour 42 mins",
       things_to_do: [
         {
           name: "Galle Fort",
@@ -1687,8 +1687,8 @@ export const package6 = {
     27: {
       start: "Bentota",
       end: "Bentota",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Water Sports",
@@ -1707,8 +1707,8 @@ export const package6 = {
     28: {
       start: "Bentota",
       end: "Colombo",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "81.6 km",
+      duration: "1 hour 50 mins",
       things_to_do: [
         {
           name: "Galle Face Green",
@@ -1719,8 +1719,8 @@ export const package6 = {
     29: {
       start: "Colombo",
       end: "Colombo",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "-",
+      duration: "-",
       things_to_do: [
         {
           name: "Lotus Tower",
@@ -1739,8 +1739,8 @@ export const package6 = {
     30: {
       start: "Colombo",
       end: "BIA",
-      distance: "115km",
-      duration: "3 hours",
+      distance: "32.4 km",
+      duration: "35 minutes",
       things_to_do: [],
     },
   },
@@ -1828,6 +1828,12 @@ export const colombo = {
       image: "/colombo-1.jpg",
     },
     {
+      section: "Lotus Tower: Colombo’s Iconic Landmark",
+      text: "Standing tall at 350 meters, the Lotus Tower is Sri Lanka’s tallest structure and a symbol of Colombo’s modern skyline. This vibrant, lotus-shaped tower is a hub for telecommunications, entertainment, and tourism. Visitors can enjoy breathtaking panoramic views of the city and the Indian Ocean from its observation deck. At night, the tower comes alive with dazzling lights, making it a must-visit attraction for those exploring Colombo.",
+      image: "/lotus-tower.jpg",
+    },
+
+    {
       section: "Gangaramaya Temple: A Spiritual Retreat",
       text: "Gangaramaya Temple is an important Buddhist temple in Colombo, renowned for its stunning architecture and eclectic collection of relics. The temple blends traditional Sri Lankan, Thai, Indian, and Chinese architectural styles. Visitors can explore the temple, the museum, and the adjacent library, which contains ancient manuscripts and artifacts. It’s a serene space to meditate and learn about Buddhist teachings.",
       image: "/colombo-2.jpg",
@@ -1883,11 +1889,6 @@ export const hikkaduwa = {
       section: "Surfing at Hikkaduwa Beach",
       text: "Hikkaduwa’s consistent waves make it a haven for surfers of all levels. Whether you’re a seasoned surfer or a beginner looking for lessons, Hikkaduwa Beach has surf schools and rental shops that cater to all your needs. The lively surf culture here ensures you’ll find plenty of fellow surfers to share the waves with.",
       image: "/hikkaduwa-2.jpg",
-    },
-    {
-      section: "Visit Hikkaduwa National Park",
-      text: "Hikkaduwa National Park is a protected area that includes both land and marine ecosystems. You can explore the park’s biodiversity by taking a boat ride through mangrove swamps or walking along the trails that wind through the forest. The park is home to a variety of bird species, reptiles, and coastal wildlife, making it a must-visit for nature enthusiasts.",
-      image: "/hikkaduwa-3.jpg",
     },
     {
       section: "Relax at Hikkaduwa Beach",
