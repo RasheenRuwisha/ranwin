@@ -13,6 +13,7 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+import Link from "next/link";
 
 const Second = () => {
   const items = [
@@ -76,12 +77,14 @@ const Second = () => {
           <p>
             This journey offers an unforgettable experience that blends
             adventure, culture and the natural beauty if the country. Filled
-            with activities and unforgettable moments this journey takes 45 days
+            with activities and unforgettable moments this journey takes 30 days
             to complete.
           </p>
-          <button className="mt-7 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-3xl font-bold transform hover:-translate-y-1 transition duration-400">
-            Learn More
-          </button>
+          <Link href="/package/north-to-south">
+            <button className="mt-7 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-3xl font-bold transform hover:-translate-y-1 transition duration-400">
+              Learn More
+            </button>
+          </Link>
         </div>
       </div>
       <div className="mt-20">

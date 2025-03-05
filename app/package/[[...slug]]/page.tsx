@@ -14,6 +14,7 @@ import {
   package3,
   package4,
   package5,
+  package6,
 } from "@/data";
 import {
   Accordion,
@@ -93,6 +94,9 @@ export default function PackagePage({ params }) {
       } else if (params?.slug?.[0] === "scenic-odyysey") {
         setUrl(params.slug[0]);
         setPackages(package5);
+      } else if (params?.slug?.[0] === "north-to-south") {
+        setUrl(params.slug[0]);
+        setPackages(package6);
       }
 
       const reviews = await getReviews(params?.slug?.[0]);

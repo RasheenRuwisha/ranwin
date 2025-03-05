@@ -35,6 +35,9 @@ export default function Footer() {
               <FooterLink href="tel:+1-437-673-4518">
                 +1 437 673 4518 (Canada)
               </FooterLink>
+              <FooterLink href="tel:+1-437-673-4518">
+                +39 327 936 8304 (Italy)
+              </FooterLink>
             </FooterColumn>
           </div>
         </div>

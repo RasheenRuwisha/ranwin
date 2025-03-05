@@ -41,12 +41,18 @@ export const dataCaro = [
     src: "/15.jpg",
     link: "/package/scenic-odyysey",
   },
+  {
+    category: "30 Days",
+    title: "Sri Lanka’s North to South Expedition",
+    src: "/mirissa-3.jpg",
+    link: "/package/north-to-south",
+  },
 ];
 
 export const socialMedia = [
   {
     id: 1,
-    img: "/facebook.png",
+    img: "/facebook.svg",
     link: "https://www.facebook.com/people/Ranwin-Tours-Travels/61571960647288/",
   },
 
@@ -1161,6 +1167,583 @@ export const package5 = {
     "Discover Sri Lanka’s best destinations on this all-encompassing route, covering history, nature, wildlife, and stunning beaches from Colombo to Bentota.",
   description:
     "Embark on an unforgettable journey through Sri Lanka, from the bustling capital to ancient cities, misty highlands, and breathtaking coastal escapes. Explore cultural landmarks in Polonnaruwa and Sigiriya, experience the charm of Kandy and Nuwara Eliya, and enjoy the scenic beauty of Ella. Encounter wildlife in Yala before unwinding on the golden beaches of Mirissa and Bentota.",
+};
+
+export const package6 = {
+  price_with_hotel: 750,
+  waypoints: [
+    [79.88452, 7.17929],
+    [79.854113, 6.938747],
+    [80.41061, 8.334985],
+    [80.009303, 9.665093],
+    [81.216793, 8.578088],
+    [81.000339, 7.939536],
+    [80.746347, 7.949809],
+    [80.635036, 7.293121],
+    [80.788197, 6.960166],
+    [81.048993, 6.873606],
+    [81.518389, 6.530255],
+    [80.817214, 6.424139],
+    [80.455813, 5.949363],
+    [79.997854, 6.421528],
+    [79.854113, 6.938747],
+    [79.88452, 7.17929],
+  ],
+  image_1: "/ella-1.jpg",
+  image_2: "/yala-2.jpg",
+  image_3: "/negombo-1.jpg",
+  price: 225,
+  number_of_days: 30,
+  short_title: "Sri Lanka: North to South Expedition",
+  title: "Sri Lanka’s 30-Day Grand Adventure: History, Nature & Coastal Bliss",
+  short_description:
+    "A captivating 30-day journey across Sri Lanka, from the ancient ruins of Anuradhapura to the northern charm of Jaffna, the scenic highlands of Ella, and the pristine beaches of Mirissa.",
+  description:
+    "Embark on a 30-day adventure through Sri Lanka’s most iconic destinations. Start from the bustling arrival point at BIA, then explore the coastal beauty of Negombo. Dive into history in Anuradhapura and witness Jaffna’s unique Tamil culture. Relax on Trincomalee’s beaches before visiting the ancient city of Polonnaruwa and the majestic Sigiriya rock fortress. Experience Kandy’s cultural wonders and the breathtaking landscapes of Nuwara Eliya and Ella. Encounter wildlife at Yala and Udawalawe before unwinding on the golden beaches of Mirissa and Bentota. Conclude your journey in Colombo with a city tour and vibrant nightlife. A complete Sri Lankan experience blending history, nature, and adventure!",
+  route: {
+    1: "BIA",
+    2: "Negombo",
+    3: "Anuradhapura",
+    4: "Jaffna",
+    5: "Trincomalee",
+    6: "Pollonaruwa",
+    7: "Sigiriya",
+    8: "Kandy",
+    9: "Nuwara Eliya",
+    10: "Ella",
+    11: "Yala",
+    12: "Udawalawa",
+    13: "Mirissa",
+    14: "Bentota",
+    15: "Colombo",
+  },
+  itenary: [
+    {
+      1: {
+        title: "Kandy",
+        duration: "1 Night",
+        things_to_do: [
+          "Tooth Relic Temple",
+          "Kandy View Point",
+          "Peradeniya Botanical Garden",
+          "Gem Museum",
+          "Wood Carving Center",
+          "Traditional Kandy Dance",
+          "Pinnawala Elephant Orphanage",
+          "Spice Garden",
+        ],
+      },
+      2: {
+        title: "Nuwara Eliya",
+        duration: "2 Nights",
+        things_to_do: [
+          "Tea Factory",
+          "Ramboda waterfall",
+          "Hanuman Temple",
+          "Pink Post Office",
+          "Haggala Garden",
+          "Rama Seetha Temple",
+        ],
+      },
+      3: {
+        title: "Colombo",
+        duration: "1 Night",
+        things_to_do: ["City tour", "Tuk Tuk Ride"],
+      },
+    },
+  ],
+  whats_included: ["Sim card", "Bottled Water"],
+  tickets_included: [
+    "Spice Garden",
+    "Tea Factory",
+    "Gem Museum",
+    "Wood Carving Center",
+  ],
+  day_break_down: {
+    1: {
+      start: "BIA",
+      end: "Negombo",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Negombo fish market",
+          image: "/negombo-5.jpg",
+        },
+        {
+          name: "Negombo beach",
+          image: "/negombo-1.jpg",
+        },
+      ],
+    },
+    2: {
+      start: "Negombo",
+      end: "Anuradhapura",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Jaya Sri Maha Bodhiya",
+          image: "/anuradhapura-2.jpg",
+        },
+        {
+          name: "Ruwanwelisaya",
+          image: "/anuradhapura-1.jpg",
+        },
+        {
+          name: "Isurumuniya",
+          image: "/anuradhapura-4.jpg",
+        },
+        {
+          name: "Twin Ponds",
+          image: "/anuradhapura-6.jpg",
+        },
+      ],
+    },
+    3: {
+      start: "Anuradhapura",
+      end: "Anuradhapura",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Lakes in Anuradhapura",
+          image: "/habarana-4.jpg",
+        },
+        {
+          name: "Ruins",
+          image: "/habarana-6.jpg",
+        },
+      ],
+    },
+    4: {
+      start: "Anuradhapura",
+      end: "Jaffna",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Jaffna Fort",
+          image: "/jaffna-1.jpg",
+        },
+        {
+          name: "Jaffna Library",
+          image: "/jaffna-3.jpg",
+        },
+      ],
+    },
+    5: {
+      start: "Jaffna",
+      end: "Jaffna",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Nagadeepa temple",
+          image: "/jaffna-2.jpg",
+        },
+      ],
+    },
+    6: {
+      start: "Jaffna",
+      end: "Jaffna",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Keerimalai Pond",
+          image: "/jaffna-5.jpg",
+        },
+        {
+          name: "Nallur Temple",
+          image: "/jaffna-2.jpg",
+        },
+        {
+          name: "RIO Ice Crean Factory",
+          image: "/rio.jpg",
+        },
+        {
+          name: "Point Pedro",
+          image: "/jaffna-8.jpg",
+        },
+      ],
+    },
+    7: {
+      start: "Jaffna",
+      end: "Trincomalee",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Kanniya Hot water spring",
+          image: "/trincomalee-7.jpg",
+        },
+        {
+          name: "Koneswaram Temple",
+          image: "/trincomalee-3.jpg",
+        },
+
+        {
+          name: "Fort Frederick",
+          image: "/trincomalee-4.jpg",
+        },
+      ],
+    },
+    8: {
+      start: "Trincomalee",
+      end: "Trincomalee",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Pigeon Island National Park",
+          image: "/trincomalee-2.jpg",
+        },
+        {
+          name: "Nilaveli Beach",
+          image: "/trincomalee-1.jpg",
+        },
+      ],
+    },
+    9: {
+      start: "Trincomalee",
+      end: "Pollonaruwa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Ancient Ruins",
+          image: "/habarana-6.jpg",
+        },
+        {
+          name: "Parakrama Samudra",
+          image: "/polonnaruwa-3.jpg",
+        },
+      ],
+    },
+    10: {
+      start: "Pollonaruwa",
+      end: "Sigiriya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Habarana Safari",
+          image: "/polonnaruwa-9.jpg",
+        },
+      ],
+    },
+    11: {
+      start: "Sigiriya",
+      end: "Sigiriya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Sigiriya Rock",
+          image: "/sigiriya-1.jpg",
+        },
+      ],
+    },
+    12: {
+      start: "Sigiriya",
+      end: "Sigiriya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Sigiriya Safari",
+          image: "/sigiriya-7.jpg",
+        },
+        {
+          name: "Elephant Ride",
+          image: "/elephant.jpg",
+        },
+      ],
+    },
+    13: {
+      start: "Sigiriya",
+      end: "Kandy",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Dambulla Cave Temple",
+          image: "/sigiriya-8.jpg",
+        },
+        {
+          name: "Spice Garden",
+          image: "/kandy-5.jpg",
+        },
+        {
+          name: "Kandy View Point",
+          image: "/kandy-4.jpg",
+        },
+      ],
+    },
+    14: {
+      start: "Kandy",
+      end: "Kandy",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Tooth Relic Temple",
+          image: "/kandy-1.jpg",
+        },
+        {
+          name: "Gem Museum",
+          image: "/gem.jpg",
+        },
+        {
+          name: "Wood Carving Center",
+          image: "/galle-6.jpg",
+        },
+        {
+          name: "Peradeniya Botanical Garden",
+          image: "/nuwaraeliya-4.jpg",
+        },
+      ],
+    },
+    15: {
+      start: "Kandy",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Tea Factory",
+          image: "/ella-4.jpg",
+        },
+        {
+          name: "Ramboda waterfall",
+          image: "/ramboda.png",
+        },
+        {
+          name: "Hanuman Temple",
+          image: "/hanuman.jpg",
+        },
+      ],
+    },
+    16: {
+      start: "Nuwara Eliya",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Pink Post Office",
+          image: "/pink.jpg",
+        },
+        {
+          name: "Rama Seetha Temple",
+          image: "/rama.jpg",
+        },
+        {
+          name: "Haggala Garden",
+          image: "/haggala.jpg",
+        },
+        {
+          name: "Gregory Lake Boat Ride",
+          image: "/kandy-2.jpg",
+        },
+      ],
+    },
+    17: {
+      start: "Nuwara Eliya",
+      end: "Nuwara Eliya",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "World's End",
+          image: "/nuwaraeliya-2.jpg",
+        },
+        {
+          name: "Ambewela Farm",
+          image: "/ambewela.jpg",
+        },
+      ],
+    },
+    18: {
+      start: "Nuwara Eliya",
+      end: "Ella (by train)",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [],
+    },
+    19: {
+      start: "Ella",
+      end: "Ella",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Little Adam's Peak",
+          image: "/ella-3.jpg",
+        },
+        {
+          name: "Nine arches bridge",
+          image: "/ella-1.jpg",
+        },
+      ],
+    },
+    20: {
+      start: "Ella",
+      end: "Yala",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Rawana Waterfall",
+          image: "/rawana.jpg",
+        },
+      ],
+    },
+    21: {
+      start: "Yala",
+      end: "Yala",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Yala Safari",
+          image: "/yala.jpg",
+        },
+      ],
+    },
+    22: {
+      start: "Yala",
+      end: "Udawalawa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Katharagama Temple",
+          image: "/katharagama.jpg",
+        },
+      ],
+    },
+    23: {
+      start: "Udawalawa",
+      end: "Udawalawa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Udawalawe Safari",
+          image: "/udawalawa-1.jpg",
+        },
+      ],
+    },
+    24: {
+      start: "Udawalawa",
+      end: "Mirissa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Mirissa Beach",
+          image: "/mirissa-1.jpg",
+        },
+        {
+          name: "Still fishermen",
+          image: "/fisher.jpg",
+        },
+      ],
+    },
+    25: {
+      start: "Mirissa",
+      end: "Mirissa",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Whale watching",
+          image: "/whale.jpg",
+        },
+      ],
+    },
+    26: {
+      start: "Mirissa",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Galle Fort",
+          image: "/galle-1.jpg",
+        },
+        {
+          name: "Glass Bottom Boat Ride",
+          image: "/glass.jpg",
+        },
+        {
+          name: "Turtle Conservatory",
+          image: "/turtle.jpg",
+        },
+      ],
+    },
+    27: {
+      start: "Bentota",
+      end: "Bentota",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Water Sports",
+          image: "/water-sport.jpg",
+        },
+        {
+          name: "Mangrove Boat Ride",
+          image: "/mangrove.jpg",
+        },
+        {
+          name: "Fish Therapy",
+          image: "/fish.jpg",
+        },
+      ],
+    },
+    28: {
+      start: "Bentota",
+      end: "Colombo",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Galle Face Green",
+          image: "/colombo-1.jpg",
+        },
+      ],
+    },
+    29: {
+      start: "Colombo",
+      end: "Colombo",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [
+        {
+          name: "Lotus Tower",
+          image: "/lotus-tower.jpg",
+        },
+        {
+          name: "City Tour",
+          image: "/colombo-5.jpg",
+        },
+        {
+          name: "Pettah Market",
+          image: "/colombo-5.jpg",
+        },
+      ],
+    },
+    30: {
+      start: "Colombo",
+      end: "BIA",
+      distance: "115km",
+      duration: "3 hours",
+      things_to_do: [],
+    },
+  },
 };
 
 export const ella = {
