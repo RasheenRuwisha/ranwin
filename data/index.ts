@@ -1170,7 +1170,7 @@ export const package5 = {
 };
 
 export const package6 = {
-  price_with_hotel: 750,
+  price_with_hotel: 4000,
   waypoints: [
     [79.88452, 7.17929],
     [79.854113, 6.938747],
@@ -1192,7 +1192,7 @@ export const package6 = {
   image_1: "/ella-1.jpg",
   image_2: "/yala-2.jpg",
   image_3: "/negombo-1.jpg",
-  price: 225,
+  price: 1425,
   number_of_days: 30,
   short_title: "Sri Lanka: North to South Expedition",
   title: "Sri Lanka’s 30-Day Grand Adventure: History, Nature & Coastal Bliss",

@@ -16,7 +16,7 @@ export default function Home() {
 
         <Hero />
         <Second />
-        <div className="relative h-[500px] my-20">
+        <div className="relative h-[500px] my-5 md:my-20">
           <WorldMap />
           <div className="absolute top-[50%] translate-y-[-50%] xs:px-[20px]  sm:text-md  px-[2rem]  md:px-[5rem] md:text-xl   xl:px-[10rem]  xl:text-4xl">
             The beauty of Sri Lanka lies in its diverse landscapes, where golden
